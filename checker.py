@@ -126,7 +126,8 @@ def discover(cfg, cache: dict, now, force=False):
         c = cache.get(chain) or {}
         fresh = c.get("at") and now - datetime.fromisoformat(c["at"]) < timedelta(hours=hours)
         if fresh and c.get("products") and not force:
-            out[chain] = c
+            # 캐시를 쓰더라도 지금 설정의 필터(exclude 등)는 바로 적용
+            out[chain] = dict(c, products=[p for p in c["products"] if is_card_pack(p["name"], pf)])
             continue
         found, errors = {}, []
         for kw in pf["searchKeywords"]:
