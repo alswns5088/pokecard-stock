@@ -137,32 +137,6 @@
   "gongju|cu|8809945338184|02997": 0,
   "gongju|cu|8809945338184|06543": 0,
   "gongju|cu|8809945338184|07188": 0,
-  "gongju|seveneleven|8809315141246|64801": -1,
-  "gongju|seveneleven|8809315141246|19499": -1,
-  "gongju|seveneleven|8809315141246|16112": 0,
-  "gongju|seveneleven|8809315141246|57806": 4,
-  "gongju|seveneleven|8809315141246|15267": 0,
-  "gongju|seveneleven|8809315141246|52672": -1,
-  "gongju|seveneleven|8809315141246|15553": -1,
-  "gongju|seveneleven|8809315141246|68410": -1,
-  "gongju|seveneleven|8809315141246|63895": -1,
-  "gongju|seveneleven|8809315141246|68830": -1,
-  "gongju|seveneleven|8809315141246|13067": -1,
-  "gongju|seveneleven|8809315141246|53008": -1,
-  "gongju|seveneleven|8809315141246|18274": 6,
-  "gongju|seveneleven|8809315141246|55087": 4,
-  "gongju|seveneleven|8809315141246|18124": 0,
-  "gongju|seveneleven|8809315141246|68829": -1,
-  "gongju|seveneleven|8809315141246|16251": -1,
-  "gongju|seveneleven|8809315141246|68284": -1,
-  "gongju|seveneleven|8809315141246|68488": -1,
-  "gongju|seveneleven|8809315141246|52344": -1,
-  "gongju|seveneleven|8809315141246|67319": -1,
-  "gongju|seveneleven|8809315141246|68258": -1,
-  "gongju|seveneleven|8809315141246|13388": -1,
-  "gongju|seveneleven|8809315141246|18876": -1,
-  "gongju|seveneleven|8809315141246|18101": -1,
-  "gongju|seveneleven|8809315141246|16487": -1,
   "daejeon|cu|8809945338085|54229": 0,
   "daejeon|cu|8809945338085|51498": 0,
   "daejeon|cu|8809945338085|44365": 0,
@@ -1741,7 +1715,7 @@
   "cheongju|cu|8809945338184|34832": 0
  },
  "events": [],
- "signature": "d84b3b841ebaedd8ac665df6c3adaf843783ba1d3169ba467eacedfd485575a9",
+ "signature": "aedfa2c8951e553cb61bfb7d47bb07bcd64f67d569948c76be6c2f884074865e",
  "catalog": {
   "gs25": {
    "at": null,
@@ -1789,10 +1763,6 @@
   "seveneleven": {
    "at": "2026-10-13T17:57:32+09:00",
    "products": [
-    {
-     "id": "8809315141246",
-     "name": "이즐)포켓몬교통카드_30주년"
-    },
     {
      "id": "8800286279754",
      "name": "비젼)포켓몬카드세트(ex스페셜세트)"
@@ -1868,5 +1838,5 @@
   "daejeon",
   "gongju"
  ],
- "lastWrite": "2026-10-13T17:57:32+09:00"
+ "lastWrite": "2026-10-13T18:05:41+09:00"
 }

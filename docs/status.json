@@ -32,7 +32,7 @@
   {
    "id": "seveneleven",
    "label": "세븐일레븐",
-   "products": 8,
+   "products": 7,
    "error": null
   },
   {
@@ -43,7 +43,7 @@
   }
  ],
  "minQuantity": 1,
- "checkedAt": "2026-10-13T17:57:32+09:00",
+ "checkedAt": "2026-10-13T18:05:41+09:00",
  "groups": [
   {
    "region": "gongju",
@@ -137,45 +137,9 @@
    "region": "gongju",
    "chain": "seveneleven",
    "chainLabel": "세븐일레븐",
-   "productId": "8809315141246",
-   "product": "이즐)포켓몬교통카드_30주년",
-   "error": null,
-   "warning": null,
-   "checkedStores": 26,
-   "stores": [
-    {
-     "code": "18274",
-     "name": "공주신관점",
-     "address": "충남 공주시 번영2로 40-15 (신관동)",
-     "phone": "",
-     "qty": 6,
-     "mapUrl": "https://map.naver.com/p/search/%EA%B3%B5%EC%A3%BC%EC%8B%A0%EA%B4%80%EC%A0%90%20%EC%B6%A9%EB%82%A8%20%EA%B3%B5%EC%A3%BC%EC%8B%9C%20%EB%B2%88%EC%98%812%EB%A1%9C%2040-15%20%28%EC%8B%A0%EA%B4%80%EB%8F%99%29"
-    },
-    {
-     "code": "55087",
-     "name": "공주신관중앙점",
-     "address": "충청남도 공주시 번영2로 18-4",
-     "phone": "",
-     "qty": 4,
-     "mapUrl": "https://map.naver.com/p/search/%EA%B3%B5%EC%A3%BC%EC%8B%A0%EA%B4%80%EC%A4%91%EC%95%99%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%82%A8%EB%8F%84%20%EA%B3%B5%EC%A3%BC%EC%8B%9C%20%EB%B2%88%EC%98%812%EB%A1%9C%2018-4"
-    },
-    {
-     "code": "57806",
-     "name": "동학사학봉점",
-     "address": "충청남도 공주시 반포면 계룡대로 1404",
-     "phone": "",
-     "qty": 4,
-     "mapUrl": "https://map.naver.com/p/search/%EB%8F%99%ED%95%99%EC%82%AC%ED%95%99%EB%B4%89%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%82%A8%EB%8F%84%20%EA%B3%B5%EC%A3%BC%EC%8B%9C%20%EB%B0%98%ED%8F%AC%EB%A9%B4%20%EA%B3%84%EB%A3%A1%EB%8C%80%EB%A1%9C%201404"
-    }
-   ]
-  },
-  {
-   "region": "gongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
    "productId": "8800286279754",
    "product": "비젼)포켓몬카드세트(ex스페셜세트)",
-   "error": "선택한 매장의 재고 수량을 확인하지 못했습니다.",
+   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
    "warning": null,
    "checkedStores": 0,
    "stores": []
@@ -186,7 +150,7 @@
    "chainLabel": "세븐일레븐",
    "productId": "8809581507876",
    "product": "비젼)포켓몬카드151",
-   "error": "선택한 매장의 재고 수량을 확인하지 못했습니다.",
+   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
    "warning": null,
    "checkedStores": 0,
    "stores": []
@@ -197,7 +161,7 @@
    "chainLabel": "세븐일레븐",
    "productId": "8809945337118",
    "product": "비젼)포켓몬카드레이징서프_H",
-   "error": "선택한 매장의 재고 수량을 확인하지 못했습니다.",
+   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
    "warning": null,
    "checkedStores": 0,
    "stores": []
@@ -420,17 +384,6 @@
    "error": null,
    "warning": null,
    "checkedStores": 106,
-   "stores": []
-  },
-  {
-   "region": "daejeon",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8809315141246",
-   "product": "이즐)포켓몬교통카드_30주년",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "warning": null,
-   "checkedStores": 0,
    "stores": []
   },
   {
@@ -702,17 +655,6 @@
    "error": null,
    "warning": null,
    "checkedStores": 91,
-   "stores": []
-  },
-  {
-   "region": "cheongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8809315141246",
-   "product": "이즐)포켓몬교통카드_30주년",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "warning": null,
-   "checkedStores": 0,
    "stores": []
   },
   {
