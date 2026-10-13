@@ -1,0 +1,57 @@
+{
+  "_설명": "keywords: 감시할 상품명 / regions[].notify: false로 바꾸면 그 지역은 푸시를 아예 보내지 않음(대시보드에는 계속 표시). 지역별 알림은 휴대폰 ntfy 앱에서 '주제-지역id'를 구독해서 고르세요.",
+  "keywords": [
+    "포켓몬카드"
+  ],
+  "chains": ["gs25", "cu", "seveneleven", "emart24"],
+  "regions": [
+    {
+      "id": "gongju",
+      "name": "공주",
+      "notify": true,
+      "addressMustContain": ["공주시"],
+      "storeKeyword": "공주",
+      "centers": [
+        { "name": "공주 원도심", "lat": 36.4556, "lng": 127.1247 },
+        { "name": "공주 신관동", "lat": 36.4713, "lng": 127.1408 },
+        { "name": "공주 유구읍", "lat": 36.5537, "lng": 126.9540 }
+      ]
+    },
+    {
+      "id": "daejeon",
+      "name": "대전",
+      "notify": true,
+      "addressMustContain": ["대전"],
+      "storeKeyword": "대전",
+      "centers": [
+        { "name": "대전역(동구)", "lat": 36.3320, "lng": 127.4345 },
+        { "name": "서대전(중구)", "lat": 36.3220, "lng": 127.4040 },
+        { "name": "둔산(서구)", "lat": 36.3510, "lng": 127.3860 },
+        { "name": "관저(서구)", "lat": 36.2990, "lng": 127.3360 },
+        { "name": "유성온천(유성구)", "lat": 36.3540, "lng": 127.3410 },
+        { "name": "노은(유성구)", "lat": 36.3730, "lng": 127.3170 },
+        { "name": "송촌(대덕구)", "lat": 36.3640, "lng": 127.4440 }
+      ]
+    },
+    {
+      "id": "cheongju",
+      "name": "청주",
+      "notify": true,
+      "addressMustContain": ["청주시"],
+      "storeKeyword": "청주",
+      "centers": [
+        { "name": "성안길(상당구)", "lat": 36.6360, "lng": 127.4890 },
+        { "name": "율량(청원구)", "lat": 36.6600, "lng": 127.4930 },
+        { "name": "분평(서원구)", "lat": 36.6100, "lng": 127.4780 },
+        { "name": "가경(흥덕구)", "lat": 36.6250, "lng": 127.4330 },
+        { "name": "오창(청원구)", "lat": 36.7150, "lng": 127.4300 }
+      ]
+    }
+  ],
+  "minQuantity": 1,
+  "storeLimit": 60,
+  "concurrency": 4,
+  "notifyOnFirstRun": true,
+  "heartbeatHours": 6,
+  "apiBase": "https://mcp.aka.page"
+}

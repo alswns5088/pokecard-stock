@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>충청 카드 재고</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f4ee; --card:#fffdf8; --ink:#1d1b16; --muted:#6f6a5e; --line:#e4dfd2;
+  --accent:#e8453c; --accent-ink:#fff; --ok:#1f8a4c; --ok-bg:#e3f4ea; --zero:#9a9486; --warn:#b26a00; --warn-bg:#fff2dc;
+  --gs25:#1569d6; --cu:#7a3fc2; --seveneleven:#e0632a; --emart24:#c99a00;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#15140f; --card:#1f1d17; --ink:#f1ede2; --muted:#a39d8d; --line:#34312a;
+    --ok:#53c784; --ok-bg:#183326; --zero:#77715f; --warn:#f0b046; --warn-bg:#3a2c12;
+    --gs25:#5a9bff; --cu:#b58cf0; --seveneleven:#ff9461; --emart24:#ffd146;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15140f; --card:#1f1d17; --ink:#f1ede2; --muted:#a39d8d; --line:#34312a;
+  --ok:#53c784; --ok-bg:#183326; --zero:#77715f; --warn:#f0b046; --warn-bg:#3a2c12;
+  --gs25:#5a9bff; --cu:#b58cf0; --seveneleven:#ff9461; --emart24:#ffd146;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:920px;margin:0 auto;padding:28px 16px 64px}
+header{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between;border-bottom:3px solid var(--ink);padding-bottom:18px}
+h1{margin:0;font-weight:900;font-size:clamp(26px,6vw,40px);letter-spacing:-.03em;line-height:1.1}
+h1 small{display:block;font-size:14px;font-weight:500;color:var(--muted);letter-spacing:0;margin-bottom:6px}
+.meta{font-size:13px;color:var(--muted);text-align:right}
+.meta b{color:var(--ink)}
+.btns{display:flex;gap:8px;margin-top:8px;justify-content:flex-end;flex-wrap:wrap}
+.btn{font:inherit;font-size:13px;font-weight:700;padding:7px 12px;border-radius:999px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);text-decoration:none;cursor:pointer}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.demo{margin:16px 0 0;padding:10px 14px;border-radius:10px;background:var(--warn-bg);color:var(--warn);font-size:14px;font-weight:500}
+.regions{display:flex;gap:0;margin:22px 0 0;border-bottom:1px solid var(--line)}
+.rtab{font:inherit;font-size:17px;font-weight:700;padding:10px 18px;border:0;border-bottom:3px solid transparent;background:none;color:var(--muted);cursor:pointer;margin-bottom:-1px;display:flex;gap:6px;align-items:baseline}
+.rtab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.rtab .n{font-size:13px;font-weight:500;padding:1px 7px;border-radius:999px;background:var(--line);color:var(--ink)}
+.rtab .n.hot{background:var(--ok-bg);color:var(--ok)}
+.rtab .off{font-size:11px;font-weight:500;color:var(--zero)}
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:22px 0}
+.sum{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.sum .k{font-size:13px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sum .v{font-size:30px;font-weight:900;letter-spacing:-.02em}
+.sum .v span{font-size:14px;font-weight:500;color:var(--muted);margin-left:4px}
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0 18px}
+.tab{font:inherit;font-size:14px;font-weight:500;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+.tab[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.toggle{margin-left:auto;font-size:14px;display:flex;align-items:center;gap:6px;cursor:pointer;user-select:none}
+section.kw{margin-bottom:28px}
+section.kw h2{font-size:18px;margin:0 0 10px;font-weight:700;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+section.kw h2 .cnt{font-size:13px;font-weight:500;color:var(--muted)}
+.group{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden}
+.ghead{display:flex;gap:10px;align-items:center;padding:10px 14px;border-bottom:1px solid var(--line);font-size:14px}
+.chip{font-size:12px;font-weight:700;padding:2px 8px;border-radius:6px;color:#fff;flex:none}
+.prod{color:var(--muted);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.err{padding:10px 14px;font-size:13px;color:var(--warn);background:var(--warn-bg)}
+.empty{padding:12px 14px;font-size:14px;color:var(--muted)}
+ul.stores{list-style:none;margin:0;padding:0}
+ul.stores li{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:10px 14px;border-top:1px solid var(--line)}
+ul.stores li:first-child{border-top:0}
+.sname{font-weight:700;font-size:15px}
+.sname a{color:inherit;text-decoration:none;border-bottom:1px dotted var(--muted)}
+.addr{grid-column:1;font-size:12.5px;color:var(--muted)}
+.qty{grid-row:1/3;grid-column:2;align-self:center;font-weight:900;font-size:18px;padding:4px 10px;border-radius:8px;text-align:center;min-width:56px}
+.qty.ok{background:var(--ok-bg);color:var(--ok)}
+.qty.zero{color:var(--zero);font-weight:500;font-size:14px}
+h3{font-size:16px;margin:36px 0 10px}
+.events{background:var(--card);border:1px solid var(--line);border-radius:14px;list-style:none;margin:0;padding:0}
+.events li{padding:9px 14px;border-top:1px solid var(--line);font-size:14px;display:flex;gap:10px;flex-wrap:wrap}
+.events li:first-child{border-top:0}
+.events time{color:var(--muted);font-variant-numeric:tabular-nums;flex:none}
+.in{color:var(--ok);font-weight:700}.out{color:var(--zero);font-weight:700}
+footer{margin-top:40px;font-size:12px;color:var(--muted)}
+footer a{color:inherit}
+@media (max-width:560px){.meta{text-align:left}.btns{justify-content:flex-start}.toggle{margin-left:0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1><small>공주 · 대전 · 청주 편의점</small>포켓몬카드 재고</h1>
+    <div class="meta">
+      <div>마지막 확인 <b id="checked">–</b></div>
+      <div class="btns">
+        <a class="btn primary" id="runLink" target="_blank" rel="noopener">지금 확인하기</a>
+        <a class="btn" id="editLink" target="_blank" rel="noopener">감시 상품 편집</a>
+      </div>
+    </div>
+  </header>
+  <div class="demo" id="demo" hidden>status.json을 불러오지 못해 <b>예시 데이터</b>를 보여주고 있어요. GitHub Actions가 한 번 실행되면 실제 재고가 표시됩니다.</div>
+
+  <nav class="regions" id="regions"></nav>
+  <div class="summary" id="summary"></div>
+
+  <div class="controls" id="tabs">
+    <button class="tab" data-chain="all" aria-pressed="true">전체</button>
+    <button class="tab" data-chain="gs25" aria-pressed="false">GS25</button>
+    <button class="tab" data-chain="cu" aria-pressed="false">CU</button>
+    <button class="tab" data-chain="seveneleven" aria-pressed="false">세븐일레븐</button>
+    <button class="tab" data-chain="emart24" aria-pressed="false">이마트24</button>
+    <label class="toggle"><input type="checkbox" id="onlyStock" checked> 재고 있는 매장만</label>
+  </div>
+
+  <div id="list"></div>
+
+  <h3>최근 입고·품절 기록</h3>
+  <ul class="events" id="events"></ul>
+
+  <footer>앱 재고조회 데이터는 실제 진열 재고와 다를 수 있어요. 방문 전 매장에 전화로 확인하세요. 데이터 경로: <a href="https://github.com/hmmhmmhm/daiso-mcp" target="_blank" rel="noopener">daiso-mcp</a> 공개 API.</footer>
+</div>
+
+<script>
+const DEMO = {
+  regions:[{id:"gongju",name:"공주",notify:true},{id:"daejeon",name:"대전",notify:true},{id:"cheongju",name:"청주",notify:false}],
+  minQuantity:1, checkedAt:new Date().toISOString(), keywords:["포켓몬카드"],
+  groups:[
+    {region:"gongju",keyword:"포켓몬카드",chain:"gs25",chainLabel:"GS25",product:"(예시) 포켓몬 카드게임 확장팩",stores:[
+      {name:"GS25 공주예시점",address:"충남 공주시 예시로 1",qty:4,mapUrl:"#"},{name:"GS25 신관예시점",address:"충남 공주시 신관동 2",qty:0,mapUrl:"#"}]},
+    {region:"gongju",keyword:"포켓몬카드",chain:"cu",chainLabel:"CU",product:"(예시) 포켓몬카드",stores:[]},
+    {region:"daejeon",keyword:"포켓몬카드",chain:"gs25",chainLabel:"GS25",product:"(예시) 포켓몬 카드게임 확장팩",stores:[
+      {name:"GS25 둔산예시점",address:"대전 서구 둔산동 1",qty:2,mapUrl:"#"},{name:"GS25 유성예시점",address:"대전 유성구 봉명동 2",qty:1,mapUrl:"#"}]},
+    {region:"daejeon",keyword:"포켓몬카드",chain:"cu",chainLabel:"CU",product:null,error:"(예시) 조회 실패",stores:[]},
+    {region:"cheongju",keyword:"포켓몬카드",chain:"gs25",chainLabel:"GS25",product:"(예시) 포켓몬 카드게임 확장팩",stores:[
+      {name:"GS25 성안예시점",address:"충북 청주시 상당구 1",qty:3,mapUrl:"#"}]}
+  ],
+  events:[{at:new Date().toISOString(),type:"restock",region:"daejeon",chain:"gs25",chainLabel:"GS25",store:"GS25 둔산예시점",product:"(예시) 포켓몬 카드게임 확장팩",qty:2,before:0}]
+};
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt = iso => { const d = new Date(iso); return isNaN(d) ? "–" : d.toLocaleString("ko-KR",{month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit",timeZone:"Asia/Seoul"}); };
+const ago = iso => { const m = Math.round((Date.now() - new Date(iso)) / 60000); return m < 1 ? "방금" : m < 60 ? `${m}분 전` : m < 1440 ? `${Math.round(m/60)}시간 전` : `${Math.round(m/1440)}일 전`; };
+
+let data = null, chain = "all", region = null;
+try { chain = localStorage.getItem("chain") || "all"; region = localStorage.getItem("region"); } catch (e) {}
+const save = (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} };
+
+function repoLinks(){
+  // user.github.io/repo → github.com/user/repo
+  const h = location.hostname, seg = location.pathname.split("/").filter(Boolean);
+  if (h.endsWith(".github.io") && seg.length) {
+    const repo = `https://github.com/${h.split(".")[0]}/${seg[0]}`;
+    $("#runLink").href = `${repo}/actions/workflows/check.yml`;
+    $("#editLink").href = `${repo}/edit/main/config.json`;
+  } else { $("#runLink").style.display = $("#editLink").style.display = "none"; }
+}
+
+function render(){
+  const min = data.minQuantity || 1, only = $("#onlyStock").checked;
+  const regions = data.regions || [];
+  if (!regions.some(r => r.id === region)) region = regions[0]?.id;
+  const inStock = rid => new Set(data.groups.filter(g => g.region === rid)
+    .flatMap(g => g.stores.filter(s => (s.qty||0) >= min).map(s => g.chain + (s.code || s.name)))).size;
+  $("#regions").innerHTML = regions.map(r => { const n = inStock(r.id);
+    return `<button class="rtab" data-region="${esc(r.id)}" aria-selected="${r.id === region}">${esc(r.name)}<span class="n ${n ? "hot" : ""}">${n}</span>${r.notify === false ? '<span class="off">알림 꺼짐</span>' : ""}</button>`; }).join("");
+  document.querySelectorAll(".rtab").forEach(b => b.onclick = () => { region = b.dataset.region; save("region", region); render(); });
+  const G = data.groups.filter(g => g.region === region);
+  $("#checked").textContent = `${fmt(data.checkedAt)} (${ago(data.checkedAt)})`;
+  document.querySelectorAll(".tab").forEach(b => b.setAttribute("aria-pressed", b.dataset.chain === chain));
+
+  const kws = data.keywords || [...new Set(G.map(g => g.keyword))];
+  $("#summary").innerHTML = kws.map(k => {
+    const gs = G.filter(g => g.keyword === k);
+    const n = gs.reduce((a, g) => a + g.stores.filter(s => (s.qty||0) >= min).length, 0);
+    const q = gs.reduce((a, g) => a + g.stores.reduce((x, s) => x + Math.max(s.qty||0, 0), 0), 0);
+    return `<div class="sum"><div class="k">${esc(k)}</div><div class="v">${n}<span>곳 · 총 ${q}개</span></div></div>`;
+  }).join("");
+
+  $("#list").innerHTML = kws.map(k => {
+    const gs = G.filter(g => g.keyword === k && (chain === "all" || g.chain === chain));
+    const total = gs.reduce((a, g) => a + g.stores.filter(s => (s.qty||0) >= min).length, 0);
+    const body = gs.map(g => {
+      const stores = g.stores.filter(s => !only || (s.qty||0) >= min);
+      const rows = stores.map(s => `<li>
+          <span class="sname"><a href="${esc(s.mapUrl)}" target="_blank" rel="noopener">${esc(s.name)}</a></span>
+          <span class="qty ${(s.qty||0) >= min ? "ok" : "zero"}">${(s.qty||0) >= min ? s.qty + "개" : "없음"}</span>
+          <span class="addr">${esc(s.address)}${s.phone ? " · " + esc(s.phone) : ""}</span></li>`).join("");
+      const inner = g.error ? `<div class="err">조회 실패: ${esc(g.error)}</div>`
+        : rows ? `<ul class="stores">${rows}</ul>`
+        : `<div class="empty">${only ? "재고 있는 매장 없음" : "매장 정보 없음"} (확인한 매장 ${g.stores.length}곳)</div>`;
+      return `<div class="group"><div class="ghead"><span class="chip" style="background:var(--${g.chain})">${esc(g.chainLabel)}</span><span class="prod" title="${esc(g.product)}">${esc(g.product || "상품 미확인")}</span></div>${inner}</div>`;
+    }).join("");
+    return `<section class="kw"><h2>${esc(k)}<span class="cnt">재고 있는 매장 ${total}곳</span></h2>${body}</section>`;
+  }).join("");
+
+  const ev = (data.events || []).filter(e => e.region === region && (chain === "all" || e.chain === chain)).slice(0, 40);
+  $("#events").innerHTML = ev.length ? ev.map(e => `<li><time>${fmt(e.at)}</time>
+      <span class="${e.type === "restock" ? "in" : "out"}">${e.type === "restock" ? "입고" : "품절"}</span>
+      <span>[${esc(e.chainLabel)}] ${esc(e.store)} — ${esc(e.product)} ${e.type === "restock" ? esc(e.qty) + "개" : ""}</span></li>`).join("")
+    : `<li><span style="color:var(--muted)">아직 기록이 없어요.</span></li>`;
+}
+
+document.querySelectorAll(".tab").forEach(b => b.onclick = () => { chain = b.dataset.chain; save("chain", chain); render(); });
+$("#onlyStock").onchange = render;
+repoLinks();
+
+fetch("status.json?t=" + Date.now(), {cache: "no-store"})
+  .then(r => { if (!r.ok) throw 0; return r.json(); })
+  .then(j => { data = j; render(); })
+  .catch(() => { data = DEMO; $("#demo").hidden = false; render(); });
+setInterval(() => fetch("status.json?t=" + Date.now(), {cache:"no-store"}).then(r => r.ok && r.json()).then(j => { if (j) { data = j; $("#demo").hidden = true; render(); } }).catch(()=>{}), 5 * 60 * 1000);
+</script>
+</body>
+</html>
