@@ -1,0 +1,1862 @@
+{
+ "regions": [
+  {
+   "id": "gongju",
+   "name": "공주",
+   "notify": true
+  },
+  {
+   "id": "daejeon",
+   "name": "대전",
+   "notify": true
+  },
+  {
+   "id": "cheongju",
+   "name": "청주",
+   "notify": true
+  }
+ ],
+ "keywords": [
+  "포켓몬카드"
+ ],
+ "minQuantity": 1,
+ "checkedAt": "2026-10-13T17:44:57+09:00",
+ "groups": [
+  {
+   "region": "gongju",
+   "keyword": "포켓몬카드",
+   "chain": "gs25",
+   "chainLabel": "GS25",
+   "product": null,
+   "error": "공주 원도심: HTTP 503 GS25_UPSTREAM_UNAVAILABLE: GS25 재고 서비스 인증을 사용할 수 없습니다. 운영자는 GS25_AUTH_SESSION_FILE의 인증 갱신 상태를 확인하세요. API 키 방식은 GS25_API_KEY 설정을 확인하세요.",
+   "warning": null,
+   "stores": []
+  },
+  {
+   "region": "gongju",
+   "keyword": "포켓몬카드",
+   "chain": "cu",
+   "chainLabel": "CU",
+   "product": "포켓몬)나이트원더러카드",
+   "error": null,
+   "warning": null,
+   "stores": [
+    {
+     "code": "51320",
+     "name": "공주공산성점",
+     "address": "충청남도 공주시 왕릉로 142 (금성동, 연문빌딩) 연문빌딩",
+     "phone": "041-856-2030",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EA%B3%B5%EC%A3%BC%EA%B3%B5%EC%82%B0%EC%84%B1%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%82%A8%EB%8F%84%20%EA%B3%B5%EC%A3%BC%EC%8B%9C%20%EC%99%95%EB%A6%89%EB%A1%9C%20142%20%28%EA%B8%88%EC%84%B1%EB%8F%99%2C%20%EC%97%B0%EB%AC%B8%EB%B9%8C%EB%94%A9%29%20%EC%97%B0%EB%AC%B8%EB%B9%8C%EB%94%A9"
+    },
+    {
+     "code": "51810",
+     "name": "공주대생활관점",
+     "address": "충청남도 공주시 공주대학로 56-51 홍익사",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EA%B3%B5%EC%A3%BC%EB%8C%80%EC%83%9D%ED%99%9C%EA%B4%80%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%82%A8%EB%8F%84%20%EA%B3%B5%EC%A3%BC%EC%8B%9C%20%EA%B3%B5%EC%A3%BC%EB%8C%80%ED%95%99%EB%A1%9C%2056-51%20%ED%99%8D%EC%9D%B5%EC%82%AC"
+    },
+    {
+     "code": "12907",
+     "name": "공주대아점",
+     "address": "충청남도 공주시 신금2길 36, (신관동)",
+     "phone": "0418813039",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EA%B3%B5%EC%A3%BC%EB%8C%80%EC%95%84%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%82%A8%EB%8F%84%20%EA%B3%B5%EC%A3%BC%EC%8B%9C%20%EC%8B%A0%EA%B8%882%EA%B8%B8%2036%2C%20%28%EC%8B%A0%EA%B4%80%EB%8F%99%29"
+    },
+    {
+     "code": "54427",
+     "name": "공주대점",
+     "address": "충청남도 공주시 공주대학로 75-1 (신관동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EA%B3%B5%EC%A3%BC%EB%8C%80%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%82%A8%EB%8F%84%20%EA%B3%B5%EC%A3%BC%EC%8B%9C%20%EA%B3%B5%EC%A3%BC%EB%8C%80%ED%95%99%EB%A1%9C%2075-1%20%28%EC%8B%A0%EA%B4%80%EB%8F%99%29"
+    },
+    {
+     "code": "53859",
+     "name": "공주문화거리점",
+     "address": "충남 공주시 우체국길 22",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EA%B3%B5%EC%A3%BC%EB%AC%B8%ED%99%94%EA%B1%B0%EB%A6%AC%EC%A0%90%20%EC%B6%A9%EB%82%A8%20%EA%B3%B5%EC%A3%BC%EC%8B%9C%20%EC%9A%B0%EC%B2%B4%EA%B5%AD%EA%B8%B8%2022"
+    },
+    {
+     "code": "46066",
+     "name": "공주미나리점",
+     "address": "충청남도 공주시 미나리2길 18-1 (금성동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EA%B3%B5%EC%A3%BC%EB%AF%B8%EB%82%98%EB%A6%AC%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%82%A8%EB%8F%84%20%EA%B3%B5%EC%A3%BC%EC%8B%9C%20%EB%AF%B8%EB%82%98%EB%A6%AC2%EA%B8%B8%2018-1%20%28%EA%B8%88%EC%84%B1%EB%8F%99%29"
+    },
+    {
+     "code": "43016",
+     "name": "공주번영점",
+     "address": "충청남도 공주시 번영1로 194-5 (신관동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EA%B3%B5%EC%A3%BC%EB%B2%88%EC%98%81%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%82%A8%EB%8F%84%20%EA%B3%B5%EC%A3%BC%EC%8B%9C%20%EB%B2%88%EC%98%811%EB%A1%9C%20194-5%20%28%EC%8B%A0%EA%B4%80%EB%8F%99%29"
+    },
+    {
+     "code": "53731",
+     "name": "공주신관로점",
+     "address": "충남 공주시 번영1로 26",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EA%B3%B5%EC%A3%BC%EC%8B%A0%EA%B4%80%EB%A1%9C%EC%A0%90%20%EC%B6%A9%EB%82%A8%20%EA%B3%B5%EC%A3%BC%EC%8B%9C%20%EB%B2%88%EC%98%811%EB%A1%9C%2026"
+    },
+    {
+     "code": "51309",
+     "name": "공주신관중앙점",
+     "address": "충청남도 공주시 번영2로 55 (신관동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EA%B3%B5%EC%A3%BC%EC%8B%A0%EA%B4%80%EC%A4%91%EC%95%99%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%82%A8%EB%8F%84%20%EA%B3%B5%EC%A3%BC%EC%8B%9C%20%EB%B2%88%EC%98%812%EB%A1%9C%2055%20%28%EC%8B%A0%EA%B4%80%EB%8F%99%29"
+    },
+    {
+     "code": "51754",
+     "name": "공주신관현대점",
+     "address": "충남 공주시 공주대학로 23-23",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EA%B3%B5%EC%A3%BC%EC%8B%A0%EA%B4%80%ED%98%84%EB%8C%80%EC%A0%90%20%EC%B6%A9%EB%82%A8%20%EA%B3%B5%EC%A3%BC%EC%8B%9C%20%EA%B3%B5%EC%A3%BC%EB%8C%80%ED%95%99%EB%A1%9C%2023-23"
+    },
+    {
+     "code": "38756",
+     "name": "공주옥룡로드점",
+     "address": "충청남도 공주시 무령로 290 (옥룡동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EA%B3%B5%EC%A3%BC%EC%98%A5%EB%A3%A1%EB%A1%9C%EB%93%9C%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%82%A8%EB%8F%84%20%EA%B3%B5%EC%A3%BC%EC%8B%9C%20%EB%AC%B4%EB%A0%B9%EB%A1%9C%20290%20%28%EC%98%A5%EB%A3%A1%EB%8F%99%29"
+    },
+    {
+     "code": "48587",
+     "name": "공주옥룡점",
+     "address": "충청남도 공주시 우금티로 777, (옥룡동)",
+     "phone": "0418572057",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EA%B3%B5%EC%A3%BC%EC%98%A5%EB%A3%A1%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%82%A8%EB%8F%84%20%EA%B3%B5%EC%A3%BC%EC%8B%9C%20%EC%9A%B0%EA%B8%88%ED%8B%B0%EB%A1%9C%20777%2C%20%28%EC%98%A5%EB%A3%A1%EB%8F%99%29"
+    },
+    {
+     "code": "07188",
+     "name": "공주유구점",
+     "address": "충청남도 공주시 유구읍 중앙2길 76, (석남리)",
+     "phone": "0418415794",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EA%B3%B5%EC%A3%BC%EC%9C%A0%EA%B5%AC%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%82%A8%EB%8F%84%20%EA%B3%B5%EC%A3%BC%EC%8B%9C%20%EC%9C%A0%EA%B5%AC%EC%9D%8D%20%EC%A4%91%EC%95%992%EA%B8%B8%2076%2C%20%28%EC%84%9D%EB%82%A8%EB%A6%AC%29"
+    },
+    {
+     "code": "52589",
+     "name": "공주일신점",
+     "address": "충청남도 공주시 흑수골길 10, (신관동)",
+     "phone": "0418540405",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EA%B3%B5%EC%A3%BC%EC%9D%BC%EC%8B%A0%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%82%A8%EB%8F%84%20%EA%B3%B5%EC%A3%BC%EC%8B%9C%20%ED%9D%91%EC%88%98%EA%B3%A8%EA%B8%B8%2010%2C%20%28%EC%8B%A0%EA%B4%80%EB%8F%99%29"
+    },
+    {
+     "code": "02997",
+     "name": "공주터미널점",
+     "address": "충청남도 공주시 번영3로 5-1, (신관동) 1층",
+     "phone": "0418525366",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EA%B3%B5%EC%A3%BC%ED%84%B0%EB%AF%B8%EB%84%90%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%82%A8%EB%8F%84%20%EA%B3%B5%EC%A3%BC%EC%8B%9C%20%EB%B2%88%EC%98%813%EB%A1%9C%205-1%2C%20%28%EC%8B%A0%EA%B4%80%EB%8F%99%29%201%EC%B8%B5"
+    },
+    {
+     "code": "49974",
+     "name": "공주행운점",
+     "address": "충청남도 공주시 흑수골길 49 (신관동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EA%B3%B5%EC%A3%BC%ED%96%89%EC%9A%B4%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%82%A8%EB%8F%84%20%EA%B3%B5%EC%A3%BC%EC%8B%9C%20%ED%9D%91%EC%88%98%EA%B3%A8%EA%B8%B8%2049%20%28%EC%8B%A0%EA%B4%80%EB%8F%99%29"
+    },
+    {
+     "code": "06543",
+     "name": "신관2호점",
+     "address": "충청남도 공주시 전막2길 16-2, (신관동) 1층",
+     "phone": "0418586700",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%8B%A0%EA%B4%802%ED%98%B8%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%82%A8%EB%8F%84%20%EA%B3%B5%EC%A3%BC%EC%8B%9C%20%EC%A0%84%EB%A7%892%EA%B8%B8%2016-2%2C%20%28%EC%8B%A0%EA%B4%80%EB%8F%99%29%201%EC%B8%B5"
+    }
+   ]
+  },
+  {
+   "region": "gongju",
+   "keyword": "포켓몬카드",
+   "chain": "seveneleven",
+   "chainLabel": "세븐일레븐",
+   "product": null,
+   "error": "공주: 선택한 매장의 재고 수량을 확인하지 못했습니다.",
+   "warning": null,
+   "stores": []
+  },
+  {
+   "region": "gongju",
+   "keyword": "포켓몬카드",
+   "chain": "emart24",
+   "chainLabel": "이마트24",
+   "product": null,
+   "error": "공주 원도심: HTTP 500 EMART24_INVENTORY_CHECK_FAILED: 편의점 릴레이 요청에 실패했습니다.",
+   "warning": null,
+   "stores": []
+  },
+  {
+   "region": "daejeon",
+   "keyword": "포켓몬카드",
+   "chain": "gs25",
+   "chainLabel": "GS25",
+   "product": null,
+   "error": "대전역(동구): HTTP 503 GS25_UPSTREAM_UNAVAILABLE: GS25 재고 서비스 인증을 사용할 수 없습니다. 운영자는 GS25_AUTH_SESSION_FILE의 인증 갱신 상태를 확인하세요. API 키 방식은 GS25_API_KEY 설정을 확인하세요.",
+   "warning": null,
+   "stores": []
+  },
+  {
+   "region": "daejeon",
+   "keyword": "포켓몬카드",
+   "chain": "cu",
+   "chainLabel": "CU",
+   "product": "포켓몬)나이트원더러카드",
+   "error": null,
+   "warning": null,
+   "stores": [
+    {
+     "code": "51406",
+     "name": "KH둔산주유소점",
+     "address": "대전광역시 서구 둔산로 139 KH에너지 KH둔산주유소(둔산동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/KH%EB%91%94%EC%82%B0%EC%A3%BC%EC%9C%A0%EC%86%8C%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EB%91%94%EC%82%B0%EB%A1%9C%20139%20KH%EC%97%90%EB%84%88%EC%A7%80%20KH%EB%91%94%EC%82%B0%EC%A3%BC%EC%9C%A0%EC%86%8C%28%EB%91%94%EC%82%B0%EB%8F%99%29"
+    },
+    {
+     "code": "53965",
+     "name": "갈마위너스점",
+     "address": "대전 서구 대덕대로168번길 22, 101호",
+     "phone": "0425371777",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EA%B0%88%EB%A7%88%EC%9C%84%EB%84%88%EC%8A%A4%EC%A0%90%20%EB%8C%80%EC%A0%84%20%EC%84%9C%EA%B5%AC%20%EB%8C%80%EB%8D%95%EB%8C%80%EB%A1%9C168%EB%B2%88%EA%B8%B8%2022%2C%20101%ED%98%B8"
+    },
+    {
+     "code": "17782",
+     "name": "경성큰마을점",
+     "address": "대전광역시 서구 대덕대로162번길 43, (갈마동) 1층 102, 109, 110호",
+     "phone": "0425341777",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EA%B2%BD%EC%84%B1%ED%81%B0%EB%A7%88%EC%9D%84%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EB%8C%80%EB%8D%95%EB%8C%80%EB%A1%9C162%EB%B2%88%EA%B8%B8%2043%2C%20%28%EA%B0%88%EB%A7%88%EB%8F%99%29%201%EC%B8%B5%20102%2C%20109%2C%20110%ED%98%B8"
+    },
+    {
+     "code": "55725",
+     "name": "관저마치광장점",
+     "address": "대전 서구 구봉로131번길 28",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EA%B4%80%EC%A0%80%EB%A7%88%EC%B9%98%EA%B4%91%EC%9E%A5%EC%A0%90%20%EB%8C%80%EC%A0%84%20%EC%84%9C%EA%B5%AC%20%EA%B5%AC%EB%B4%89%EB%A1%9C131%EB%B2%88%EA%B8%B8%2028"
+    },
+    {
+     "code": "30240",
+     "name": "관저어반힐스점",
+     "address": "대전광역시 서구 관저남로 80, (관저동) 1층 상가동 103,104호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EA%B4%80%EC%A0%80%EC%96%B4%EB%B0%98%ED%9E%90%EC%8A%A4%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EA%B4%80%EC%A0%80%EB%82%A8%EB%A1%9C%2080%2C%20%28%EA%B4%80%EC%A0%80%EB%8F%99%29%201%EC%B8%B5%20%EC%83%81%EA%B0%80%EB%8F%99%20103%2C104%ED%98%B8"
+    },
+    {
+     "code": "50520",
+     "name": "관저중앙대박점",
+     "address": "대전광역시 서구 관저동로99번길 23 (관저동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EA%B4%80%EC%A0%80%EC%A4%91%EC%95%99%EB%8C%80%EB%B0%95%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EA%B4%80%EC%A0%80%EB%8F%99%EB%A1%9C99%EB%B2%88%EA%B8%B8%2023%20%28%EA%B4%80%EC%A0%80%EB%8F%99%29"
+    },
+    {
+     "code": "54228",
+     "name": "뉴건양대학교병원점",
+     "address": "대전광역시 서구 관저동로 158 건양대학교병원 (관저동) 건양대학교병원",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%89%B4%EA%B1%B4%EC%96%91%EB%8C%80%ED%95%99%EA%B5%90%EB%B3%91%EC%9B%90%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EA%B4%80%EC%A0%80%EB%8F%99%EB%A1%9C%20158%20%EA%B1%B4%EC%96%91%EB%8C%80%ED%95%99%EA%B5%90%EB%B3%91%EC%9B%90%20%28%EA%B4%80%EC%A0%80%EB%8F%99%29%20%EA%B1%B4%EC%96%91%EB%8C%80%ED%95%99%EA%B5%90%EB%B3%91%EC%9B%90"
+    },
+    {
+     "code": "53448",
+     "name": "뉴대전유천현대점",
+     "address": "대전광역시 중구 계백로1615번길 34 현대아파트2차 후문상가 103호, 105호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%89%B4%EB%8C%80%EC%A0%84%EC%9C%A0%EC%B2%9C%ED%98%84%EB%8C%80%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EA%B3%84%EB%B0%B1%EB%A1%9C1615%EB%B2%88%EA%B8%B8%2034%20%ED%98%84%EB%8C%80%EC%95%84%ED%8C%8C%ED%8A%B82%EC%B0%A8%20%ED%9B%84%EB%AC%B8%EC%83%81%EA%B0%80%20103%ED%98%B8%2C%20105%ED%98%B8"
+    },
+    {
+     "code": "33522",
+     "name": "뉴둔산월드점",
+     "address": "대전광역시 서구 대덕대로233번길 20 (둔산동) 1층",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%89%B4%EB%91%94%EC%82%B0%EC%9B%94%EB%93%9C%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EB%8C%80%EB%8D%95%EB%8C%80%EB%A1%9C233%EB%B2%88%EA%B8%B8%2020%20%28%EB%91%94%EC%82%B0%EB%8F%99%29%201%EC%B8%B5"
+    },
+    {
+     "code": "26984",
+     "name": "뉴문화동상아점",
+     "address": "대전광역시 중구 계백로1686번길 51 상아아파트",
+     "phone": "0422239176",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%89%B4%EB%AC%B8%ED%99%94%EB%8F%99%EC%83%81%EC%95%84%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EA%B3%84%EB%B0%B1%EB%A1%9C1686%EB%B2%88%EA%B8%B8%2051%20%EC%83%81%EC%95%84%EC%95%84%ED%8C%8C%ED%8A%B8"
+    },
+    {
+     "code": "51496",
+     "name": "대전관저느리울점",
+     "address": "대전광역시 서구 관저동로 88 관저빌딩 103호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EA%B4%80%EC%A0%80%EB%8A%90%EB%A6%AC%EC%9A%B8%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EA%B4%80%EC%A0%80%EB%8F%99%EB%A1%9C%2088%20%EA%B4%80%EC%A0%80%EB%B9%8C%EB%94%A9%20103%ED%98%B8"
+    },
+    {
+     "code": "31281",
+     "name": "대전관저스타점",
+     "address": "대전광역시 서구 도안남로 119 (관저동) 1층 1층",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EA%B4%80%EC%A0%80%EC%8A%A4%ED%83%80%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EB%8F%84%EC%95%88%EB%82%A8%EB%A1%9C%20119%20%28%EA%B4%80%EC%A0%80%EB%8F%99%29%201%EC%B8%B5%201%EC%B8%B5"
+    },
+    {
+     "code": "36121",
+     "name": "대전관저타운점",
+     "address": "대전광역시 서구 구봉산북로280번길 12",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EA%B4%80%EC%A0%80%ED%83%80%EC%9A%B4%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EA%B5%AC%EB%B4%89%EC%82%B0%EB%B6%81%EB%A1%9C280%EB%B2%88%EA%B8%B8%2012"
+    },
+    {
+     "code": "56038",
+     "name": "대전괴정달콤점",
+     "address": "대전광역시 서구 계룡로546번길 8 (괴정동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EA%B4%B4%EC%A0%95%EB%8B%AC%EC%BD%A4%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EA%B3%84%EB%A3%A1%EB%A1%9C546%EB%B2%88%EA%B8%B8%208%20%28%EA%B4%B4%EC%A0%95%EB%8F%99%29"
+    },
+    {
+     "code": "31374",
+     "name": "대전구봉8단지점",
+     "address": "대전광역시 서구 관저서로 52, (관저동) 1층",
+     "phone": "0425419572",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EA%B5%AC%EB%B4%898%EB%8B%A8%EC%A7%80%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EA%B4%80%EC%A0%80%EC%84%9C%EB%A1%9C%2052%2C%20%28%EA%B4%80%EC%A0%80%EB%8F%99%29%201%EC%B8%B5"
+    },
+    {
+     "code": "39407",
+     "name": "대전구암센터점",
+     "address": "대전광역시 유성구 월드컵대로275번길 53 (구암동) 1층 101호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EA%B5%AC%EC%95%94%EC%84%BC%ED%84%B0%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EC%9B%94%EB%93%9C%EC%BB%B5%EB%8C%80%EB%A1%9C275%EB%B2%88%EA%B8%B8%2053%20%28%EA%B5%AC%EC%95%94%EB%8F%99%29%201%EC%B8%B5%20101%ED%98%B8"
+    },
+    {
+     "code": "55459",
+     "name": "대전구암타운점",
+     "address": "대전광역시 유성구 계룡로26번길 77 (구암동) 1층",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EA%B5%AC%EC%95%94%ED%83%80%EC%9A%B4%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EA%B3%84%EB%A3%A1%EB%A1%9C26%EB%B2%88%EA%B8%B8%2077%20%28%EA%B5%AC%EC%95%94%EB%8F%99%29%201%EC%B8%B5"
+    },
+    {
+     "code": "47153",
+     "name": "대전노은역점",
+     "address": "대전광역시 유성구 노은로 166 계룡프라자 (지족동) 계룡프라자",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EB%85%B8%EC%9D%80%EC%97%AD%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EB%85%B8%EC%9D%80%EB%A1%9C%20166%20%EA%B3%84%EB%A3%A1%ED%94%84%EB%9D%BC%EC%9E%90%20%28%EC%A7%80%EC%A1%B1%EB%8F%99%29%20%EA%B3%84%EB%A3%A1%ED%94%84%EB%9D%BC%EC%9E%90"
+    },
+    {
+     "code": "45240",
+     "name": "대전노은초점",
+     "address": "대전광역시 유성구 노은동로87번길 49 (노은동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EB%85%B8%EC%9D%80%EC%B4%88%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EB%85%B8%EC%9D%80%EB%8F%99%EB%A1%9C87%EB%B2%88%EA%B8%B8%2049%20%28%EB%85%B8%EC%9D%80%EB%8F%99%29"
+    },
+    {
+     "code": "25139",
+     "name": "대전노은타운점",
+     "address": "대전광역시 유성구 노은서로96번길 57, (노은동) 1층 101호",
+     "phone": "0428232533",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EB%85%B8%EC%9D%80%ED%83%80%EC%9A%B4%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EB%85%B8%EC%9D%80%EC%84%9C%EB%A1%9C96%EB%B2%88%EA%B8%B8%2057%2C%20%28%EB%85%B8%EC%9D%80%EB%8F%99%29%201%EC%B8%B5%20101%ED%98%B8"
+    },
+    {
+     "code": "30817",
+     "name": "대전대동그린점",
+     "address": "대전광역시 동구 백룡로6번길 88, (대동) 1층",
+     "phone": "0426278921",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EB%8C%80%EB%8F%99%EA%B7%B8%EB%A6%B0%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8F%99%EA%B5%AC%20%EB%B0%B1%EB%A3%A1%EB%A1%9C6%EB%B2%88%EA%B8%B8%2088%2C%20%28%EB%8C%80%EB%8F%99%29%201%EC%B8%B5"
+    },
+    {
+     "code": "55136",
+     "name": "대전대동점",
+     "address": "대전광역시 동구 용운로1번길 3 (대동) 180-24번지",
+     "phone": "0426377258",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EB%8C%80%EB%8F%99%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8F%99%EA%B5%AC%20%EC%9A%A9%EC%9A%B4%EB%A1%9C1%EB%B2%88%EA%B8%B8%203%20%28%EB%8C%80%EB%8F%99%29%20180-24%EB%B2%88%EC%A7%80"
+    },
+    {
+     "code": "37553",
+     "name": "대전대흥교점",
+     "address": "대전광역시 동구 대흥로 194 (인동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EB%8C%80%ED%9D%A5%EA%B5%90%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8F%99%EA%B5%AC%20%EB%8C%80%ED%9D%A5%EB%A1%9C%20194%20%28%EC%9D%B8%EB%8F%99%29"
+    },
+    {
+     "code": "47803",
+     "name": "대전둔산서로점",
+     "address": "대전광역시 서구 둔산서로 33 (둔산동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EB%91%94%EC%82%B0%EC%84%9C%EB%A1%9C%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EB%91%94%EC%82%B0%EC%84%9C%EB%A1%9C%2033%20%28%EB%91%94%EC%82%B0%EB%8F%99%29"
+    },
+    {
+     "code": "49217",
+     "name": "대전둔산은하수점",
+     "address": "대전광역시 서구 둔산남로9번길 39 (둔산동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EB%91%94%EC%82%B0%EC%9D%80%ED%95%98%EC%88%98%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EB%91%94%EC%82%B0%EB%82%A8%EB%A1%9C9%EB%B2%88%EA%B8%B8%2039%20%28%EB%91%94%EC%82%B0%EB%8F%99%29"
+    },
+    {
+     "code": "54796",
+     "name": "대전둔산중앙점",
+     "address": "대전광역시 서구 계룡로491번길 74 (둔산동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EB%91%94%EC%82%B0%EC%A4%91%EC%95%99%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EA%B3%84%EB%A3%A1%EB%A1%9C491%EB%B2%88%EA%B8%B8%2074%20%28%EB%91%94%EC%82%B0%EB%8F%99%29"
+    },
+    {
+     "code": "31655",
+     "name": "대전로데오점",
+     "address": "대전광역시 서구 둔산남로 96, (탄방동) E플러스빌딩",
+     "phone": "0424866200",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EB%A1%9C%EB%8D%B0%EC%98%A4%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EB%91%94%EC%82%B0%EB%82%A8%EB%A1%9C%2096%2C%20%28%ED%83%84%EB%B0%A9%EB%8F%99%29%20E%ED%94%8C%EB%9F%AC%EC%8A%A4%EB%B9%8C%EB%94%A9"
+    },
+    {
+     "code": "38358",
+     "name": "대전문화스토리점",
+     "address": "대전광역시 중구 계룡로 922 (문화동, 하우스토리2차) 하우스토리2차",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EB%AC%B8%ED%99%94%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EA%B3%84%EB%A3%A1%EB%A1%9C%20922%20%28%EB%AC%B8%ED%99%94%EB%8F%99%2C%20%ED%95%98%EC%9A%B0%EC%8A%A4%ED%86%A0%EB%A6%AC2%EC%B0%A8%29%20%ED%95%98%EC%9A%B0%EC%8A%A4%ED%86%A0%EB%A6%AC2%EC%B0%A8"
+    },
+    {
+     "code": "46762",
+     "name": "대전봉명네거리점",
+     "address": "대전광역시 유성구 계룡로52번길 11 (봉명동, 유성세움펠리피아주상복합아파트) 유성세움펠리피아주상복합아파트",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EB%B4%89%EB%AA%85%EB%84%A4%EA%B1%B0%EB%A6%AC%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EA%B3%84%EB%A3%A1%EB%A1%9C52%EB%B2%88%EA%B8%B8%2011%20%28%EB%B4%89%EB%AA%85%EB%8F%99%2C%20%EC%9C%A0%EC%84%B1%EC%84%B8%EC%9B%80%ED%8E%A0%EB%A6%AC%ED%94%BC%EC%95%84%EC%A3%BC%EC%83%81%EB%B3%B5%ED%95%A9%EC%95%84%ED%8C%8C%ED%8A%B8%29%20%EC%9C%A0%EC%84%B1%EC%84%B8%EC%9B%80%ED%8E%A0%EB%A6%AC%ED%94%BC%EC%95%84%EC%A3%BC%EC%83%81%EB%B3%B5%ED%95%A9%EC%95%84%ED%8C%8C%ED%8A%B8"
+    },
+    {
+     "code": "54465",
+     "name": "대전봉명센터점",
+     "address": "대전 유성구 대학로 50",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EB%B4%89%EB%AA%85%EC%84%BC%ED%84%B0%EC%A0%90%20%EB%8C%80%EC%A0%84%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EB%8C%80%ED%95%99%EB%A1%9C%2050"
+    },
+    {
+     "code": "51010",
+     "name": "대전봉명타운점",
+     "address": "대전광역시 유성구 도안대로567번길 14, (봉명동)",
+     "phone": "0428269343",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EB%B4%89%EB%AA%85%ED%83%80%EC%9A%B4%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EB%8F%84%EC%95%88%EB%8C%80%EB%A1%9C567%EB%B2%88%EA%B8%B8%2014%2C%20%28%EB%B4%89%EB%AA%85%EB%8F%99%29"
+    },
+    {
+     "code": "32493",
+     "name": "대전봉명호반점",
+     "address": "대전광역시 유성구 도안동로 523 베르디움 1층 401동 101호",
+     "phone": "0428253595",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EB%B4%89%EB%AA%85%ED%98%B8%EB%B0%98%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EB%8F%84%EC%95%88%EB%8F%99%EB%A1%9C%20523%20%EB%B2%A0%EB%A5%B4%EB%94%94%EC%9B%80%201%EC%B8%B5%20401%EB%8F%99%20101%ED%98%B8"
+    },
+    {
+     "code": "51129",
+     "name": "대전삼성생명점",
+     "address": "대전광역시 서구 한밭대로 755 삼성생명 (둔산동) 삼성생명 101호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%82%BC%EC%84%B1%EC%83%9D%EB%AA%85%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%ED%95%9C%EB%B0%AD%EB%8C%80%EB%A1%9C%20755%20%EC%82%BC%EC%84%B1%EC%83%9D%EB%AA%85%20%28%EB%91%94%EC%82%B0%EB%8F%99%29%20%EC%82%BC%EC%84%B1%EC%83%9D%EB%AA%85%20101%ED%98%B8"
+    },
+    {
+     "code": "27492",
+     "name": "대전삼성타운점",
+     "address": "대전광역시 동구 우암로 125-15 1층",
+     "phone": "0423521458",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%82%BC%EC%84%B1%ED%83%80%EC%9A%B4%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8F%99%EA%B5%AC%20%EC%9A%B0%EC%95%94%EB%A1%9C%20125-15%201%EC%B8%B5"
+    },
+    {
+     "code": "41770",
+     "name": "대전상대타운점",
+     "address": "대전광역시 유성구 월드컵대로316번길 26",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%83%81%EB%8C%80%ED%83%80%EC%9A%B4%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EC%9B%94%EB%93%9C%EC%BB%B5%EB%8C%80%EB%A1%9C316%EB%B2%88%EA%B8%B8%2026"
+    },
+    {
+     "code": "41891",
+     "name": "대전새들뫼1단지점",
+     "address": "대전광역시 동구 계족로 137 (대동, 새들뫼휴먼시아1단지) 새들뫼휴먼시아1단지",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%83%88%EB%93%A4%EB%AB%BC1%EB%8B%A8%EC%A7%80%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8F%99%EA%B5%AC%20%EA%B3%84%EC%A1%B1%EB%A1%9C%20137%20%28%EB%8C%80%EB%8F%99%2C%20%EC%83%88%EB%93%A4%EB%AB%BC%ED%9C%B4%EB%A8%BC%EC%8B%9C%EC%95%841%EB%8B%A8%EC%A7%80%29%20%EC%83%88%EB%93%A4%EB%AB%BC%ED%9C%B4%EB%A8%BC%EC%8B%9C%EC%95%841%EB%8B%A8%EC%A7%80"
+    },
+    {
+     "code": "50483",
+     "name": "대전선비마을점",
+     "address": "대전광역시 대덕구 동춘당로54번길 45 (송촌동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%84%A0%EB%B9%84%EB%A7%88%EC%9D%84%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8C%80%EB%8D%95%EA%B5%AC%20%EB%8F%99%EC%B6%98%EB%8B%B9%EB%A1%9C54%EB%B2%88%EA%B8%B8%2045%20%28%EC%86%A1%EC%B4%8C%EB%8F%99%29"
+    },
+    {
+     "code": "40401",
+     "name": "대전성남점",
+     "address": "대전광역시 동구 우암로 155, (성남동)",
+     "phone": "0426252555",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%84%B1%EB%82%A8%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8F%99%EA%B5%AC%20%EC%9A%B0%EC%95%94%EB%A1%9C%20155%2C%20%28%EC%84%B1%EB%82%A8%EB%8F%99%29"
+    },
+    {
+     "code": "54969",
+     "name": "대전센터점",
+     "address": "대전 동구 선화로 210",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%84%BC%ED%84%B0%EC%A0%90%20%EB%8C%80%EC%A0%84%20%EB%8F%99%EA%B5%AC%20%EC%84%A0%ED%99%94%EB%A1%9C%20210"
+    },
+    {
+     "code": "53712",
+     "name": "대전송촌고점",
+     "address": "대전 대덕구 선비마을로 24",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%86%A1%EC%B4%8C%EA%B3%A0%EC%A0%90%20%EB%8C%80%EC%A0%84%20%EB%8C%80%EB%8D%95%EA%B5%AC%20%EC%84%A0%EB%B9%84%EB%A7%88%EC%9D%84%EB%A1%9C%2024"
+    },
+    {
+     "code": "52294",
+     "name": "대전송촌더파크점",
+     "address": "대전광역시 대덕구 계족산로52번길 21 (송촌동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%86%A1%EC%B4%8C%EB%8D%94%ED%8C%8C%ED%81%AC%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8C%80%EB%8D%95%EA%B5%AC%20%EA%B3%84%EC%A1%B1%EC%82%B0%EB%A1%9C52%EB%B2%88%EA%B8%B8%2021%20%28%EC%86%A1%EC%B4%8C%EB%8F%99%29"
+    },
+    {
+     "code": "41002",
+     "name": "대전송촌사랑점",
+     "address": "대전광역시 대덕구 송촌로 12",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%86%A1%EC%B4%8C%EC%82%AC%EB%9E%91%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8C%80%EB%8D%95%EA%B5%AC%20%EC%86%A1%EC%B4%8C%EB%A1%9C%2012"
+    },
+    {
+     "code": "53366",
+     "name": "대전송촌엘리프점",
+     "address": "대전 대덕구 계족산로52번길 50",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%86%A1%EC%B4%8C%EC%97%98%EB%A6%AC%ED%94%84%EC%A0%90%20%EB%8C%80%EC%A0%84%20%EB%8C%80%EB%8D%95%EA%B5%AC%20%EA%B3%84%EC%A1%B1%EC%82%B0%EB%A1%9C52%EB%B2%88%EA%B8%B8%2050"
+    },
+    {
+     "code": "43513",
+     "name": "대전송촌점",
+     "address": "대전광역시 대덕구 계족산로81번길 64, 송촌동마리스빌딩  (송촌동)",
+     "phone": "0426230270",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%86%A1%EC%B4%8C%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8C%80%EB%8D%95%EA%B5%AC%20%EA%B3%84%EC%A1%B1%EC%82%B0%EB%A1%9C81%EB%B2%88%EA%B8%B8%2064%2C%20%EC%86%A1%EC%B4%8C%EB%8F%99%EB%A7%88%EB%A6%AC%EC%8A%A4%EB%B9%8C%EB%94%A9%20%20%28%EC%86%A1%EC%B4%8C%EB%8F%99%29"
+    },
+    {
+     "code": "52884",
+     "name": "대전스카이로드점",
+     "address": "대전광역시 중구 중앙로164번길 11 (은행동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%8A%A4%EC%B9%B4%EC%9D%B4%EB%A1%9C%EB%93%9C%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EC%A4%91%EC%95%99%EB%A1%9C164%EB%B2%88%EA%B8%B8%2011%20%28%EC%9D%80%ED%96%89%EB%8F%99%29"
+    },
+    {
+     "code": "38973",
+     "name": "대전시청역점",
+     "address": "대전광역시 서구 둔산중로 55 (둔산동) (지하 55로) 대전도시철도시청역 지하 1층 111-1호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%8B%9C%EC%B2%AD%EC%97%AD%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EB%91%94%EC%82%B0%EC%A4%91%EB%A1%9C%2055%20%28%EB%91%94%EC%82%B0%EB%8F%99%29%20%28%EC%A7%80%ED%95%98%2055%EB%A1%9C%29%20%EB%8C%80%EC%A0%84%EB%8F%84%EC%8B%9C%EC%B2%A0%EB%8F%84%EC%8B%9C%EC%B2%AD%EC%97%AD%20%EC%A7%80%ED%95%98%201%EC%B8%B5%20111-1%ED%98%B8"
+    },
+    {
+     "code": "07440",
+     "name": "대전신동아점",
+     "address": "대전광역시 동구 한밭대로1237번길 45, 편의점  (용전동) 1층",
+     "phone": "0426278962",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%8B%A0%EB%8F%99%EC%95%84%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8F%99%EA%B5%AC%20%ED%95%9C%EB%B0%AD%EB%8C%80%EB%A1%9C1237%EB%B2%88%EA%B8%B8%2045%2C%20%ED%8E%B8%EC%9D%98%EC%A0%90%20%20%28%EC%9A%A9%EC%A0%84%EB%8F%99%29%201%EC%B8%B5"
+    },
+    {
+     "code": "55454",
+     "name": "대전신선마을점",
+     "address": "대전 서구 관저로 83",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%8B%A0%EC%84%A0%EB%A7%88%EC%9D%84%EC%A0%90%20%EB%8C%80%EC%A0%84%20%EC%84%9C%EA%B5%AC%20%EA%B4%80%EC%A0%80%EB%A1%9C%2083"
+    },
+    {
+     "code": "44365",
+     "name": "대전역점",
+     "address": "대전광역시 동구 태전로 7 (중동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%97%AD%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8F%99%EA%B5%AC%20%ED%83%9C%EC%A0%84%EB%A1%9C%207%20%28%EC%A4%91%EB%8F%99%29"
+    },
+    {
+     "code": "54229",
+     "name": "대전역지하철점",
+     "address": "대전광역시 동구 중앙로 218 (중동) 대전역",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%97%AD%EC%A7%80%ED%95%98%EC%B2%A0%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8F%99%EA%B5%AC%20%EC%A4%91%EC%95%99%EB%A1%9C%20218%20%28%EC%A4%91%EB%8F%99%29%20%EB%8C%80%EC%A0%84%EC%97%AD"
+    },
+    {
+     "code": "53670",
+     "name": "대전열매11단지점",
+     "address": "대전광역시 유성구 왕가봉로 22, 일부",
+     "phone": "01072567594",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%97%B4%EB%A7%A411%EB%8B%A8%EC%A7%80%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EC%99%95%EA%B0%80%EB%B4%89%EB%A1%9C%2022%2C%20%EC%9D%BC%EB%B6%80"
+    },
+    {
+     "code": "41655",
+     "name": "대전열매1단지점",
+     "address": "대전광역시 유성구 노은서로 222 (지족동) 1층 103, 104호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%97%B4%EB%A7%A41%EB%8B%A8%EC%A7%80%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EB%85%B8%EC%9D%80%EC%84%9C%EB%A1%9C%20222%20%28%EC%A7%80%EC%A1%B1%EB%8F%99%29%201%EC%B8%B5%20103%2C%20104%ED%98%B8"
+    },
+    {
+     "code": "53503",
+     "name": "대전오류점",
+     "address": "대전광역시 중구 오류동 154-5, 경복궁메디컬파크",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%98%A4%EB%A5%98%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EC%98%A4%EB%A5%98%EB%8F%99%20154-5%2C%20%EA%B2%BD%EB%B3%B5%EA%B6%81%EB%A9%94%EB%94%94%EC%BB%AC%ED%8C%8C%ED%81%AC"
+    },
+    {
+     "code": "53416",
+     "name": "대전용두베스트점",
+     "address": "대전광역시 중구 동서대로1321번길 4 (용두동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%9A%A9%EB%91%90%EB%B2%A0%EC%8A%A4%ED%8A%B8%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EB%8F%99%EC%84%9C%EB%8C%80%EB%A1%9C1321%EB%B2%88%EA%B8%B8%204%20%28%EC%9A%A9%EB%91%90%EB%8F%99%29"
+    },
+    {
+     "code": "48173",
+     "name": "대전용두센터점",
+     "address": "대전광역시 중구 계룡로 827-8 (용두동) 1층 101호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%9A%A9%EB%91%90%EC%84%BC%ED%84%B0%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EA%B3%84%EB%A3%A1%EB%A1%9C%20827-8%20%28%EC%9A%A9%EB%91%90%EB%8F%99%29%201%EC%B8%B5%20101%ED%98%B8"
+    },
+    {
+     "code": "43232",
+     "name": "대전우송사랑점",
+     "address": "대전 동구 계족로 184-90 1층",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%9A%B0%EC%86%A1%EC%82%AC%EB%9E%91%EC%A0%90%20%EB%8C%80%EC%A0%84%20%EB%8F%99%EA%B5%AC%20%EA%B3%84%EC%A1%B1%EB%A1%9C%20184-90%201%EC%B8%B5"
+    },
+    {
+     "code": "55266",
+     "name": "대전원앙점",
+     "address": "대전 서구 관저북로 12",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%9B%90%EC%95%99%EC%A0%90%20%EB%8C%80%EC%A0%84%20%EC%84%9C%EA%B5%AC%20%EA%B4%80%EC%A0%80%EB%B6%81%EB%A1%9C%2012"
+    },
+    {
+     "code": "38196",
+     "name": "대전유성봉명점",
+     "address": "대전광역시 유성구 온천북로 51, (봉명동, 이신팰리스)",
+     "phone": "0428261458",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%9C%A0%EC%84%B1%EB%B4%89%EB%AA%85%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EC%98%A8%EC%B2%9C%EB%B6%81%EB%A1%9C%2051%2C%20%28%EB%B4%89%EB%AA%85%EB%8F%99%2C%20%EC%9D%B4%EC%8B%A0%ED%8C%B0%EB%A6%AC%EC%8A%A4%29"
+    },
+    {
+     "code": "49620",
+     "name": "대전유성장대점",
+     "address": "대전광역시 유성구 유성대로730번길 96, (장대동)",
+     "phone": "0428245487",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%9C%A0%EC%84%B1%EC%9E%A5%EB%8C%80%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EC%9C%A0%EC%84%B1%EB%8C%80%EB%A1%9C730%EB%B2%88%EA%B8%B8%2096%2C%20%28%EC%9E%A5%EB%8C%80%EB%8F%99%29"
+    },
+    {
+     "code": "30427",
+     "name": "대전유천본점",
+     "address": "대전광역시 중구 계백로1583번길 41, (유천동)",
+     "phone": "0425332509",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%9C%A0%EC%B2%9C%EB%B3%B8%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EA%B3%84%EB%B0%B1%EB%A1%9C1583%EB%B2%88%EA%B8%B8%2041%2C%20%28%EC%9C%A0%EC%B2%9C%EB%8F%99%29"
+    },
+    {
+     "code": "33140",
+     "name": "대전유천사랑점",
+     "address": "대전광역시 중구 유천로 32-1, (유천동)",
+     "phone": "070-8285-1661",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%9C%A0%EC%B2%9C%EC%82%AC%EB%9E%91%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EC%9C%A0%EC%B2%9C%EB%A1%9C%2032-1%2C%20%28%EC%9C%A0%EC%B2%9C%EB%8F%99%29"
+    },
+    {
+     "code": "38253",
+     "name": "대전유천점",
+     "address": "대전광역시 중구 계백로1615번길 57",
+     "phone": "0425247707",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%9C%A0%EC%B2%9C%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EA%B3%84%EB%B0%B1%EB%A1%9C1615%EB%B2%88%EA%B8%B8%2057"
+    },
+    {
+     "code": "43554",
+     "name": "대전은행점",
+     "address": "대전광역시 중구 대종로480번길 7, (은행동)",
+     "phone": "042235252",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%9D%80%ED%96%89%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EB%8C%80%EC%A2%85%EB%A1%9C480%EB%B2%88%EA%B8%B8%207%2C%20%28%EC%9D%80%ED%96%89%EB%8F%99%29"
+    },
+    {
+     "code": "47865",
+     "name": "대전이스트시티점",
+     "address": "대전광역시 동구 동대전로46번길 30 (대동) LH이스트시티1단지",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%9D%B4%EC%8A%A4%ED%8A%B8%EC%8B%9C%ED%8B%B0%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8F%99%EA%B5%AC%20%EB%8F%99%EB%8C%80%EC%A0%84%EB%A1%9C46%EB%B2%88%EA%B8%B8%2030%20%28%EB%8C%80%EB%8F%99%29%20LH%EC%9D%B4%EC%8A%A4%ED%8A%B8%EC%8B%9C%ED%8B%B01%EB%8B%A8%EC%A7%80"
+    },
+    {
+     "code": "52490",
+     "name": "대전장대푸르지오점",
+     "address": "대전광역시 유성구 장대로71번길 37 (장대동) 1층 102호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%9E%A5%EB%8C%80%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EC%9E%A5%EB%8C%80%EB%A1%9C71%EB%B2%88%EA%B8%B8%2037%20%28%EC%9E%A5%EB%8C%80%EB%8F%99%29%201%EC%B8%B5%20102%ED%98%B8"
+    },
+    {
+     "code": "55615",
+     "name": "대전중리베스트점",
+     "address": "대전광역시 대덕구 송촌북로15번길 30",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%A4%91%EB%A6%AC%EB%B2%A0%EC%8A%A4%ED%8A%B8%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8C%80%EB%8D%95%EA%B5%AC%20%EC%86%A1%EC%B4%8C%EB%B6%81%EB%A1%9C15%EB%B2%88%EA%B8%B8%2030"
+    },
+    {
+     "code": "52918",
+     "name": "대전지족드림점",
+     "address": "대전광역시 유성구 은구비남로 39(지족동)상 건물 1층",
+     "phone": "042-824-0519",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%A7%80%EC%A1%B1%EB%93%9C%EB%A6%BC%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EC%9D%80%EA%B5%AC%EB%B9%84%EB%82%A8%EB%A1%9C%2039%28%EC%A7%80%EC%A1%B1%EB%8F%99%29%EC%83%81%20%EA%B1%B4%EB%AC%BC%201%EC%B8%B5"
+    },
+    {
+     "code": "54750",
+     "name": "대전지족프리미엄점",
+     "address": "대전 유성구 은구비로 12",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%EC%A7%80%EC%A1%B1%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84%EC%A0%90%20%EB%8C%80%EC%A0%84%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EC%9D%80%EA%B5%AC%EB%B9%84%EB%A1%9C%2012"
+    },
+    {
+     "code": "52588",
+     "name": "대전탄방중앙점",
+     "address": "대전광역시 서구 문정로10번길 48 (탄방동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%ED%83%84%EB%B0%A9%EC%A4%91%EC%95%99%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EB%AC%B8%EC%A0%95%EB%A1%9C10%EB%B2%88%EA%B8%B8%2048%20%28%ED%83%84%EB%B0%A9%EB%8F%99%29"
+    },
+    {
+     "code": "54581",
+     "name": "대전탄방한가람점",
+     "address": "대전 서구 문예로 16",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%ED%83%84%EB%B0%A9%ED%95%9C%EA%B0%80%EB%9E%8C%EC%A0%90%20%EB%8C%80%EC%A0%84%20%EC%84%9C%EA%B5%AC%20%EB%AC%B8%EC%98%88%EB%A1%9C%2016"
+    },
+    {
+     "code": "52617",
+     "name": "대전태평유등점",
+     "address": "대전광역시 중구 수침로 109-1, (태평동)",
+     "phone": "0425358383",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8C%80%EC%A0%84%ED%83%9C%ED%8F%89%EC%9C%A0%EB%93%B1%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EC%88%98%EC%B9%A8%EB%A1%9C%20109-1%2C%20%28%ED%83%9C%ED%8F%89%EB%8F%99%29"
+    },
+    {
+     "code": "49485",
+     "name": "더청춘대전비래점",
+     "address": "대전광역시 대덕구 비래서로25번길 49 (비래동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%8D%94%EC%B2%AD%EC%B6%98%EB%8C%80%EC%A0%84%EB%B9%84%EB%9E%98%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8C%80%EB%8D%95%EA%B5%AC%20%EB%B9%84%EB%9E%98%EC%84%9C%EB%A1%9C25%EB%B2%88%EA%B8%B8%2049%20%28%EB%B9%84%EB%9E%98%EB%8F%99%29"
+    },
+    {
+     "code": "52649",
+     "name": "둔산녹원점",
+     "address": "대전광역시 서구 계룡로491번길 8 (둔산동, 갤러리빌4차아파트) 제 104-1호",
+     "phone": "0424860708",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%91%94%EC%82%B0%EB%85%B9%EC%9B%90%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EA%B3%84%EB%A3%A1%EB%A1%9C491%EB%B2%88%EA%B8%B8%208%20%28%EB%91%94%EC%82%B0%EB%8F%99%2C%20%EA%B0%A4%EB%9F%AC%EB%A6%AC%EB%B9%8C4%EC%B0%A8%EC%95%84%ED%8C%8C%ED%8A%B8%29%20%EC%A0%9C%20104-1%ED%98%B8"
+    },
+    {
+     "code": "20849",
+     "name": "둔산마치점",
+     "address": "대전광역시 서구 둔산중로64번길 20, 둔산마치  (둔산동) 1층",
+     "phone": "0424892286",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%91%94%EC%82%B0%EB%A7%88%EC%B9%98%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EB%91%94%EC%82%B0%EC%A4%91%EB%A1%9C64%EB%B2%88%EA%B8%B8%2020%2C%20%EB%91%94%EC%82%B0%EB%A7%88%EC%B9%98%20%20%28%EB%91%94%EC%82%B0%EB%8F%99%29%201%EC%B8%B5"
+    },
+    {
+     "code": "42588",
+     "name": "둔산법원점",
+     "address": "대전광역시 서구 둔산로137번길 36, 태재빌딩  (둔산동)",
+     "phone": "0424888243",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%91%94%EC%82%B0%EB%B2%95%EC%9B%90%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EB%91%94%EC%82%B0%EB%A1%9C137%EB%B2%88%EA%B8%B8%2036%2C%20%ED%83%9C%EC%9E%AC%EB%B9%8C%EB%94%A9%20%20%28%EB%91%94%EC%82%B0%EB%8F%99%29"
+    },
+    {
+     "code": "45429",
+     "name": "둔산사랑점",
+     "address": "대전광역시 서구 둔산로51번길 38, (둔산동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%91%94%EC%82%B0%EC%82%AC%EB%9E%91%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EB%91%94%EC%82%B0%EB%A1%9C51%EB%B2%88%EA%B8%B8%2038%2C%20%28%EB%91%94%EC%82%B0%EB%8F%99%29"
+    },
+    {
+     "code": "30150",
+     "name": "둔산소망점",
+     "address": "대전광역시 서구 둔산로51번길 16, (둔산동)",
+     "phone": "0424833334",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%91%94%EC%82%B0%EC%86%8C%EB%A7%9D%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EB%91%94%EC%82%B0%EB%A1%9C51%EB%B2%88%EA%B8%B8%2016%2C%20%28%EB%91%94%EC%82%B0%EB%8F%99%29"
+    },
+    {
+     "code": "45611",
+     "name": "둔산스마일점",
+     "address": "대전광역시 서구 둔산로 136, (둔산동)",
+     "phone": "0424883555",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%91%94%EC%82%B0%EC%8A%A4%EB%A7%88%EC%9D%BC%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EB%91%94%EC%82%B0%EB%A1%9C%20136%2C%20%28%EB%91%94%EC%82%B0%EB%8F%99%29"
+    },
+    {
+     "code": "43943",
+     "name": "둔산아너스빌점",
+     "address": "대전광역시 서구 둔산북로 121 (둔산동) 아너스빌오피스텔",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%91%94%EC%82%B0%EC%95%84%EB%84%88%EC%8A%A4%EB%B9%8C%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EB%91%94%EC%82%B0%EB%B6%81%EB%A1%9C%20121%20%28%EB%91%94%EC%82%B0%EB%8F%99%29%20%EC%95%84%EB%84%88%EC%8A%A4%EB%B9%8C%EC%98%A4%ED%94%BC%EC%8A%A4%ED%85%94"
+    },
+    {
+     "code": "28652",
+     "name": "둔산을지점",
+     "address": "대전광역시 서구 둔산로65번길 81, (둔산동) 1층",
+     "phone": "0424718283",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%91%94%EC%82%B0%EC%9D%84%EC%A7%80%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EB%91%94%EC%82%B0%EB%A1%9C65%EB%B2%88%EA%B8%B8%2081%2C%20%28%EB%91%94%EC%82%B0%EB%8F%99%29%201%EC%B8%B5"
+    },
+    {
+     "code": "55509",
+     "name": "둔산이비자점",
+     "address": "대전 서구 대덕대로185번길 9",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%91%94%EC%82%B0%EC%9D%B4%EB%B9%84%EC%9E%90%EC%A0%90%20%EB%8C%80%EC%A0%84%20%EC%84%9C%EA%B5%AC%20%EB%8C%80%EB%8D%95%EB%8C%80%EB%A1%9C185%EB%B2%88%EA%B8%B8%209"
+    },
+    {
+     "code": "46921",
+     "name": "둔산제일점",
+     "address": "대전광역시 서구 둔산남로9번길 91, (둔산동)",
+     "phone": "0424834100",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%91%94%EC%82%B0%EC%A0%9C%EC%9D%BC%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EB%91%94%EC%82%B0%EB%82%A8%EB%A1%9C9%EB%B2%88%EA%B8%B8%2091%2C%20%28%EB%91%94%EC%82%B0%EB%8F%99%29"
+    },
+    {
+     "code": "54189",
+     "name": "둔산한마루점",
+     "address": "대전 서구 둔산북로 160",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%91%94%EC%82%B0%ED%95%9C%EB%A7%88%EB%A3%A8%EC%A0%90%20%EB%8C%80%EC%A0%84%20%EC%84%9C%EA%B5%AC%20%EB%91%94%EC%82%B0%EB%B6%81%EB%A1%9C%20160"
+    },
+    {
+     "code": "35549",
+     "name": "봉명우산거리점",
+     "address": "대전광역시 유성구 문화원로 86 채운2 (봉명동) 채운2",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%B4%89%EB%AA%85%EC%9A%B0%EC%82%B0%EA%B1%B0%EB%A6%AC%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EB%AC%B8%ED%99%94%EC%9B%90%EB%A1%9C%2086%20%EC%B1%84%EC%9A%B42%20%28%EB%B4%89%EB%AA%85%EB%8F%99%29%20%EC%B1%84%EC%9A%B42"
+    },
+    {
+     "code": "46897",
+     "name": "서대전코아루점",
+     "address": "대전광역시 중구 오류로 13-10 (오류동) 170-5번지",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%84%9C%EB%8C%80%EC%A0%84%EC%BD%94%EC%95%84%EB%A3%A8%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EC%98%A4%EB%A5%98%EB%A1%9C%2013-10%20%28%EC%98%A4%EB%A5%98%EB%8F%99%29%20170-5%EB%B2%88%EC%A7%80"
+    },
+    {
+     "code": "44022",
+     "name": "유성고정문점",
+     "address": "대전광역시 유성구 유성대로654번길 125,  (구암동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%9C%A0%EC%84%B1%EA%B3%A0%EC%A0%95%EB%AC%B8%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EC%9C%A0%EC%84%B1%EB%8C%80%EB%A1%9C654%EB%B2%88%EA%B8%B8%20125%2C%20%20%28%EA%B5%AC%EC%95%94%EB%8F%99%29"
+    },
+    {
+     "code": "35552",
+     "name": "유성라마다점",
+     "address": "대전광역시 유성구 계룡로 127 라마다호텔 (봉명동) 라마다호텔",
+     "phone": "0428220199",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%9C%A0%EC%84%B1%EB%9D%BC%EB%A7%88%EB%8B%A4%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EA%B3%84%EB%A3%A1%EB%A1%9C%20127%20%EB%9D%BC%EB%A7%88%EB%8B%A4%ED%98%B8%ED%85%94%20%28%EB%B4%89%EB%AA%85%EB%8F%99%29%20%EB%9D%BC%EB%A7%88%EB%8B%A4%ED%98%B8%ED%85%94"
+    },
+    {
+     "code": "47614",
+     "name": "유성복합터미널점",
+     "address": "대전광역시 유성구 유성대로694번길 15, (구암동)",
+     "phone": "0428268966",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%9C%A0%EC%84%B1%EB%B3%B5%ED%95%A9%ED%84%B0%EB%AF%B8%EB%84%90%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EC%9C%A0%EC%84%B1%EB%8C%80%EB%A1%9C694%EB%B2%88%EA%B8%B8%2015%2C%20%28%EA%B5%AC%EC%95%94%EB%8F%99%29"
+    },
+    {
+     "code": "38996",
+     "name": "유성본점",
+     "address": "대전광역시 유성구 온천로 2, 소망빌딩  (봉명동)",
+     "phone": "0428223444",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%9C%A0%EC%84%B1%EB%B3%B8%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EC%98%A8%EC%B2%9C%EB%A1%9C%202%2C%20%EC%86%8C%EB%A7%9D%EB%B9%8C%EB%94%A9%20%20%28%EB%B4%89%EB%AA%85%EB%8F%99%29"
+    },
+    {
+     "code": "35662",
+     "name": "유성봉명스타점",
+     "address": "대전광역시 유성구 계룡로87번길 61, (봉명동)",
+     "phone": "0428262232",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%9C%A0%EC%84%B1%EB%B4%89%EB%AA%85%EC%8A%A4%ED%83%80%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EA%B3%84%EB%A3%A1%EB%A1%9C87%EB%B2%88%EA%B8%B8%2061%2C%20%28%EB%B4%89%EB%AA%85%EB%8F%99%29"
+    },
+    {
+     "code": "17930",
+     "name": "유성빌리지점",
+     "address": "대전광역시 유성구 문화원로47번길 16, (궁동) 1층",
+     "phone": "0428247234",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%9C%A0%EC%84%B1%EB%B9%8C%EB%A6%AC%EC%A7%80%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EB%AC%B8%ED%99%94%EC%9B%90%EB%A1%9C47%EB%B2%88%EA%B8%B8%2016%2C%20%28%EA%B6%81%EB%8F%99%29%201%EC%B8%B5"
+    },
+    {
+     "code": "23779",
+     "name": "유성센트럴점",
+     "address": "대전광역시 유성구 계룡로132번길 10, (봉명동) 1층 102호",
+     "phone": "0428257452",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%9C%A0%EC%84%B1%EC%84%BC%ED%8A%B8%EB%9F%B4%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EA%B3%84%EB%A3%A1%EB%A1%9C132%EB%B2%88%EA%B8%B8%2010%2C%20%28%EB%B4%89%EB%AA%85%EB%8F%99%29%201%EC%B8%B5%20102%ED%98%B8"
+    },
+    {
+     "code": "20631",
+     "name": "유성아이누리점",
+     "address": "대전광역시 유성구 온천로 26, 109호(봉명동, 리베라아이누리2차) 1층 109호",
+     "phone": "0428267893",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%9C%A0%EC%84%B1%EC%95%84%EC%9D%B4%EB%88%84%EB%A6%AC%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EC%98%A8%EC%B2%9C%EB%A1%9C%2026%2C%20109%ED%98%B8%28%EB%B4%89%EB%AA%85%EB%8F%99%2C%20%EB%A6%AC%EB%B2%A0%EB%9D%BC%EC%95%84%EC%9D%B4%EB%88%84%EB%A6%AC2%EC%B0%A8%29%201%EC%B8%B5%20109%ED%98%B8"
+    },
+    {
+     "code": "04091",
+     "name": "유성온천점",
+     "address": "대전광역시 유성구 온천로 68, (봉명동) 1층",
+     "phone": "0428256576",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%9C%A0%EC%84%B1%EC%98%A8%EC%B2%9C%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EC%98%A8%EC%B2%9C%EB%A1%9C%2068%2C%20%28%EB%B4%89%EB%AA%85%EB%8F%99%29%201%EC%B8%B5"
+    },
+    {
+     "code": "51866",
+     "name": "유성장대행운점",
+     "address": "대전광역시 유성구 온천서로 47",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%9C%A0%EC%84%B1%EC%9E%A5%EB%8C%80%ED%96%89%EC%9A%B4%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EC%98%A8%EC%B2%9C%EC%84%9C%EB%A1%9C%2047"
+    },
+    {
+     "code": "24776",
+     "name": "유성지족점",
+     "address": "대전광역시 유성구 은구비로 48, (지족동) 1층 101호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%9C%A0%EC%84%B1%EC%A7%80%EC%A1%B1%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EC%9D%80%EA%B5%AC%EB%B9%84%EB%A1%9C%2048%2C%20%28%EC%A7%80%EC%A1%B1%EB%8F%99%29%201%EC%B8%B5%20101%ED%98%B8"
+    },
+    {
+     "code": "53412",
+     "name": "유성타운점",
+     "address": "대전광역시 유성구 온천북로33번길 21-4, (봉명동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%9C%A0%EC%84%B1%ED%83%80%EC%9A%B4%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EC%98%A8%EC%B2%9C%EB%B6%81%EB%A1%9C33%EB%B2%88%EA%B8%B8%2021-4%2C%20%28%EB%B4%89%EB%AA%85%EB%8F%99%29"
+    },
+    {
+     "code": "43801",
+     "name": "유성파랑새점",
+     "address": "대전광역시 유성구 계룡로141번길 13-1 (봉명동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%9C%A0%EC%84%B1%ED%8C%8C%EB%9E%91%EC%83%88%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EA%B3%84%EB%A3%A1%EB%A1%9C141%EB%B2%88%EA%B8%B8%2013-1%20%28%EB%B4%89%EB%AA%85%EB%8F%99%29"
+    },
+    {
+     "code": "21949",
+     "name": "유성푸르지오점",
+     "address": "대전광역시 유성구 온천로 45, (봉명동, 유성푸르지오시티) 133호",
+     "phone": "0428267894",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%9C%A0%EC%84%B1%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EC%98%A8%EC%B2%9C%EB%A1%9C%2045%2C%20%28%EB%B4%89%EB%AA%85%EB%8F%99%2C%20%EC%9C%A0%EC%84%B1%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%EC%8B%9C%ED%8B%B0%29%20133%ED%98%B8"
+    },
+    {
+     "code": "28702",
+     "name": "장대스토리점",
+     "address": "대전광역시 유성구 유성대로 781, 한일빌딩  (장대동)",
+     "phone": "0428258169",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%9E%A5%EB%8C%80%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EC%9C%A0%EC%84%B1%EB%8C%80%EB%A1%9C%20781%2C%20%ED%95%9C%EC%9D%BC%EB%B9%8C%EB%94%A9%20%20%28%EC%9E%A5%EB%8C%80%EB%8F%99%29"
+    },
+    {
+     "code": "16363",
+     "name": "장대중앙점",
+     "address": "대전광역시 유성구 문화원로6번길 47,  (장대동) 1층",
+     "phone": "0428261017",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%9E%A5%EB%8C%80%EC%A4%91%EC%95%99%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EB%AC%B8%ED%99%94%EC%9B%90%EB%A1%9C6%EB%B2%88%EA%B8%B8%2047%2C%20%20%28%EC%9E%A5%EB%8C%80%EB%8F%99%29%201%EC%B8%B5"
+    },
+    {
+     "code": "55691",
+     "name": "중앙로지하상가점",
+     "address": "대전 중구 중앙로 지하 145",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%A4%91%EC%95%99%EB%A1%9C%EC%A7%80%ED%95%98%EC%83%81%EA%B0%80%EC%A0%90%20%EB%8C%80%EC%A0%84%20%EC%A4%91%EA%B5%AC%20%EC%A4%91%EC%95%99%EB%A1%9C%20%EC%A7%80%ED%95%98%20145"
+    },
+    {
+     "code": "19693",
+     "name": "충남대병원3호점",
+     "address": "대전광역시 중구 문화로 282, (대사동)",
+     "phone": "0423382960",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B6%A9%EB%82%A8%EB%8C%80%EB%B3%91%EC%9B%903%ED%98%B8%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EB%AC%B8%ED%99%94%EB%A1%9C%20282%2C%20%28%EB%8C%80%EC%82%AC%EB%8F%99%29"
+    },
+    {
+     "code": "54520",
+     "name": "충남대정문점",
+     "address": "대전광역시 유성구 대학로76번안길 19-12 티엔에스 (궁동) 티엔에스",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B6%A9%EB%82%A8%EB%8C%80%EC%A0%95%EB%AC%B8%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EB%8C%80%ED%95%99%EB%A1%9C76%EB%B2%88%EC%95%88%EA%B8%B8%2019-12%20%ED%8B%B0%EC%97%94%EC%97%90%EC%8A%A4%20%28%EA%B6%81%EB%8F%99%29%20%ED%8B%B0%EC%97%94%EC%97%90%EC%8A%A4"
+    },
+    {
+     "code": "51498",
+     "name": "한국철도공사점",
+     "address": "대전광역시 동구 중앙로 242 외 공용구역(철도기관 공동사옥 지하 1층)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%ED%95%9C%EA%B5%AD%EC%B2%A0%EB%8F%84%EA%B3%B5%EC%82%AC%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%8F%99%EA%B5%AC%20%EC%A4%91%EC%95%99%EB%A1%9C%20242%20%EC%99%B8%20%EA%B3%B5%EC%9A%A9%EA%B5%AC%EC%97%AD%28%EC%B2%A0%EB%8F%84%EA%B8%B0%EA%B4%80%20%EA%B3%B5%EB%8F%99%EC%82%AC%EC%98%A5%20%EC%A7%80%ED%95%98%201%EC%B8%B5%29"
+    },
+    {
+     "code": "55151",
+     "name": "현대노은점",
+     "address": "대전광역시 유성구 노은동로 79, (노은동)",
+     "phone": "0424775182",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%ED%98%84%EB%8C%80%EB%85%B8%EC%9D%80%EC%A0%90%20%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EB%85%B8%EC%9D%80%EB%8F%99%EB%A1%9C%2079%2C%20%28%EB%85%B8%EC%9D%80%EB%8F%99%29"
+    }
+   ]
+  },
+  {
+   "region": "daejeon",
+   "keyword": "포켓몬카드",
+   "chain": "seveneleven",
+   "chainLabel": "세븐일레븐",
+   "product": null,
+   "error": "대전: HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
+   "warning": null,
+   "stores": []
+  },
+  {
+   "region": "daejeon",
+   "keyword": "포켓몬카드",
+   "chain": "emart24",
+   "chainLabel": "이마트24",
+   "product": null,
+   "error": "대전역(동구): HTTP 500 EMART24_INVENTORY_CHECK_FAILED: 편의점 릴레이 요청에 실패했습니다.",
+   "warning": null,
+   "stores": []
+  },
+  {
+   "region": "cheongju",
+   "keyword": "포켓몬카드",
+   "chain": "gs25",
+   "chainLabel": "GS25",
+   "product": null,
+   "error": "성안길(상당구): HTTP 503 GS25_UPSTREAM_UNAVAILABLE: GS25 재고 서비스 인증을 사용할 수 없습니다. 운영자는 GS25_AUTH_SESSION_FILE의 인증 갱신 상태를 확인하세요. API 키 방식은 GS25_API_KEY 설정을 확인하세요.",
+   "warning": null,
+   "stores": []
+  },
+  {
+   "region": "cheongju",
+   "keyword": "포켓몬카드",
+   "chain": "cu",
+   "chainLabel": "CU",
+   "product": "포켓몬)나이트원더러카드",
+   "error": null,
+   "warning": null,
+   "stores": [
+    {
+     "code": "53061",
+     "name": "뉴청주대예대점",
+     "address": "충청북도 청주시 청원구 안덕벌로19번길 116 청주대학교예술대학 (내덕동) 청주대학교예술대학",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EB%89%B4%EC%B2%AD%EC%A3%BC%EB%8C%80%EC%98%88%EB%8C%80%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%95%88%EB%8D%95%EB%B2%8C%EB%A1%9C19%EB%B2%88%EA%B8%B8%20116%20%EC%B2%AD%EC%A3%BC%EB%8C%80%ED%95%99%EA%B5%90%EC%98%88%EC%88%A0%EB%8C%80%ED%95%99%20%28%EB%82%B4%EB%8D%95%EB%8F%99%29%20%EC%B2%AD%EC%A3%BC%EB%8C%80%ED%95%99%EA%B5%90%EC%98%88%EC%88%A0%EB%8C%80%ED%95%99"
+    },
+    {
+     "code": "15753",
+     "name": "양청빌리지점",
+     "address": "충청북도 청주시 청원구 오창읍 양청택지로 122, (양청리) 1층",
+     "phone": "0432157612",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%96%91%EC%B2%AD%EB%B9%8C%EB%A6%AC%EC%A7%80%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%98%A4%EC%B0%BD%EC%9D%8D%20%EC%96%91%EC%B2%AD%ED%83%9D%EC%A7%80%EB%A1%9C%20122%2C%20%28%EC%96%91%EC%B2%AD%EB%A6%AC%29%201%EC%B8%B5"
+    },
+    {
+     "code": "45796",
+     "name": "양청중점",
+     "address": "충청북도 청주시 청원구 오창읍 양청택지로 81, (양청리)",
+     "phone": "0432187474",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%96%91%EC%B2%AD%EC%A4%91%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%98%A4%EC%B0%BD%EC%9D%8D%20%EC%96%91%EC%B2%AD%ED%83%9D%EC%A7%80%EB%A1%9C%2081%2C%20%28%EC%96%91%EC%B2%AD%EB%A6%AC%29"
+    },
+    {
+     "code": "48278",
+     "name": "오창대운점",
+     "address": "충청북도 청주시 청원구 오창읍 중심상업로 14 대운프라자 (양청리) 대운프라자",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%98%A4%EC%B0%BD%EB%8C%80%EC%9A%B4%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%98%A4%EC%B0%BD%EC%9D%8D%20%EC%A4%91%EC%8B%AC%EC%83%81%EC%97%85%EB%A1%9C%2014%20%EB%8C%80%EC%9A%B4%ED%94%84%EB%9D%BC%EC%9E%90%20%28%EC%96%91%EC%B2%AD%EB%A6%AC%29%20%EB%8C%80%EC%9A%B4%ED%94%84%EB%9D%BC%EC%9E%90"
+    },
+    {
+     "code": "43401",
+     "name": "오창롯데캐슬점",
+     "address": "충북 청주시 청원구 오창읍 중부로 760",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%98%A4%EC%B0%BD%EB%A1%AF%EB%8D%B0%EC%BA%90%EC%8A%AC%EC%A0%90%20%EC%B6%A9%EB%B6%81%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%98%A4%EC%B0%BD%EC%9D%8D%20%EC%A4%91%EB%B6%80%EB%A1%9C%20760"
+    },
+    {
+     "code": "19893",
+     "name": "오창바이오점",
+     "address": "충청북도 청주시 청원구 오창읍 양청1길 4, (양청리)",
+     "phone": "0432148886",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%98%A4%EC%B0%BD%EB%B0%94%EC%9D%B4%EC%98%A4%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%98%A4%EC%B0%BD%EC%9D%8D%20%EC%96%91%EC%B2%AD1%EA%B8%B8%204%2C%20%28%EC%96%91%EC%B2%AD%EB%A6%AC%29"
+    },
+    {
+     "code": "52238",
+     "name": "오창반도유보라점",
+     "address": "충청북도 청주시 청원구 오창읍 과학산업3로 210-8 (각리)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%98%A4%EC%B0%BD%EB%B0%98%EB%8F%84%EC%9C%A0%EB%B3%B4%EB%9D%BC%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%98%A4%EC%B0%BD%EC%9D%8D%20%EA%B3%BC%ED%95%99%EC%82%B0%EC%97%853%EB%A1%9C%20210-8%20%28%EA%B0%81%EB%A6%AC%29"
+    },
+    {
+     "code": "34649",
+     "name": "오창센터점",
+     "address": "충청북도 청주시 청원구 오창읍 중심상업2로 9-38, (양청리) 1층",
+     "phone": "0432164589",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%98%A4%EC%B0%BD%EC%84%BC%ED%84%B0%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%98%A4%EC%B0%BD%EC%9D%8D%20%EC%A4%91%EC%8B%AC%EC%83%81%EC%97%852%EB%A1%9C%209-38%2C%20%28%EC%96%91%EC%B2%AD%EB%A6%AC%29%201%EC%B8%B5"
+    },
+    {
+     "code": "31762",
+     "name": "오창센트럴파크점",
+     "address": "충청북도 청주시 청원구 오창읍 각리 1층",
+     "phone": "0432134119",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%98%A4%EC%B0%BD%EC%84%BC%ED%8A%B8%EB%9F%B4%ED%8C%8C%ED%81%AC%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%98%A4%EC%B0%BD%EC%9D%8D%20%EA%B0%81%EB%A6%AC%201%EC%B8%B5"
+    },
+    {
+     "code": "34832",
+     "name": "오창양청전원점",
+     "address": "충청북도 청주시 청원구 양청택지1길 49-2 (오창읍) 창호빌 1층",
+     "phone": "0432177900",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%98%A4%EC%B0%BD%EC%96%91%EC%B2%AD%EC%A0%84%EC%9B%90%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%96%91%EC%B2%AD%ED%83%9D%EC%A7%801%EA%B8%B8%2049-2%20%28%EC%98%A4%EC%B0%BD%EC%9D%8D%29%20%EC%B0%BD%ED%98%B8%EB%B9%8C%201%EC%B8%B5"
+    },
+    {
+     "code": "09147",
+     "name": "오창양청점",
+     "address": "충청북도 청주시 청원구 오창읍 양청길 40, (양청리) 1층",
+     "phone": "0432117612",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%98%A4%EC%B0%BD%EC%96%91%EC%B2%AD%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%98%A4%EC%B0%BD%EC%9D%8D%20%EC%96%91%EC%B2%AD%EA%B8%B8%2040%2C%20%28%EC%96%91%EC%B2%AD%EB%A6%AC%29%201%EC%B8%B5"
+    },
+    {
+     "code": "37039",
+     "name": "오창우림필유점",
+     "address": "충청북도 청주시 청원구 오창중앙로 13 (오창읍) 1층 상가동 105, 106호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%98%A4%EC%B0%BD%EC%9A%B0%EB%A6%BC%ED%95%84%EC%9C%A0%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%98%A4%EC%B0%BD%EC%A4%91%EC%95%99%EB%A1%9C%2013%20%28%EC%98%A4%EC%B0%BD%EC%9D%8D%29%201%EC%B8%B5%20%EC%83%81%EA%B0%80%EB%8F%99%20105%2C%20106%ED%98%B8"
+    },
+    {
+     "code": "21000",
+     "name": "오창중앙점",
+     "address": "충청북도 청주시 청원구 중심상업로 27 (오창읍) 1층 1동 110호",
+     "phone": "0432124131",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%98%A4%EC%B0%BD%EC%A4%91%EC%95%99%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%A4%91%EC%8B%AC%EC%83%81%EC%97%85%EB%A1%9C%2027%20%28%EC%98%A4%EC%B0%BD%EC%9D%8D%29%201%EC%B8%B5%201%EB%8F%99%20110%ED%98%B8"
+    },
+    {
+     "code": "43422",
+     "name": "오창코아루점",
+     "address": "충청북도 청주시 청원구 오창중앙로 21-14 (오창읍) 코아루아파트 상가 1층 111호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%98%A4%EC%B0%BD%EC%BD%94%EC%95%84%EB%A3%A8%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%98%A4%EC%B0%BD%EC%A4%91%EC%95%99%EB%A1%9C%2021-14%20%28%EC%98%A4%EC%B0%BD%EC%9D%8D%29%20%EC%BD%94%EC%95%84%EB%A3%A8%EC%95%84%ED%8C%8C%ED%8A%B8%20%EC%83%81%EA%B0%80%201%EC%B8%B5%20111%ED%98%B8"
+    },
+    {
+     "code": "55226",
+     "name": "제이원호텔점",
+     "address": "충북 청주시 청원구 중부로 806",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%A0%9C%EC%9D%B4%EC%9B%90%ED%98%B8%ED%85%94%EC%A0%90%20%EC%B6%A9%EB%B6%81%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%A4%91%EB%B6%80%EB%A1%9C%20806"
+    },
+    {
+     "code": "52632",
+     "name": "청주가경대림점",
+     "address": "충청북도 청주시 흥덕구 가경로189번길 7-2 (가경동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B0%80%EA%B2%BD%EB%8C%80%EB%A6%BC%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%EA%B0%80%EA%B2%BD%EB%A1%9C189%EB%B2%88%EA%B8%B8%207-2%20%28%EA%B0%80%EA%B2%BD%EB%8F%99%29"
+    },
+    {
+     "code": "27880",
+     "name": "청주가경대원점",
+     "address": "충청북도 청주시 흥덕구 가경로 116 1층 102호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B0%80%EA%B2%BD%EB%8C%80%EC%9B%90%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%EA%B0%80%EA%B2%BD%EB%A1%9C%20116%201%EC%B8%B5%20102%ED%98%B8"
+    },
+    {
+     "code": "52977",
+     "name": "청주가경드림점",
+     "address": "충북 청주시 흥덕구 장구봉로 13",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B0%80%EA%B2%BD%EB%93%9C%EB%A6%BC%EC%A0%90%20%EC%B6%A9%EB%B6%81%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%EC%9E%A5%EA%B5%AC%EB%B4%89%EB%A1%9C%2013"
+    },
+    {
+     "code": "42745",
+     "name": "청주가경뜨란채점",
+     "address": "충청북도 청주시 흥덕구 풍년로 56 (가경동, 청주가경뜨란채8단지아파트) 1층 103,104호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B0%80%EA%B2%BD%EB%9C%A8%EB%9E%80%EC%B1%84%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%ED%92%8D%EB%85%84%EB%A1%9C%2056%20%28%EA%B0%80%EA%B2%BD%EB%8F%99%2C%20%EC%B2%AD%EC%A3%BC%EA%B0%80%EA%B2%BD%EB%9C%A8%EB%9E%80%EC%B1%848%EB%8B%A8%EC%A7%80%EC%95%84%ED%8C%8C%ED%8A%B8%29%201%EC%B8%B5%20103%2C104%ED%98%B8"
+    },
+    {
+     "code": "24316",
+     "name": "청주가경로망스점",
+     "address": "충청북도 청주시 흥덕구 풍년로 192, (가경동)",
+     "phone": "0432321704",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B0%80%EA%B2%BD%EB%A1%9C%EB%A7%9D%EC%8A%A4%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%ED%92%8D%EB%85%84%EB%A1%9C%20192%2C%20%28%EA%B0%80%EA%B2%BD%EB%8F%99%29"
+    },
+    {
+     "code": "23308",
+     "name": "청주가경민들레점",
+     "address": "충청북도 청주시 흥덕구 경산로 15, (가경동) 1층",
+     "phone": "0432321120",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B0%80%EA%B2%BD%EB%AF%BC%EB%93%A4%EB%A0%88%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%EA%B2%BD%EC%82%B0%EB%A1%9C%2015%2C%20%28%EA%B0%80%EA%B2%BD%EB%8F%99%29%201%EC%B8%B5"
+    },
+    {
+     "code": "54859",
+     "name": "청주가경비발디점",
+     "address": "충청북도 청주시 흥덕구 서현서로 40 (가경동) 가경한라비발디아파트",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B0%80%EA%B2%BD%EB%B9%84%EB%B0%9C%EB%94%94%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%EC%84%9C%ED%98%84%EC%84%9C%EB%A1%9C%2040%20%28%EA%B0%80%EA%B2%BD%EB%8F%99%29%20%EA%B0%80%EA%B2%BD%ED%95%9C%EB%9D%BC%EB%B9%84%EB%B0%9C%EB%94%94%EC%95%84%ED%8C%8C%ED%8A%B8"
+    },
+    {
+     "code": "53644",
+     "name": "청주가경센트럴점",
+     "address": "충북 청주시 흥덕구 풍년로180번길 25-1",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B0%80%EA%B2%BD%EC%84%BC%ED%8A%B8%EB%9F%B4%EC%A0%90%20%EC%B6%A9%EB%B6%81%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%ED%92%8D%EB%85%84%EB%A1%9C180%EB%B2%88%EA%B8%B8%2025-1"
+    },
+    {
+     "code": "43822",
+     "name": "청주가경아이파크점",
+     "address": "충청북도 청주시 흥덕구 서현로 60 (가경동) 근린생활시설 1층 120호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B0%80%EA%B2%BD%EC%95%84%EC%9D%B4%ED%8C%8C%ED%81%AC%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%EC%84%9C%ED%98%84%EB%A1%9C%2060%20%28%EA%B0%80%EA%B2%BD%EB%8F%99%29%20%EA%B7%BC%EB%A6%B0%EC%83%9D%ED%99%9C%EC%8B%9C%EC%84%A4%201%EC%B8%B5%20120%ED%98%B8"
+    },
+    {
+     "code": "13176",
+     "name": "청주가경원룸점",
+     "address": "충청북도 청주시 흥덕구 가경로127번길 27, (가경동)",
+     "phone": "0432330068",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B0%80%EA%B2%BD%EC%9B%90%EB%A3%B8%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%EA%B0%80%EA%B2%BD%EB%A1%9C127%EB%B2%88%EA%B8%B8%2027%2C%20%28%EA%B0%80%EA%B2%BD%EB%8F%99%29"
+    },
+    {
+     "code": "53240",
+     "name": "청주가경좋은점",
+     "address": "충청북도 청주시 흥덕구 가경로161번길 29, (가경동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B0%80%EA%B2%BD%EC%A2%8B%EC%9D%80%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%EA%B0%80%EA%B2%BD%EB%A1%9C161%EB%B2%88%EA%B8%B8%2029%2C%20%28%EA%B0%80%EA%B2%BD%EB%8F%99%29"
+    },
+    {
+     "code": "29765",
+     "name": "청주가경타운점",
+     "address": "충청북도 청주시 흥덕구 가경동 1486-1번지",
+     "phone": "07045258748",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B0%80%EA%B2%BD%ED%83%80%EC%9A%B4%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%EA%B0%80%EA%B2%BD%EB%8F%99%201486-1%EB%B2%88%EC%A7%80"
+    },
+    {
+     "code": "13931",
+     "name": "청주가경하나점",
+     "address": "충청북도 청주시 흥덕구 서현동로 8, (가경동) 1층 104호",
+     "phone": "0432378541",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B0%80%EA%B2%BD%ED%95%98%EB%82%98%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%EC%84%9C%ED%98%84%EB%8F%99%EB%A1%9C%208%2C%20%28%EA%B0%80%EA%B2%BD%EB%8F%99%29%201%EC%B8%B5%20104%ED%98%B8"
+    },
+    {
+     "code": "34177",
+     "name": "청주가경행복점",
+     "address": "충청북도 청주시 흥덕구 풍년로206번길 48, (가경동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B0%80%EA%B2%BD%ED%96%89%EB%B3%B5%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%ED%92%8D%EB%85%84%EB%A1%9C206%EB%B2%88%EA%B8%B8%2048%2C%20%28%EA%B0%80%EA%B2%BD%EB%8F%99%29"
+    },
+    {
+     "code": "16765",
+     "name": "청주가로수길점",
+     "address": "충청북도 청주시 상당구 중앙로 5-1, (북문로2가) 1층",
+     "phone": "0432244936",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B0%80%EB%A1%9C%EC%88%98%EA%B8%B8%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%83%81%EB%8B%B9%EA%B5%AC%20%EC%A4%91%EC%95%99%EB%A1%9C%205-1%2C%20%28%EB%B6%81%EB%AC%B8%EB%A1%9C2%EA%B0%80%29%201%EC%B8%B5"
+    },
+    {
+     "code": "48460",
+     "name": "청주강서IC점",
+     "address": "충청북도 청주시 흥덕구 강서로 47-2 (강서동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B0%95%EC%84%9CIC%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%EA%B0%95%EC%84%9C%EB%A1%9C%2047-2%20%28%EA%B0%95%EC%84%9C%EB%8F%99%29"
+    },
+    {
+     "code": "50591",
+     "name": "청주강서서현점",
+     "address": "충청북도 청주시 흥덕구 서현중로27번길 23 (가경동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B0%95%EC%84%9C%EC%84%9C%ED%98%84%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%EC%84%9C%ED%98%84%EC%A4%91%EB%A1%9C27%EB%B2%88%EA%B8%B8%2023%20%28%EA%B0%80%EA%B2%BD%EB%8F%99%29"
+    },
+    {
+     "code": "55553",
+     "name": "청주강서젤라점",
+     "address": "충청북도 청주시 흥덕구 가로수로1154번길 6-1",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B0%95%EC%84%9C%EC%A0%A4%EB%9D%BC%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%EA%B0%80%EB%A1%9C%EC%88%98%EB%A1%9C1154%EB%B2%88%EA%B8%B8%206-1"
+    },
+    {
+     "code": "40808",
+     "name": "청주강서타운점",
+     "address": "충청북도 청주시 흥덕구 강서로 107 (강서동) 1층 103호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B0%95%EC%84%9C%ED%83%80%EC%9A%B4%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%EA%B0%95%EC%84%9C%EB%A1%9C%20107%20%28%EA%B0%95%EC%84%9C%EB%8F%99%29%201%EC%B8%B5%20103%ED%98%B8"
+    },
+    {
+     "code": "50377",
+     "name": "청주강서호반점",
+     "address": "충청북도 청주시 흥덕구 서현중로 49 (가경동, 가로수마을호반베르디움) 가로수마을호반베르디움 상가동 106호, 107호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B0%95%EC%84%9C%ED%98%B8%EB%B0%98%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%EC%84%9C%ED%98%84%EC%A4%91%EB%A1%9C%2049%20%28%EA%B0%80%EA%B2%BD%EB%8F%99%2C%20%EA%B0%80%EB%A1%9C%EC%88%98%EB%A7%88%EC%9D%84%ED%98%B8%EB%B0%98%EB%B2%A0%EB%A5%B4%EB%94%94%EC%9B%80%29%20%EA%B0%80%EB%A1%9C%EC%88%98%EB%A7%88%EC%9D%84%ED%98%B8%EB%B0%98%EB%B2%A0%EB%A5%B4%EB%94%94%EC%9B%80%20%EC%83%81%EA%B0%80%EB%8F%99%20106%ED%98%B8%2C%20107%ED%98%B8"
+    },
+    {
+     "code": "51594",
+     "name": "청주개신점",
+     "address": "충청북도 청주시 서원구 장구봉로 94 우평원더라움 상가 B101호 (개신동 504번지)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B0%9C%EC%8B%A0%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%84%9C%EC%9B%90%EA%B5%AC%20%EC%9E%A5%EA%B5%AC%EB%B4%89%EB%A1%9C%2094%20%EC%9A%B0%ED%8F%89%EC%9B%90%EB%8D%94%EB%9D%BC%EC%9B%80%20%EC%83%81%EA%B0%80%20B101%ED%98%B8%20%28%EA%B0%9C%EC%8B%A0%EB%8F%99%20504%EB%B2%88%EC%A7%80%29"
+    },
+    {
+     "code": "52660",
+     "name": "청주고속버스터미널점",
+     "address": "충청북도 청주시 흥덕구 2순환로 1225 고속버스터미널점 (가경동) 고속버스터미널",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B3%A0%EC%86%8D%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%202%EC%88%9C%ED%99%98%EB%A1%9C%201225%20%EA%B3%A0%EC%86%8D%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90%EC%A0%90%20%28%EA%B0%80%EA%B2%BD%EB%8F%99%29%20%EA%B3%A0%EC%86%8D%EB%B2%84%EC%8A%A4%ED%84%B0%EB%AF%B8%EB%84%90"
+    },
+    {
+     "code": "29790",
+     "name": "청주관문주유소점",
+     "address": "충청북도 청주시 서원구 청남로 1894, (미평동) 1층",
+     "phone": "0432921710",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B4%80%EB%AC%B8%EC%A3%BC%EC%9C%A0%EC%86%8C%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%84%9C%EC%9B%90%EA%B5%AC%20%EC%B2%AD%EB%82%A8%EB%A1%9C%201894%2C%20%28%EB%AF%B8%ED%8F%89%EB%8F%99%29%201%EC%B8%B5"
+    },
+    {
+     "code": "26906",
+     "name": "청주교대생활관점",
+     "address": "충청북도 청주시 서원구 청남로 2065, (수곡동)",
+     "phone": "0432884151",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EA%B5%90%EB%8C%80%EC%83%9D%ED%99%9C%EA%B4%80%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%84%9C%EC%9B%90%EA%B5%AC%20%EC%B2%AD%EB%82%A8%EB%A1%9C%202065%2C%20%28%EC%88%98%EA%B3%A1%EB%8F%99%29"
+    },
+    {
+     "code": "53460",
+     "name": "청주남주칸타빌점",
+     "address": "충북 청주시 상당구 무심동로336번길 45",
+     "phone": "043-237-1190",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EB%82%A8%EC%A3%BC%EC%B9%B8%ED%83%80%EB%B9%8C%EC%A0%90%20%EC%B6%A9%EB%B6%81%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%83%81%EB%8B%B9%EA%B5%AC%20%EB%AC%B4%EC%8B%AC%EB%8F%99%EB%A1%9C336%EB%B2%88%EA%B8%B8%2045"
+    },
+    {
+     "code": "51460",
+     "name": "청주내덕센터점",
+     "address": "충청북도 청주시 청원구 내덕로 54, 1층 104호 (내덕동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EB%82%B4%EB%8D%95%EC%84%BC%ED%84%B0%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EB%82%B4%EB%8D%95%EB%A1%9C%2054%2C%201%EC%B8%B5%20104%ED%98%B8%20%28%EB%82%B4%EB%8D%95%EB%8F%99%29"
+    },
+    {
+     "code": "46283",
+     "name": "청주내덕신화대로점",
+     "address": "충청북도 청주시 청원구 충청대로57번길 2 (내덕동) 1층",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EB%82%B4%EB%8D%95%EC%8B%A0%ED%99%94%EB%8C%80%EB%A1%9C%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%B6%A9%EC%B2%AD%EB%8C%80%EB%A1%9C57%EB%B2%88%EA%B8%B8%202%20%28%EB%82%B4%EB%8D%95%EB%8F%99%29%201%EC%B8%B5"
+    },
+    {
+     "code": "36224",
+     "name": "청주내덕신화점",
+     "address": "충청북도 청주시 청원구 1순환로211번길 15 (내덕동, 상가동) 1층 103호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EB%82%B4%EB%8D%95%EC%8B%A0%ED%99%94%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%201%EC%88%9C%ED%99%98%EB%A1%9C211%EB%B2%88%EA%B8%B8%2015%20%28%EB%82%B4%EB%8D%95%EB%8F%99%2C%20%EC%83%81%EA%B0%80%EB%8F%99%29%201%EC%B8%B5%20103%ED%98%B8"
+    },
+    {
+     "code": "25026",
+     "name": "청주내덕조이버드점",
+     "address": "충청북도 청주시 청원구 1순환로197번길 86, (내덕동) 1층",
+     "phone": "0432169459",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EB%82%B4%EB%8D%95%EC%A1%B0%EC%9D%B4%EB%B2%84%EB%93%9C%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%201%EC%88%9C%ED%99%98%EB%A1%9C197%EB%B2%88%EA%B8%B8%2086%2C%20%28%EB%82%B4%EB%8D%95%EB%8F%99%29%201%EC%B8%B5"
+    },
+    {
+     "code": "49033",
+     "name": "청주내덕중앙점",
+     "address": "충청북도 청주시 청원구 중앙로 200 (내덕동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EB%82%B4%EB%8D%95%EC%A4%91%EC%95%99%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%A4%91%EC%95%99%EB%A1%9C%20200%20%28%EB%82%B4%EB%8D%95%EB%8F%99%29"
+    },
+    {
+     "code": "47031",
+     "name": "청주대기숙사점",
+     "address": "충청북도 청주시 청원구 안덕벌로19번길 116 청주대학교 우암마을(43-009)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EB%8C%80%EA%B8%B0%EC%88%99%EC%82%AC%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%95%88%EB%8D%95%EB%B2%8C%EB%A1%9C19%EB%B2%88%EA%B8%B8%20116%20%EC%B2%AD%EC%A3%BC%EB%8C%80%ED%95%99%EA%B5%90%20%EC%9A%B0%EC%95%94%EB%A7%88%EC%9D%84%2843-009%29"
+    },
+    {
+     "code": "38750",
+     "name": "청주대먹자골목점",
+     "address": "충청북도 청주시 청원구 중앙로173번길 1 (우암동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EB%8C%80%EB%A8%B9%EC%9E%90%EA%B3%A8%EB%AA%A9%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%A4%91%EC%95%99%EB%A1%9C173%EB%B2%88%EA%B8%B8%201%20%28%EC%9A%B0%EC%95%94%EB%8F%99%29"
+    },
+    {
+     "code": "47448",
+     "name": "청주대중앙점",
+     "address": "충청북도 청주시 청원구 안덕벌로52번길 3 (내덕동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EB%8C%80%EC%A4%91%EC%95%99%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%95%88%EB%8D%95%EB%B2%8C%EB%A1%9C52%EB%B2%88%EA%B8%B8%203%20%28%EB%82%B4%EB%8D%95%EB%8F%99%29"
+    },
+    {
+     "code": "50840",
+     "name": "청주문화스타점",
+     "address": "충청북도 청주시 상당구 상당로 64, 1층  (문화동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EB%AC%B8%ED%99%94%EC%8A%A4%ED%83%80%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%83%81%EB%8B%B9%EA%B5%AC%20%EC%83%81%EB%8B%B9%EB%A1%9C%2064%2C%201%EC%B8%B5%20%20%28%EB%AC%B8%ED%99%94%EB%8F%99%29"
+    },
+    {
+     "code": "27199",
+     "name": "청주복대다솜점",
+     "address": "충청북도 청주시 흥덕구 풍산로118번길 33, (복대동)",
+     "phone": "0432383753",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EB%B3%B5%EB%8C%80%EB%8B%A4%EC%86%9C%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%ED%92%8D%EC%82%B0%EB%A1%9C118%EB%B2%88%EA%B8%B8%2033%2C%20%28%EB%B3%B5%EB%8C%80%EB%8F%99%29"
+    },
+    {
+     "code": "50475",
+     "name": "청주복대올포유점",
+     "address": "충청북도 청주시 흥덕구 복대로 159, 상가 나동 101호 102호 103호 1층",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EB%B3%B5%EB%8C%80%EC%98%AC%ED%8F%AC%EC%9C%A0%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%EB%B3%B5%EB%8C%80%EB%A1%9C%20159%2C%20%EC%83%81%EA%B0%80%20%EB%82%98%EB%8F%99%20101%ED%98%B8%20102%ED%98%B8%20103%ED%98%B8%201%EC%B8%B5"
+    },
+    {
+     "code": "39675",
+     "name": "청주북문점",
+     "address": "충청북도 청주시 상당구 상당로81번길 9-1, (북문로1가)",
+     "phone": "0432538316",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EB%B6%81%EB%AC%B8%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%83%81%EB%8B%B9%EA%B5%AC%20%EC%83%81%EB%8B%B9%EB%A1%9C81%EB%B2%88%EA%B8%B8%209-1%2C%20%28%EB%B6%81%EB%AC%B8%EB%A1%9C1%EA%B0%80%29"
+    },
+    {
+     "code": "46586",
+     "name": "청주분평사거리점",
+     "address": "충청북도 청주시 서원구 청남로1995번길 8 (분평동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EB%B6%84%ED%8F%89%EC%82%AC%EA%B1%B0%EB%A6%AC%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%84%9C%EC%9B%90%EA%B5%AC%20%EC%B2%AD%EB%82%A8%EB%A1%9C1995%EB%B2%88%EA%B8%B8%208%20%28%EB%B6%84%ED%8F%89%EB%8F%99%29"
+    },
+    {
+     "code": "41232",
+     "name": "청주분평스타일점",
+     "address": "충청북도 청주시 서원구 1순환로 1059 THESTYLE",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EB%B6%84%ED%8F%89%EC%8A%A4%ED%83%80%EC%9D%BC%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%84%9C%EC%9B%90%EA%B5%AC%201%EC%88%9C%ED%99%98%EB%A1%9C%201059%20THESTYLE"
+    },
+    {
+     "code": "35332",
+     "name": "청주분평타운점",
+     "address": "충청북도 청주시 서원구 매봉로12번길 53, (분평동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EB%B6%84%ED%8F%89%ED%83%80%EC%9A%B4%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%84%9C%EC%9B%90%EA%B5%AC%20%EB%A7%A4%EB%B4%89%EB%A1%9C12%EB%B2%88%EA%B8%B8%2053%2C%20%28%EB%B6%84%ED%8F%89%EB%8F%99%29"
+    },
+    {
+     "code": "45836",
+     "name": "청주분평현대점",
+     "address": "충청북도 청주시 서원구 1순환로1063번길 61-2 갤러리빌딩 (분평동) 갤러리빌딩",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EB%B6%84%ED%8F%89%ED%98%84%EB%8C%80%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%84%9C%EC%9B%90%EA%B5%AC%201%EC%88%9C%ED%99%98%EB%A1%9C1063%EB%B2%88%EA%B8%B8%2061-2%20%EA%B0%A4%EB%9F%AC%EB%A6%AC%EB%B9%8C%EB%94%A9%20%28%EB%B6%84%ED%8F%89%EB%8F%99%29%20%EA%B0%A4%EB%9F%AC%EB%A6%AC%EB%B9%8C%EB%94%A9"
+    },
+    {
+     "code": "30972",
+     "name": "청주블루지움점",
+     "address": "충북 청주시 흥덕구 2순환로 1222 124호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EB%B8%94%EB%A3%A8%EC%A7%80%EC%9B%80%EC%A0%90%20%EC%B6%A9%EB%B6%81%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%202%EC%88%9C%ED%99%98%EB%A1%9C%201222%20124%ED%98%B8"
+    },
+    {
+     "code": "32073",
+     "name": "청주비하로제비앙점",
+     "address": "충청북도 청주시 흥덕구 가로수로1131번길 11, (비하동) 1층 115동 101호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EB%B9%84%ED%95%98%EB%A1%9C%EC%A0%9C%EB%B9%84%EC%95%99%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%EA%B0%80%EB%A1%9C%EC%88%98%EB%A1%9C1131%EB%B2%88%EA%B8%B8%2011%2C%20%28%EB%B9%84%ED%95%98%EB%8F%99%29%201%EC%B8%B5%20115%EB%8F%99%20101%ED%98%B8"
+    },
+    {
+     "code": "45275",
+     "name": "청주비하선관위점",
+     "address": "충청북도 청주시 흥덕구 2순환로1168번길 20, (비하동)",
+     "phone": "043-233-0405",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EB%B9%84%ED%95%98%EC%84%A0%EA%B4%80%EC%9C%84%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%202%EC%88%9C%ED%99%98%EB%A1%9C1168%EB%B2%88%EA%B8%B8%2020%2C%20%28%EB%B9%84%ED%95%98%EB%8F%99%29"
+    },
+    {
+     "code": "44967",
+     "name": "청주빌리지점",
+     "address": "충청북도 청주시 청원구 덕벌로31번길 2, (내덕동)",
+     "phone": "0432141606",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EB%B9%8C%EB%A6%AC%EC%A7%80%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EB%8D%95%EB%B2%8C%EB%A1%9C31%EB%B2%88%EA%B8%B8%202%2C%20%28%EB%82%B4%EB%8D%95%EB%8F%99%29"
+    },
+    {
+     "code": "50925",
+     "name": "청주사직3구역점",
+     "address": "충청북도 청주시 서원구 대원로31번길 5 (사직동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%82%AC%EC%A7%813%EA%B5%AC%EC%97%AD%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%84%9C%EC%9B%90%EA%B5%AC%20%EB%8C%80%EC%9B%90%EB%A1%9C31%EB%B2%88%EA%B8%B8%205%20%28%EC%82%AC%EC%A7%81%EB%8F%99%29"
+    },
+    {
+     "code": "54477",
+     "name": "청주산남골드점",
+     "address": "충북 청주시 서원구 산남로24번길 3 리치피아빌딩",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%82%B0%EB%82%A8%EA%B3%A8%EB%93%9C%EC%A0%90%20%EC%B6%A9%EB%B6%81%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%84%9C%EC%9B%90%EA%B5%AC%20%EC%82%B0%EB%82%A8%EB%A1%9C24%EB%B2%88%EA%B8%B8%203%20%EB%A6%AC%EC%B9%98%ED%94%BC%EC%95%84%EB%B9%8C%EB%94%A9"
+    },
+    {
+     "code": "50258",
+     "name": "청주산남법원점",
+     "address": "충청북도 청주시 서원구 원흥로64번길 1 (산남동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%82%B0%EB%82%A8%EB%B2%95%EC%9B%90%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%84%9C%EC%9B%90%EA%B5%AC%20%EC%9B%90%ED%9D%A5%EB%A1%9C64%EB%B2%88%EA%B8%B8%201%20%28%EC%82%B0%EB%82%A8%EB%8F%99%29"
+    },
+    {
+     "code": "27109",
+     "name": "청주산남원룸점",
+     "address": "충청북도 청주시 서원구 두꺼비로27번길 5-1, (산남동)",
+     "phone": "0432860402",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%82%B0%EB%82%A8%EC%9B%90%EB%A3%B8%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%84%9C%EC%9B%90%EA%B5%AC%20%EB%91%90%EA%BA%BC%EB%B9%84%EB%A1%9C27%EB%B2%88%EA%B8%B8%205-1%2C%20%28%EC%82%B0%EB%82%A8%EB%8F%99%29"
+    },
+    {
+     "code": "50804",
+     "name": "청주산남주공1단지점",
+     "address": "충청북도 청주시 서원구 구룡산로 317, 108호,109호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%82%B0%EB%82%A8%EC%A3%BC%EA%B3%B51%EB%8B%A8%EC%A7%80%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%84%9C%EC%9B%90%EA%B5%AC%20%EA%B5%AC%EB%A3%A1%EC%82%B0%EB%A1%9C%20317%2C%20108%ED%98%B8%2C109%ED%98%B8"
+    },
+    {
+     "code": "55234",
+     "name": "청주산남칸타빌점",
+     "address": "충북 청주시 서원구 탑골로37번길 1",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%82%B0%EB%82%A8%EC%B9%B8%ED%83%80%EB%B9%8C%EC%A0%90%20%EC%B6%A9%EB%B6%81%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%84%9C%EC%9B%90%EA%B5%AC%20%ED%83%91%EA%B3%A8%EB%A1%9C37%EB%B2%88%EA%B8%B8%201"
+    },
+    {
+     "code": "26765",
+     "name": "청주삼일점",
+     "address": "충청북도 청주시 흥덕구 가경로 96 삼일아파트",
+     "phone": "-",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%82%BC%EC%9D%BC%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%EA%B0%80%EA%B2%BD%EB%A1%9C%2096%20%EC%82%BC%EC%9D%BC%EC%95%84%ED%8C%8C%ED%8A%B8"
+    },
+    {
+     "code": "29081",
+     "name": "청주서문CGV점",
+     "address": "충청북도 청주시 상당구 상당로81번길 66 1층",
+     "phone": "0432503356",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%84%9C%EB%AC%B8CGV%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%83%81%EB%8B%B9%EA%B5%AC%20%EC%83%81%EB%8B%B9%EB%A1%9C81%EB%B2%88%EA%B8%B8%2066%201%EC%B8%B5"
+    },
+    {
+     "code": "24051",
+     "name": "청주서문대림점",
+     "address": "충청북도 청주시 상당구 남사로79번길 1, (서문동) 3층",
+     "phone": "15778007",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%84%9C%EB%AC%B8%EB%8C%80%EB%A6%BC%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%83%81%EB%8B%B9%EA%B5%AC%20%EB%82%A8%EC%82%AC%EB%A1%9C79%EB%B2%88%EA%B8%B8%201%2C%20%28%EC%84%9C%EB%AC%B8%EB%8F%99%29%203%EC%B8%B5"
+    },
+    {
+     "code": "31567",
+     "name": "청주성안점",
+     "address": "충청북도 청주시 상당구 대성로 69, (서운동)",
+     "phone": "0432506632",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%84%B1%EC%95%88%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%83%81%EB%8B%B9%EA%B5%AC%20%EB%8C%80%EC%84%B1%EB%A1%9C%2069%2C%20%28%EC%84%9C%EC%9A%B4%EB%8F%99%29"
+    },
+    {
+     "code": "47861",
+     "name": "청주수곡더샵점",
+     "address": "충청북도 청주시 서원구 수곡로 20(수곡동) 더샵청주퍼스트파크",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%88%98%EA%B3%A1%EB%8D%94%EC%83%B5%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%84%9C%EC%9B%90%EA%B5%AC%20%EC%88%98%EA%B3%A1%EB%A1%9C%2020%28%EC%88%98%EA%B3%A1%EB%8F%99%29%20%EB%8D%94%EC%83%B5%EC%B2%AD%EC%A3%BC%ED%8D%BC%EC%8A%A4%ED%8A%B8%ED%8C%8C%ED%81%AC"
+    },
+    {
+     "code": "49760",
+     "name": "청주수곡동점",
+     "address": "충청북도 청주시 서원구 구룡산로326번길 19-2 지혜빌라 (수곡동) 지혜빌라",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%88%98%EA%B3%A1%EB%8F%99%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%84%9C%EC%9B%90%EA%B5%AC%20%EA%B5%AC%EB%A3%A1%EC%82%B0%EB%A1%9C326%EB%B2%88%EA%B8%B8%2019-2%20%EC%A7%80%ED%98%9C%EB%B9%8C%EB%9D%BC%20%28%EC%88%98%EA%B3%A1%EB%8F%99%29%20%EC%A7%80%ED%98%9C%EB%B9%8C%EB%9D%BC"
+    },
+    {
+     "code": "47809",
+     "name": "청주수곡두진점",
+     "address": "충청북도 청주시 서원구 수곡로 36 (수곡동) 두진하트리움아파트 상가",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%88%98%EA%B3%A1%EB%91%90%EC%A7%84%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%84%9C%EC%9B%90%EA%B5%AC%20%EC%88%98%EA%B3%A1%EB%A1%9C%2036%20%28%EC%88%98%EA%B3%A1%EB%8F%99%29%20%EB%91%90%EC%A7%84%ED%95%98%ED%8A%B8%EB%A6%AC%EC%9B%80%EC%95%84%ED%8C%8C%ED%8A%B8%20%EC%83%81%EA%B0%80"
+    },
+    {
+     "code": "11102",
+     "name": "청주수동점",
+     "address": "충청북도 청주시 상당구 대성로 217, (수동)",
+     "phone": "0432212347",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%88%98%EB%8F%99%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%83%81%EB%8B%B9%EA%B5%AC%20%EB%8C%80%EC%84%B1%EB%A1%9C%20217%2C%20%28%EC%88%98%EB%8F%99%29"
+    },
+    {
+     "code": "21902",
+     "name": "청주시청후문점",
+     "address": "충청북도 청주시 상당구 중앙로 63-1, (북문로3가) 1층",
+     "phone": "0432212049",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%8B%9C%EC%B2%AD%ED%9B%84%EB%AC%B8%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%83%81%EB%8B%B9%EA%B5%AC%20%EC%A4%91%EC%95%99%EB%A1%9C%2063-1%2C%20%28%EB%B6%81%EB%AC%B8%EB%A1%9C3%EA%B0%80%29%201%EC%B8%B5"
+    },
+    {
+     "code": "25061",
+     "name": "청주안덕벌점",
+     "address": "충청북도 청주시 청원구 안덕벌로 20, (내덕동)",
+     "phone": "0432130436",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%95%88%EB%8D%95%EB%B2%8C%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%95%88%EB%8D%95%EB%B2%8C%EB%A1%9C%2020%2C%20%28%EB%82%B4%EB%8D%95%EB%8F%99%29"
+    },
+    {
+     "code": "45345",
+     "name": "청주예대점",
+     "address": "충청북도 청주시 청원구 안덕벌로86번길 22, (내덕동)",
+     "phone": "0432136113",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%98%88%EB%8C%80%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%95%88%EB%8D%95%EB%B2%8C%EB%A1%9C86%EB%B2%88%EA%B8%B8%2022%2C%20%28%EB%82%B4%EB%8D%95%EB%8F%99%29"
+    },
+    {
+     "code": "43705",
+     "name": "청주오창중심상업점",
+     "address": "충청북도 청주시 청원구 오창읍 중심상업1로 8-37 (양청리)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%98%A4%EC%B0%BD%EC%A4%91%EC%8B%AC%EC%83%81%EC%97%85%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%98%A4%EC%B0%BD%EC%9D%8D%20%EC%A4%91%EC%8B%AC%EC%83%81%EC%97%851%EB%A1%9C%208-37%20%28%EC%96%91%EC%B2%AD%EB%A6%AC%29"
+    },
+    {
+     "code": "38146",
+     "name": "청주우암대박점",
+     "address": "충청북도 청주시 청원구 내덕로 24-1, (우암동)",
+     "phone": "043-252-9676",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%9A%B0%EC%95%94%EB%8C%80%EB%B0%95%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EB%82%B4%EB%8D%95%EB%A1%9C%2024-1%2C%20%28%EC%9A%B0%EC%95%94%EB%8F%99%29"
+    },
+    {
+     "code": "51083",
+     "name": "청주우암센터점",
+     "address": "충청북도 청주시 청원구 새터로43번길 46 (우암동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%9A%B0%EC%95%94%EC%84%BC%ED%84%B0%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%83%88%ED%84%B0%EB%A1%9C43%EB%B2%88%EA%B8%B8%2046%20%28%EC%9A%B0%EC%95%94%EB%8F%99%29"
+    },
+    {
+     "code": "50236",
+     "name": "청주원더아리아점",
+     "address": "충청북도 청주시 청원구 상당로 314 청주첨단문화산업단지 (내덕동) 청주첨단문화산업단지",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%9B%90%EB%8D%94%EC%95%84%EB%A6%AC%EC%95%84%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%83%81%EB%8B%B9%EB%A1%9C%20314%20%EC%B2%AD%EC%A3%BC%EC%B2%A8%EB%8B%A8%EB%AC%B8%ED%99%94%EC%82%B0%EC%97%85%EB%8B%A8%EC%A7%80%20%28%EB%82%B4%EB%8D%95%EB%8F%99%29%20%EC%B2%AD%EC%A3%BC%EC%B2%A8%EB%8B%A8%EB%AC%B8%ED%99%94%EC%82%B0%EC%97%85%EB%8B%A8%EC%A7%80"
+    },
+    {
+     "code": "35296",
+     "name": "청주율량더킹점",
+     "address": "충청북도 청주시 청원구 율량로202번길 60 (율량동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%9C%A8%EB%9F%89%EB%8D%94%ED%82%B9%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%9C%A8%EB%9F%89%EB%A1%9C202%EB%B2%88%EA%B8%B8%2060%20%28%EC%9C%A8%EB%9F%89%EB%8F%99%29"
+    },
+    {
+     "code": "50738",
+     "name": "청주율량천사점",
+     "address": "충청북도 청주시 청원구 율봉로 215, 101호 102호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%9C%A8%EB%9F%89%EC%B2%9C%EC%82%AC%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%9C%A8%EB%B4%89%EB%A1%9C%20215%2C%20101%ED%98%B8%20102%ED%98%B8"
+    },
+    {
+     "code": "33409",
+     "name": "청주율봉공원점",
+     "address": "충청북도 청주시 청원구 율량로189번길 38 (율량동) 1층",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%9C%A8%EB%B4%89%EA%B3%B5%EC%9B%90%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%20%EC%9C%A8%EB%9F%89%EB%A1%9C189%EB%B2%88%EA%B8%B8%2038%20%28%EC%9C%A8%EB%9F%89%EB%8F%99%29%201%EC%B8%B5"
+    },
+    {
+     "code": "35492",
+     "name": "청주중앙점",
+     "address": "충청북도 청주시 상당구 사직대로 363-1, (북문로 2가) 1층",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%A4%91%EC%95%99%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%83%81%EB%8B%B9%EA%B5%AC%20%EC%82%AC%EC%A7%81%EB%8C%80%EB%A1%9C%20363-1%2C%20%28%EB%B6%81%EB%AC%B8%EB%A1%9C%202%EA%B0%80%29%201%EC%B8%B5"
+    },
+    {
+     "code": "55610",
+     "name": "청주지플레이스점",
+     "address": "충북 청주시 청원구 1순환로 128",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%A7%80%ED%94%8C%EB%A0%88%EC%9D%B4%EC%8A%A4%EC%A0%90%20%EC%B6%A9%EB%B6%81%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%201%EC%88%9C%ED%99%98%EB%A1%9C%20128"
+    },
+    {
+     "code": "50740",
+     "name": "청주힐데스하임점",
+     "address": "충청북도 청주시 상당구 용담로 50 제근린생활시설4동 1층 105호,106호(탑동, 청주센트럴 힐데스하임)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%ED%9E%90%EB%8D%B0%EC%8A%A4%ED%95%98%EC%9E%84%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%83%81%EB%8B%B9%EA%B5%AC%20%EC%9A%A9%EB%8B%B4%EB%A1%9C%2050%20%EC%A0%9C%EA%B7%BC%EB%A6%B0%EC%83%9D%ED%99%9C%EC%8B%9C%EC%84%A44%EB%8F%99%201%EC%B8%B5%20105%ED%98%B8%2C106%ED%98%B8%28%ED%83%91%EB%8F%99%2C%20%EC%B2%AD%EC%A3%BC%EC%84%BC%ED%8A%B8%EB%9F%B4%20%ED%9E%90%EB%8D%B0%EC%8A%A4%ED%95%98%EC%9E%84%29"
+    },
+    {
+     "code": "39170",
+     "name": "청주힐즈파크점",
+     "address": "충청북도 청주시 청원구 1순환로 123 (내덕동) 청주힐즈파크푸르지오 1층 상가동 102,103호",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%ED%9E%90%EC%A6%88%ED%8C%8C%ED%81%AC%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%B2%AD%EC%9B%90%EA%B5%AC%201%EC%88%9C%ED%99%98%EB%A1%9C%20123%20%28%EB%82%B4%EB%8D%95%EB%8F%99%29%20%EC%B2%AD%EC%A3%BC%ED%9E%90%EC%A6%88%ED%8C%8C%ED%81%AC%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%201%EC%B8%B5%20%EC%83%81%EA%B0%80%EB%8F%99%20102%2C103%ED%98%B8"
+    },
+    {
+     "code": "11113",
+     "name": "하복대세일점",
+     "address": "충청북도 청주시 흥덕구 짐대로72번길 34, (복대동)",
+     "phone": "0432354888",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%ED%95%98%EB%B3%B5%EB%8C%80%EC%84%B8%EC%9D%BC%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%EC%A7%90%EB%8C%80%EB%A1%9C72%EB%B2%88%EA%B8%B8%2034%2C%20%28%EB%B3%B5%EB%8C%80%EB%8F%99%29"
+    },
+    {
+     "code": "38521",
+     "name": "하복대원룸점",
+     "address": "충청북도 청주시 흥덕구 짐대로46번길 21, (복대동)",
+     "phone": "",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%ED%95%98%EB%B3%B5%EB%8C%80%EC%9B%90%EB%A3%B8%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%EC%A7%90%EB%8C%80%EB%A1%9C46%EB%B2%88%EA%B8%B8%2021%2C%20%28%EB%B3%B5%EB%8C%80%EB%8F%99%29"
+    },
+    {
+     "code": "09145",
+     "name": "하복대중앙점",
+     "address": "충청북도 청주시 흥덕구 진재로15번길 23,  (복대동) 1층",
+     "phone": "0432383828",
+     "qty": 0,
+     "mapUrl": "https://map.naver.com/p/search/%ED%95%98%EB%B3%B5%EB%8C%80%EC%A4%91%EC%95%99%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%EC%A7%84%EC%9E%AC%EB%A1%9C15%EB%B2%88%EA%B8%B8%2023%2C%20%20%28%EB%B3%B5%EB%8C%80%EB%8F%99%29%201%EC%B8%B5"
+    }
+   ]
+  },
+  {
+   "region": "cheongju",
+   "keyword": "포켓몬카드",
+   "chain": "seveneleven",
+   "chainLabel": "세븐일레븐",
+   "product": null,
+   "error": "청주: HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
+   "warning": null,
+   "stores": []
+  },
+  {
+   "region": "cheongju",
+   "keyword": "포켓몬카드",
+   "chain": "emart24",
+   "chainLabel": "이마트24",
+   "product": null,
+   "error": "성안길(상당구): HTTP 500 EMART24_INVENTORY_CHECK_FAILED: 편의점 릴레이 요청에 실패했습니다.",
+   "warning": null,
+   "stores": []
+  }
+ ],
+ "events": []
+}
