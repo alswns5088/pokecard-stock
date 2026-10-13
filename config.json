@@ -1,50 +1,151 @@
 {
-  "_설명": "keywords: 감시할 상품명 / regions[].notify: false로 바꾸면 그 지역은 푸시를 아예 보내지 않음(대시보드에는 계속 표시). 지역별 알림은 휴대폰 ntfy 앱에서 '주제-지역id'를 구독해서 고르세요.",
-  "keywords": [
-    "포켓몬카드"
+  "_설명": "productFilter: 편의점마다 searchKeywords로 검색해서, 이름에 mustContainAny 중 하나 + cardWordsAny 중 하나가 들어가고 exclude 단어가 없는 상품을 '카드팩'으로 보고 모두 감시합니다. regions[].notify=false면 그 지역 푸시를 보내지 않습니다.",
+  "productFilter": {
+    "searchKeywords": [
+      "포켓몬카드",
+      "포켓몬 카드",
+      "포켓몬 확장팩"
+    ],
+    "mustContainAny": [
+      "포켓몬"
+    ],
+    "cardWordsAny": [
+      "카드",
+      "확장팩",
+      "부스터",
+      "스타터",
+      "덱",
+      "팩"
+    ],
+    "exclude": [
+      "빵",
+      "젤리",
+      "음료",
+      "라면",
+      "과자",
+      "스낵",
+      "슬리브",
+      "바인더",
+      "파일",
+      "케이스",
+      "띠부"
+    ]
+  },
+  "maxProductsPerChain": 8,
+  "discoveryHours": 6,
+  "chains": [
+    "gs25",
+    "cu",
+    "seveneleven",
+    "emart24"
   ],
-  "chains": ["gs25", "cu", "seveneleven", "emart24"],
   "regions": [
     {
       "id": "gongju",
       "name": "공주",
       "notify": true,
-      "addressMustContain": ["공주시"],
+      "addressMustContain": [
+        "공주시"
+      ],
       "storeKeyword": "공주",
       "centers": [
-        { "name": "공주 원도심", "lat": 36.4556, "lng": 127.1247 },
-        { "name": "공주 신관동", "lat": 36.4713, "lng": 127.1408 },
-        { "name": "공주 유구읍", "lat": 36.5537, "lng": 126.9540 }
+        {
+          "name": "공주 원도심",
+          "lat": 36.4556,
+          "lng": 127.1247
+        },
+        {
+          "name": "공주 신관동",
+          "lat": 36.4713,
+          "lng": 127.1408
+        },
+        {
+          "name": "공주 유구읍",
+          "lat": 36.5537,
+          "lng": 126.954
+        }
       ]
     },
     {
       "id": "daejeon",
       "name": "대전",
       "notify": true,
-      "addressMustContain": ["대전"],
+      "addressMustContain": [
+        "대전"
+      ],
       "storeKeyword": "대전",
       "centers": [
-        { "name": "대전역(동구)", "lat": 36.3320, "lng": 127.4345 },
-        { "name": "서대전(중구)", "lat": 36.3220, "lng": 127.4040 },
-        { "name": "둔산(서구)", "lat": 36.3510, "lng": 127.3860 },
-        { "name": "관저(서구)", "lat": 36.2990, "lng": 127.3360 },
-        { "name": "유성온천(유성구)", "lat": 36.3540, "lng": 127.3410 },
-        { "name": "노은(유성구)", "lat": 36.3730, "lng": 127.3170 },
-        { "name": "송촌(대덕구)", "lat": 36.3640, "lng": 127.4440 }
+        {
+          "name": "대전역(동구)",
+          "lat": 36.332,
+          "lng": 127.4345
+        },
+        {
+          "name": "서대전(중구)",
+          "lat": 36.322,
+          "lng": 127.404
+        },
+        {
+          "name": "둔산(서구)",
+          "lat": 36.351,
+          "lng": 127.386
+        },
+        {
+          "name": "관저(서구)",
+          "lat": 36.299,
+          "lng": 127.336
+        },
+        {
+          "name": "유성온천(유성구)",
+          "lat": 36.354,
+          "lng": 127.341
+        },
+        {
+          "name": "노은(유성구)",
+          "lat": 36.373,
+          "lng": 127.317
+        },
+        {
+          "name": "송촌(대덕구)",
+          "lat": 36.364,
+          "lng": 127.444
+        }
       ]
     },
     {
       "id": "cheongju",
       "name": "청주",
       "notify": true,
-      "addressMustContain": ["청주시"],
+      "addressMustContain": [
+        "청주시"
+      ],
       "storeKeyword": "청주",
       "centers": [
-        { "name": "성안길(상당구)", "lat": 36.6360, "lng": 127.4890 },
-        { "name": "율량(청원구)", "lat": 36.6600, "lng": 127.4930 },
-        { "name": "분평(서원구)", "lat": 36.6100, "lng": 127.4780 },
-        { "name": "가경(흥덕구)", "lat": 36.6250, "lng": 127.4330 },
-        { "name": "오창(청원구)", "lat": 36.7150, "lng": 127.4300 }
+        {
+          "name": "성안길(상당구)",
+          "lat": 36.636,
+          "lng": 127.489
+        },
+        {
+          "name": "율량(청원구)",
+          "lat": 36.66,
+          "lng": 127.493
+        },
+        {
+          "name": "분평(서원구)",
+          "lat": 36.61,
+          "lng": 127.478
+        },
+        {
+          "name": "가경(흥덕구)",
+          "lat": 36.625,
+          "lng": 127.433
+        },
+        {
+          "name": "오창(청원구)",
+          "lat": 36.715,
+          "lng": 127.43
+        }
       ]
     }
   ],

@@ -77,6 +77,21 @@ h3{font-size:16px;margin:36px 0 10px}
 .in{color:var(--ok);font-weight:700}.out{color:var(--zero);font-weight:700}
 footer{margin-top:40px;font-size:12px;color:var(--muted)}
 footer a{color:inherit}
+.stat{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.st{font-size:12px;padding:2px 8px;border-radius:6px;background:var(--ok-bg);color:var(--ok);font-weight:500}
+.st.bad{background:var(--warn-bg);color:var(--warn)}
+.items{grid-column:1/3;display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.item{font-size:13px;padding:3px 9px;border-radius:999px;background:var(--ok-bg);color:var(--ok);font-weight:500}
+.item b{font-weight:900;margin-left:4px}
+details.watch{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px}
+details.watch summary{cursor:pointer;padding:11px 14px;font-size:14px;display:flex;gap:10px;align-items:center;list-style:none}
+details.watch summary::-webkit-details-marker{display:none}
+details.watch summary .meta2{color:var(--muted);margin-left:auto;font-size:13px;text-align:right}
+details.watch ul{list-style:none;margin:0;padding:0 14px 10px}
+details.watch li{font-size:13.5px;padding:6px 0;border-top:1px solid var(--line);display:flex;gap:10px;justify-content:space-between}
+details.watch li span:last-child{color:var(--muted);flex:none}
+details.watch li.bad span:last-child{color:var(--warn)}
+.big{font-size:44px;font-weight:900;letter-spacing:-.03em;line-height:1}
 @media (max-width:560px){.meta{text-align:left}.btns{justify-content:flex-start}.toggle{margin-left:0}}
 </style>
 </head>
@@ -88,7 +103,7 @@ footer a{color:inherit}
       <div>마지막 확인 <b id="checked">–</b></div>
       <div class="btns">
         <a class="btn primary" id="runLink" target="_blank" rel="noopener">지금 확인하기</a>
-        <a class="btn" id="editLink" target="_blank" rel="noopener">감시 상품 편집</a>
+        <a class="btn" id="editLink" target="_blank" rel="noopener">설정 편집</a>
       </div>
     </div>
   </header>
@@ -103,10 +118,13 @@ footer a{color:inherit}
     <button class="tab" data-chain="cu" aria-pressed="false">CU</button>
     <button class="tab" data-chain="seveneleven" aria-pressed="false">세븐일레븐</button>
     <button class="tab" data-chain="emart24" aria-pressed="false">이마트24</button>
-    <label class="toggle"><input type="checkbox" id="onlyStock" checked> 재고 있는 매장만</label>
   </div>
 
+  <h3 style="margin-top:8px">재고 있는 매장</h3>
   <div id="list"></div>
+
+  <h3>편의점별 감시 현황</h3>
+  <div id="watch"></div>
 
   <h3>최근 입고·품절 기록</h3>
   <ul class="events" id="events"></ul>
@@ -117,31 +135,30 @@ footer a{color:inherit}
 <script>
 const DEMO = {
   regions:[{id:"gongju",name:"공주",notify:true},{id:"daejeon",name:"대전",notify:true},{id:"cheongju",name:"청주",notify:false}],
-  minQuantity:1, checkedAt:new Date().toISOString(), keywords:["포켓몬카드"],
+  chains:[{id:"gs25",label:"GS25",products:2,error:null},{id:"cu",label:"CU",products:2,error:null},{id:"seveneleven",label:"세븐일레븐",products:0,error:"(예시) 조회 실패"},{id:"emart24",label:"이마트24",products:1,error:null}],
+  minQuantity:1, checkedAt:new Date().toISOString(),
   groups:[
-    {region:"gongju",keyword:"포켓몬카드",chain:"gs25",chainLabel:"GS25",product:"(예시) 포켓몬 카드게임 확장팩",stores:[
-      {name:"GS25 공주예시점",address:"충남 공주시 예시로 1",qty:4,mapUrl:"#"},{name:"GS25 신관예시점",address:"충남 공주시 신관동 2",qty:0,mapUrl:"#"}]},
-    {region:"gongju",keyword:"포켓몬카드",chain:"cu",chainLabel:"CU",product:"(예시) 포켓몬카드",stores:[]},
-    {region:"daejeon",keyword:"포켓몬카드",chain:"gs25",chainLabel:"GS25",product:"(예시) 포켓몬 카드게임 확장팩",stores:[
-      {name:"GS25 둔산예시점",address:"대전 서구 둔산동 1",qty:2,mapUrl:"#"},{name:"GS25 유성예시점",address:"대전 유성구 봉명동 2",qty:1,mapUrl:"#"}]},
-    {region:"daejeon",keyword:"포켓몬카드",chain:"cu",chainLabel:"CU",product:null,error:"(예시) 조회 실패",stores:[]},
-    {region:"cheongju",keyword:"포켓몬카드",chain:"gs25",chainLabel:"GS25",product:"(예시) 포켓몬 카드게임 확장팩",stores:[
-      {name:"GS25 성안예시점",address:"충북 청주시 상당구 1",qty:3,mapUrl:"#"}]}
+    {region:"gongju",chain:"gs25",chainLabel:"GS25",productId:"g1",product:"(예시) 포켓몬카드 확장팩 A",checkedStores:12,stores:[{code:"s1",name:"GS25 공주예시점",address:"충남 공주시 예시로 1",phone:"041-000-0000",qty:4,mapUrl:"#"}]},
+    {region:"gongju",chain:"gs25",chainLabel:"GS25",productId:"g2",product:"(예시) 포켓몬카드 확장팩 B",checkedStores:12,stores:[{code:"s1",name:"GS25 공주예시점",address:"충남 공주시 예시로 1",phone:"041-000-0000",qty:2,mapUrl:"#"}]},
+    {region:"gongju",chain:"cu",chainLabel:"CU",productId:"c1",product:"(예시) 포켓몬)카드팩",checkedStores:17,stores:[]},
+    {region:"gongju",chain:"cu",chainLabel:"CU",productId:"c2",product:"(예시) 포켓몬)스타터덱",checkedStores:0,error:"(예시) 조회 실패",stores:[]},
+    {region:"daejeon",chain:"cu",chainLabel:"CU",productId:"c1",product:"(예시) 포켓몬)카드팩",checkedStores:106,stores:[{code:"d1",name:"CU 둔산예시점",address:"대전 서구 둔산동 1",qty:3,mapUrl:"#"}]},
+    {region:"cheongju",chain:"cu",chainLabel:"CU",productId:"c1",product:"(예시) 포켓몬)카드팩",checkedStores:91,stores:[]}
   ],
-  events:[{at:new Date().toISOString(),type:"restock",region:"daejeon",chain:"gs25",chainLabel:"GS25",store:"GS25 둔산예시점",product:"(예시) 포켓몬 카드게임 확장팩",qty:2,before:0}]
+  events:[{at:new Date().toISOString(),type:"restock",region:"gongju",chain:"gs25",chainLabel:"GS25",store:"GS25 공주예시점",product:"(예시) 포켓몬카드 확장팩 A",qty:4,before:0}]
 };
 
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const fmt = iso => { const d = new Date(iso); return isNaN(d) ? "–" : d.toLocaleString("ko-KR",{month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit",timeZone:"Asia/Seoul"}); };
 const ago = iso => { const m = Math.round((Date.now() - new Date(iso)) / 60000); return m < 1 ? "방금" : m < 60 ? `${m}분 전` : m < 1440 ? `${Math.round(m/60)}시간 전` : `${Math.round(m/1440)}일 전`; };
+const CHAINS = ["gs25","cu","seveneleven","emart24"];
 
 let data = null, chain = "all", region = null;
 try { chain = localStorage.getItem("chain") || "all"; region = localStorage.getItem("region"); } catch (e) {}
 const save = (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} };
 
 function repoLinks(){
-  // user.github.io/repo → github.com/user/repo
   const h = location.hostname, seg = location.pathname.split("/").filter(Boolean);
   if (h.endsWith(".github.io") && seg.length) {
     const repo = `https://github.com/${h.split(".")[0]}/${seg[0]}`;
@@ -150,42 +167,65 @@ function repoLinks(){
   } else { $("#runLink").style.display = $("#editLink").style.display = "none"; }
 }
 
+// 지역의 재고 있는 매장: 매장 단위로 묶고 카드팩 목록을 붙인다
+function hotStores(rid, ch){
+  const map = new Map();
+  for (const g of data.groups) {
+    if (g.region !== rid || (ch !== "all" && g.chain !== ch)) continue;
+    for (const s of g.stores) {
+      if ((s.qty||0) < (data.minQuantity||1)) continue;
+      const k = g.chain + "|" + (s.code || s.name);
+      if (!map.has(k)) map.set(k, {chain:g.chain, chainLabel:g.chainLabel, store:s, items:[]});
+      map.get(k).items.push({name:g.product, qty:s.qty});
+    }
+  }
+  return [...map.values()].sort((a,b) => b.items.reduce((x,i)=>x+i.qty,0) - a.items.reduce((x,i)=>x+i.qty,0));
+}
+
 function render(){
-  const min = data.minQuantity || 1, only = $("#onlyStock").checked;
   const regions = data.regions || [];
   if (!regions.some(r => r.id === region)) region = regions[0]?.id;
-  const inStock = rid => new Set(data.groups.filter(g => g.region === rid)
-    .flatMap(g => g.stores.filter(s => (s.qty||0) >= min).map(s => g.chain + (s.code || s.name)))).size;
-  $("#regions").innerHTML = regions.map(r => { const n = inStock(r.id);
-    return `<button class="rtab" data-region="${esc(r.id)}" aria-selected="${r.id === region}">${esc(r.name)}<span class="n ${n ? "hot" : ""}">${n}</span>${r.notify === false ? '<span class="off">알림 꺼짐</span>' : ""}</button>`; }).join("");
-  document.querySelectorAll(".rtab").forEach(b => b.onclick = () => { region = b.dataset.region; save("region", region); render(); });
-  const G = data.groups.filter(g => g.region === region);
   $("#checked").textContent = `${fmt(data.checkedAt)} (${ago(data.checkedAt)})`;
   document.querySelectorAll(".tab").forEach(b => b.setAttribute("aria-pressed", b.dataset.chain === chain));
 
-  const kws = data.keywords || [...new Set(G.map(g => g.keyword))];
-  $("#summary").innerHTML = kws.map(k => {
-    const gs = G.filter(g => g.keyword === k);
-    const n = gs.reduce((a, g) => a + g.stores.filter(s => (s.qty||0) >= min).length, 0);
-    const q = gs.reduce((a, g) => a + g.stores.reduce((x, s) => x + Math.max(s.qty||0, 0), 0), 0);
-    return `<div class="sum"><div class="k">${esc(k)}</div><div class="v">${n}<span>곳 · 총 ${q}개</span></div></div>`;
-  }).join("");
+  $("#regions").innerHTML = regions.map(r => { const n = hotStores(r.id, "all").length;
+    return `<button class="rtab" data-region="${esc(r.id)}" aria-selected="${r.id === region}">${esc(r.name)}<span class="n ${n ? "hot" : ""}">${n}</span>${r.notify === false ? '<span class="off">알림 꺼짐</span>' : ""}</button>`; }).join("");
+  document.querySelectorAll(".rtab").forEach(b => b.onclick = () => { region = b.dataset.region; save("region", region); render(); });
 
-  $("#list").innerHTML = kws.map(k => {
-    const gs = G.filter(g => g.keyword === k && (chain === "all" || g.chain === chain));
-    const total = gs.reduce((a, g) => a + g.stores.filter(s => (s.qty||0) >= min).length, 0);
-    const body = gs.map(g => {
-      const stores = g.stores.filter(s => !only || (s.qty||0) >= min);
-      const rows = stores.map(s => `<li>
-          <span class="sname"><a href="${esc(s.mapUrl)}" target="_blank" rel="noopener">${esc(s.name)}</a></span>
-          <span class="qty ${(s.qty||0) >= min ? "ok" : "zero"}">${(s.qty||0) >= min ? s.qty + "개" : "없음"}</span>
-          <span class="addr">${esc(s.address)}${s.phone ? " · " + esc(s.phone) : ""}</span></li>`).join("");
-      const inner = g.error ? `<div class="err">조회 실패: ${esc(g.error)}</div>`
-        : rows ? `<ul class="stores">${rows}</ul>`
-        : `<div class="empty">${only ? "재고 있는 매장 없음" : "매장 정보 없음"} (확인한 매장 ${g.stores.length}곳)</div>`;
-      return `<div class="group"><div class="ghead"><span class="chip" style="background:var(--${g.chain})">${esc(g.chainLabel)}</span><span class="prod" title="${esc(g.product)}">${esc(g.product || "상품 미확인")}</span></div>${inner}</div>`;
-    }).join("");
-    return `<section class="kw"><h2>${esc(k)}<span class="cnt">재고 있는 매장 ${total}곳</span></h2>${body}</section>`;
+  const G = data.groups.filter(g => g.region === region);
+  const hot = hotStores(region, chain);
+  const allHot = hotStores(region, "all");
+  const nProducts = (data.chains || []).reduce((a, c) => a + (c.products||0), 0);
+  const chainState = CHAINS.map(c => {
+    const gs = G.filter(g => g.chain === c);
+    const meta = (data.chains || []).find(x => x.id === c) || {};
+    const ok = gs.filter(g => !g.error).length;
+    const label = meta.label || c;
+    if (!gs.length) return `<span class="st bad">${esc(label)} 상품 못 찾음</span>`;
+    return ok ? `<span class="st">${esc(label)} 정상</span>` : `<span class="st bad">${esc(label)} 조회 실패</span>`;
+  }).join("");
+  $("#summary").innerHTML = `
+    <div class="sum"><div class="k">재고 있는 매장</div><div class="big">${allHot.length}<span style="font-size:15px;font-weight:500;color:var(--muted)"> 곳</span></div></div>
+    <div class="sum"><div class="k">감시 중인 카드팩 (편의점별 자동 검색)</div><div class="v">${nProducts}<span>종</span></div><div class="stat">${chainState}</div></div>`;
+
+  $("#list").innerHTML = hot.length ? `<div class="group"><ul class="stores">${hot.map(h => `<li>
+      <span class="sname"><span class="chip" style="background:var(--${h.chain});margin-right:6px">${esc(h.chainLabel)}</span><a href="${esc(h.store.mapUrl)}" target="_blank" rel="noopener">${esc(h.store.name)}</a></span>
+      <span class="qty ok">${h.items.reduce((x,i)=>x+i.qty,0)}개</span>
+      <span class="addr">${esc(h.store.address)}${h.store.phone ? ` · <a href="tel:${esc(h.store.phone)}" style="color:inherit">${esc(h.store.phone)}</a>` : ""}</span>
+      <span class="items">${h.items.map(i => `<span class="item">${esc(i.name)}<b>${i.qty}</b></span>`).join("")}</span></li>`).join("")}</ul></div>`
+    : `<div class="group"><div class="empty">지금은 재고 있는 매장이 없어요. 어떤 카드팩이든 들어오면 푸시로 알려드려요.</div></div>`;
+
+  $("#watch").innerHTML = CHAINS.filter(c => chain === "all" || c === chain).map(c => {
+    const gs = G.filter(g => g.chain === c);
+    const meta = (data.chains || []).find(x => x.id === c) || {};
+    const ok = gs.filter(g => !g.error).length;
+    const stores = Math.max(0, ...gs.map(g => g.checkedStores || 0));
+    const summ = !gs.length ? (meta.error ? "상품 검색 실패" : "카드팩 상품 없음")
+      : ok ? `카드팩 ${gs.length}종 · 매장 ${stores}곳 확인` : "조회 실패 (외부 서비스 장애)";
+    const rows = gs.map(g => `<li class="${g.error ? "bad" : ""}"><span>${esc(g.product)}</span><span>${g.error ? "조회 실패" : `재고 ${g.stores.length}곳`}</span></li>`).join("");
+    const err = (!gs.length && meta.error) ? `<li class="bad"><span>${esc(meta.error)}</span><span></span></li>`
+      : (gs.find(g => g.error) ? `<li class="bad"><span>${esc(gs.find(g => g.error).error)}</span><span></span></li>` : "");
+    return `<details class="watch"><summary><span class="chip" style="background:var(--${c})">${esc(meta.label || c)}</span><span class="meta2">${summ}</span></summary><ul>${rows}${err}</ul></details>`;
   }).join("");
 
   const ev = (data.events || []).filter(e => e.region === region && (chain === "all" || e.chain === chain)).slice(0, 40);
@@ -196,14 +236,12 @@ function render(){
 }
 
 document.querySelectorAll(".tab").forEach(b => b.onclick = () => { chain = b.dataset.chain; save("chain", chain); render(); });
-$("#onlyStock").onchange = render;
 repoLinks();
 
-fetch("status.json?t=" + Date.now(), {cache: "no-store"})
-  .then(r => { if (!r.ok) throw 0; return r.json(); })
-  .then(j => { data = j; render(); })
-  .catch(() => { data = DEMO; $("#demo").hidden = false; render(); });
-setInterval(() => fetch("status.json?t=" + Date.now(), {cache:"no-store"}).then(r => r.ok && r.json()).then(j => { if (j) { data = j; $("#demo").hidden = true; render(); } }).catch(()=>{}), 5 * 60 * 1000);
+const load = () => fetch("status.json?t=" + Date.now(), {cache: "no-store"}).then(r => { if (!r.ok) throw 0; return r.json(); });
+load().then(j => { data = j.chains ? j : DEMO; $("#demo").hidden = !!j.chains; render(); })
+      .catch(() => { data = DEMO; $("#demo").hidden = false; render(); });
+setInterval(() => load().then(j => { if (j.chains) { data = j; $("#demo").hidden = true; render(); } }).catch(()=>{}), 5 * 60 * 1000);
 </script>
 </body>
 </html>
