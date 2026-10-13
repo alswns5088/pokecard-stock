@@ -1,0 +1,58 @@
+name: 포켓몬카드 재고 확인
+
+on:
+  schedule:
+    # 20분마다 (UTC 기준, GitHub 사정에 따라 몇 분 늦어질 수 있음)
+    - cron: "*/20 * * * *"
+  workflow_dispatch:
+    inputs:
+      test_notify:
+        description: "휴대폰 푸시 테스트 알림만 보내기"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stock-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 푸시 알림 테스트
+        if: ${{ inputs.test_notify }}
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          DASHBOARD_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: python checker.py --test-notify
+
+      - name: 재고 확인
+        if: ${{ !inputs.test_notify }}
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          DASHBOARD_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: python checker.py
+
+      - name: 상태 저장
+        if: ${{ always() && !inputs.test_notify }}
+        run: |
+          git config user.name "stock-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state.json docs/status.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+          else
+            git commit -m "재고 상태 갱신 $(TZ=Asia/Seoul date '+%m/%d %H:%M')"
+            git pull --rebase -X theirs || true
+            git push
+          fi
