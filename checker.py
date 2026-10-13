@@ -125,31 +125,55 @@ def is_card_pack(name: str, pf: dict, code: str = "") -> bool:
     return any(t in n for t in pf["mustContainAny"]) and any(t in n for t in pf["cardWordsAny"])
 
 
+def _norm(t):
+    return (t or "").replace(" ", "").replace("_", "").lower()
+
+
+def watch_match(name, cfg):
+    """watchList(감시할 팩 이름)가 있으면 그중 하나가 이름에 들어간 상품만. 없으면 모든 카드팩."""
+    wl = [w for w in cfg.get("watchList", []) if w.strip()]
+    return not wl or any(_norm(w) in _norm(name) for w in wl)
+
+
+def wanted(p, cfg):
+    return is_card_pack(p["name"], cfg["productFilter"], p["id"]) and watch_match(p["name"], cfg)
+
+
 def discover(cfg, cache: dict, now, force=False):
     """체인별 감시 상품 목록. 캐시가 유효하면 재사용, 검색 실패 시 이전 목록 유지."""
     base, pf = cfg["apiBase"], cfg["productFilter"]
     hours = cfg.get("discoveryHours", 6)
+    search_terms = list(dict.fromkeys(pf["searchKeywords"] + [w for w in cfg.get("watchList", []) if w.strip()]))
+    sig = _norm(json.dumps([cfg.get("watchList", []), pf], ensure_ascii=False))
     out = {}
     for chain in cfg["chains"]:
         c = cache.get(chain) or {}
         fresh = c.get("at") and now - datetime.fromisoformat(c["at"]) < timedelta(hours=hours)
-        if fresh and c.get("products") and not force:
-            # 캐시를 쓰더라도 지금 설정의 필터(exclude 등)는 바로 적용
-            out[chain] = dict(c, products=[p for p in c["products"] if is_card_pack(p["name"], pf, p["id"])])
+        if fresh and c.get("products") and c.get("sig") == sig and not force:
+            out[chain] = c  # 설정(감시 목록·필터)이 바뀌면 sig가 달라져 바로 다시 검색
+            continue
+        tried = c.get("triedAt")
+        if c.get("error") and tried and c.get("sig") == sig and not force \
+                and now - datetime.fromisoformat(tried) < timedelta(hours=1):
+            out[chain] = c  # 최근 검색이 실패했으면 1시간 동안은 다시 검색하지 않음 (장애 중 헛호출 방지)
+            print(f"[상품찾기][{CHAIN_LABEL[chain]}] 최근 검색 실패 → 잠시 건너뜀")
             continue
         found, errors = {}, []
-        for kw in pf["searchKeywords"]:
+        for kw in search_terms:
             try:
                 for p in search_products(base, chain, kw):
-                    if p["name"] and is_card_pack(p["name"], pf, p["id"]):
+                    if p["name"] and wanted(p, cfg):
                         found.setdefault(p["id"], p)
             except Exception as e:
                 errors.append(str(e))
+                if any(code in str(e) for code in ("UPSTREAM_UNAVAILABLE", "RELAY_FAILED", "DAILY_RATE_LIMIT", "HTTP 5")):
+                    break  # 서비스 장애 → 나머지 검색어는 생략
         products = list(found.values())[: cfg.get("maxProductsPerChain", 8)]
         if products:
-            out[chain] = {"at": now.isoformat(timespec="seconds"), "products": products, "error": None}
+            out[chain] = {"at": now.isoformat(timespec="seconds"), "products": products, "error": None, "sig": sig}
         else:  # 검색 실패 → 이전 목록 유지(다음 실행에 다시 시도)
-            out[chain] = {"at": c.get("at"), "products": c.get("products", []),
+            out[chain] = {"at": c.get("at"), "sig": sig, "triedAt": now.isoformat(timespec="seconds"),
+                          "products": [p for p in c.get("products", []) if wanted(p, cfg)],
                           "error": errors[0] if errors else "카드팩 상품을 찾지 못했습니다"}
         names = ", ".join(p["name"] for p in out[chain]["products"]) or "-"
         print(f"[상품찾기][{CHAIN_LABEL[chain]}] {len(out[chain]['products'])}개: {names}"
