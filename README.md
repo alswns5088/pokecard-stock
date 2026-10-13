@@ -1,4 +1,4 @@
-# 공주·대전·청주 편의점 포켓몬카드 재고 알림
+# 공주·청주 편의점 포켓몬카드 재고 알림
 
 GS25 · CU · 세븐일레븐 · 이마트24 앱의 재고조회 결과를 15분마다 확인해서,
 **매장에 재고가 새로 생기면 휴대폰 푸시로 알려주는** 봇이에요. 푸시는 무료 앱 [ntfy](https://ntfy.sh)로 받아요.
@@ -6,7 +6,7 @@ GS25 · CU · 세븐일레븐 · 이마트24 앱의 재고조회 결과를 15분
 재고 현황은 GitHub Pages 대시보드(`docs/index.html`)에서 지역 탭으로 볼 수 있어요.
 
 ```
-GitHub Actions (15분마다) ─▶ checker.py ─▶ 재고 API ─▶ 공주 / 대전 / 청주 매장만 추림
+GitHub Actions (15분마다) ─▶ checker.py ─▶ 재고 API ─▶ 공주 / 청주 매장만 추림
                                   │
                                   ├─ 0개 → 1개 이상으로 바뀐 매장 ─▶ 지역별 ntfy 주제로 푸시
                                   └─ state.json / docs/status.json 커밋 ─▶ 대시보드
@@ -19,7 +19,6 @@ GitHub Actions (15분마다) ─▶ checker.py ─▶ 재고 API ─▶ 공주 /
 | 지역 | ntfy 앱에서 구독할 주제 |
 |---|---|
 | 공주 | `내주제-gongju` |
-| 대전 | `내주제-daejeon` |
 | 청주 | `내주제-cheongju` |
 
 예를 들어 GitHub Secret `NTFY_TOPIC`이 `gongju-poke-df1cb1e44a1b`이면, 대전 알림을 받으려면 ntfy 앱에서 `gongju-poke-df1cb1e44a1b-daejeon`을 구독하세요.
@@ -46,7 +45,7 @@ GitHub Actions (15분마다) ─▶ checker.py ─▶ 재고 API ─▶ 공주 /
 
 ### 4. 대시보드 켜기 (선택)
 **Settings → Pages → Source: Deploy from a branch → Branch: `main` / 폴더: `/docs`** → 저장.
-몇 분 뒤 `https://<아이디>.github.io/<저장소이름>/` 에서 공주·대전·청주 탭으로 재고 현황을 볼 수 있어요.
+몇 분 뒤 `https://<아이디>.github.io/<저장소이름>/` 에서 공주·청주 탭으로 재고 현황을 볼 수 있어요.
 
 ## 설정 바꾸기 — `config.json`
 
@@ -55,7 +54,7 @@ GitHub Actions (15분마다) ─▶ checker.py ─▶ 재고 API ─▶ 공주 /
 | `keywords` | 감시할 상품명 목록. **키워드마다 각 편의점에서 가장 잘 맞는 상품 1개**를 골라 재고를 봐요. 특정 확장팩을 노린다면 앱에서 검색했을 때 그 상품이 맨 위에 나오는 이름을 넣으세요. |
 | `chains` | 조회할 편의점. 빼고 싶은 곳은 지우세요. |
 | `regions[].notify` | `false`면 그 지역 푸시를 아예 안 보내요. |
-| `regions[].centers` | 지역 안에서 매장을 찾는 기준 좌표들. 대전 7곳, 청주 5곳, 공주 3곳이 기본값이에요. 빠지는 동네가 있으면 좌표를 추가하세요. |
+| `regions[].centers` | 지역 안에서 매장을 찾는 기준 좌표들. 청주 5곳, 공주 3곳이 기본값이에요. 빠지는 동네가 있으면 좌표를 추가하세요. |
 | `regions[].addressMustContain` | 주소에 이 글자가 있어야 그 지역 매장으로 봐요 (세종 등 주변 지역 매장은 제외됨). |
 | `minQuantity` | 이 개수 이상일 때 "재고 있음"으로 봐요. |
 

@@ -41,7 +41,7 @@ CONFIG_PATH = ROOT / "config.json"
 STATE_PATH = ROOT / "state.json"
 STATUS_PATH = ROOT / "docs" / "status.json"
 KST = timezone(timedelta(hours=9))
-STATE_VERSION = 3
+STATE_VERSION = 4
 
 CHAIN_LABEL = {"gs25": "GS25", "cu": "CU", "seveneleven": "세븐일레븐", "emart24": "이마트24"}
 CENTER_BASED = {"gs25", "cu", "emart24"}  # 좌표 기준 조회. 세븐일레븐은 지역 키워드로 1회 조회
@@ -95,10 +95,15 @@ def search_products(base, chain, keyword):
         d = api_call(base, "/api/gs25/products", {"keyword": keyword, "limit": 50})
         return [{"id": p.get("itemCode"), "name": p.get("itemName") or p.get("shortItemName")}
                 for p in d.get("products", []) if p.get("itemCode") and p.get("stockCheckEnabled", True) is not False]
-    if chain == "cu":
-        d = api_call(base, "/api/cu/inventory", {"keyword": keyword, "size": 50, "storeCheck": "false"})
-        return [{"id": p.get("itemCode"), "name": p.get("itemName")}
-                for p in (d.get("inventory") or {}).get("items", []) if p.get("itemCode")]
+    if chain == "cu":  # 검색 결과가 50개를 넘으면 다음 페이지까지(최대 150개)
+        items = []
+        for offset in (0, 50, 100):
+            d = api_call(base, "/api/cu/inventory", {"keyword": keyword, "size": 50, "offset": offset, "storeCheck": "false"})
+            inv = d.get("inventory") or {}
+            items += inv.get("items", [])
+            if offset + 50 >= int(inv.get("totalCount") or 0):
+                break
+        return [{"id": p.get("itemCode"), "name": p.get("itemName")} for p in items if p.get("itemCode")]
     if chain == "seveneleven":
         d = api_call(base, "/api/seveneleven/products", {"query": keyword, "size": 50})
         return [{"id": p.get("itemCode"), "name": p.get("itemName")}
@@ -110,11 +115,14 @@ def search_products(base, chain, keyword):
     return []
 
 
-def is_card_pack(name: str, pf: dict) -> bool:
+def is_card_pack(name: str, pf: dict, code: str = "") -> bool:
+    """카드팩 판별: 제외 단어가 없고, (포켓몬코리아 카드팩 바코드 접두어) 또는 (포켓몬 + 카드 관련 단어)."""
     n = (name or "").replace(" ", "")
-    return (any(t in n for t in pf["mustContainAny"])
-            and any(t in n for t in pf["cardWordsAny"])
-            and not any(t in n for t in pf["exclude"]))
+    if any(t in n for t in pf["exclude"]):
+        return False
+    if code and any(str(code).startswith(p) for p in pf.get("barcodePrefixes", [])):
+        return True  # 열풍의아레나·로켓단의영광처럼 이름에 '카드'가 없는 팩도 포함
+    return any(t in n for t in pf["mustContainAny"]) and any(t in n for t in pf["cardWordsAny"])
 
 
 def discover(cfg, cache: dict, now, force=False):
@@ -127,13 +135,13 @@ def discover(cfg, cache: dict, now, force=False):
         fresh = c.get("at") and now - datetime.fromisoformat(c["at"]) < timedelta(hours=hours)
         if fresh and c.get("products") and not force:
             # 캐시를 쓰더라도 지금 설정의 필터(exclude 등)는 바로 적용
-            out[chain] = dict(c, products=[p for p in c["products"] if is_card_pack(p["name"], pf)])
+            out[chain] = dict(c, products=[p for p in c["products"] if is_card_pack(p["name"], pf, p["id"])])
             continue
         found, errors = {}, []
         for kw in pf["searchKeywords"]:
             try:
                 for p in search_products(base, chain, kw):
-                    if p["name"] and is_card_pack(p["name"], pf):
+                    if p["name"] and is_card_pack(p["name"], pf, p["id"]):
                         found.setdefault(p["id"], p)
             except Exception as e:
                 errors.append(str(e))
@@ -387,25 +395,68 @@ def build_start(region, results, catalog, cfg):
              "priority": 3, "tags": ["white_check_mark"], "click": os.environ.get("DASHBOARD_URL", "")}]
 
 
+# ───────────────────────── 이번 실행에서 확인할 상품 고르기 ─────────────────────────
+def chain_cost(cfg, chain):
+    """상품 1종을 모든 지역에서 확인하는 데 드는 API 호출 수."""
+    return sum(len(r["centers"]) if chain in CENTER_BASED else 1 for r in cfg["regions"])
+
+
+def plan_checks(cfg, catalog, state, now):
+    """우선 상품(이름 지정·최근 재고·새로 나온 팩)은 매번, 나머지는 오래 안 본 것부터 호출 예산 안에서."""
+    budget = cfg.get("maxCallsPerChainPerRun", 100)
+    keywords = cfg.get("priorityKeywords", [])
+    hot_until = timedelta(days=cfg.get("hotDays", 3))
+    last_checked = state.get("lastChecked", {})
+    last_stock = state.get("lastInStock", {})
+    first_seen = state.get("firstSeen", {})
+    plan, info = {}, {}
+    for chain in cfg["chains"]:
+        products = catalog[chain]["products"]
+        cost = max(1, chain_cost(cfg, chain))
+        def key(p): return f"{chain}|{p['id']}"
+        def is_priority(p):
+            if any(k.replace(" ", "") in p["name"].replace(" ", "") for k in keywords):
+                return True
+            ls = last_stock.get(key(p))
+            if ls and now - datetime.fromisoformat(ls) < hot_until:
+                return True
+            fs = first_seen.get(key(p))
+            return bool(fs and fs != "initial" and now - datetime.fromisoformat(fs) < hot_until)
+        prio = [p for p in products if is_priority(p)]
+        rest = sorted([p for p in products if not is_priority(p)], key=lambda p: last_checked.get(key(p), ""))
+        n_slots = max(len(prio), budget // cost)
+        chosen = prio + rest[: max(0, n_slots - len(prio))]
+        plan[chain] = {"products": chosen}
+        cycle = (len(rest) / max(1, n_slots - len(prio))) if rest and n_slots > len(prio) else None
+        info[chain] = {"priority": len(prio), "rotating": len(rest), "checkedNow": len(chosen),
+                       "cycleRuns": round(cycle, 1) if cycle else None}
+        print(f"[계획][{CHAIN_LABEL[chain]}] 우선 {len(prio)}종 매번 + 나머지 {len(rest)}종 중 {len(chosen) - len(prio)}종 순환")
+    return plan, info
+
+
 # ───────────────────────── 대시보드 status.json ─────────────────────────
-def build_status(results, catalog, cfg, now, events):
+def build_status(snapshot, catalog, plan_info, cfg, now, events, state):
     groups = []
+    last_checked = state.get("lastChecked", {})
     for region in cfg["regions"]:
         for chain in cfg["chains"]:
-            for pid, entry in results[region["id"]][chain].items():
-                stores = sorted(entry["stores"].values(), key=lambda s: (-(s["qty"] or 0), s["name"] or ""))
+            for p in catalog[chain]["products"]:
+                snap = snapshot.get(f"{region['id']}|{chain}|{p['id']}")
                 groups.append({
                     "region": region["id"], "chain": chain, "chainLabel": CHAIN_LABEL[chain],
-                    "productId": pid, "product": entry["product"]["name"],
-                    "error": entry["error"], "warning": entry.get("warning"),
-                    "checkedStores": len(stores),
-                    "stores": [dict(s, mapUrl=map_link(s)) for s in stores if (s["qty"] or 0) >= cfg["minQuantity"]],
+                    "productId": p["id"], "product": p["name"],
+                    "error": snap.get("error") if snap else None,
+                    "pending": snap is None,
+                    "checkedAt": last_checked.get(f"{chain}|{p['id']}"),
+                    "checkedStores": snap.get("checkedStores", 0) if snap else 0,
+                    "stores": snap.get("stores", []) if snap else [],
                 })
     return {
         "regions": [{"id": r["id"], "name": r["name"], "notify": r.get("notify", True)} for r in cfg["regions"]],
-        "chains": [{"id": c, "label": CHAIN_LABEL[c], "products": len(catalog[c]["products"]),
-                    "error": catalog[c].get("error")} for c in cfg["chains"]],
+        "chains": [dict({"id": c, "label": CHAIN_LABEL[c], "products": len(catalog[c]["products"]),
+                         "error": catalog[c].get("error")}, **plan_info.get(c, {})) for c in cfg["chains"]],
         "minQuantity": cfg["minQuantity"], "checkedAt": now.isoformat(timespec="seconds"),
+        "intervalMinutes": cfg.get("intervalMinutes", 15),
         "groups": groups, "events": events[:MAX_EVENTS],
     }
 
@@ -419,22 +470,60 @@ def signature(status) -> str:
 # ───────────────────────── main ─────────────────────────
 def run_once(cfg, dry_run=False):
     now = datetime.now(KST)
+    stamp = now.isoformat(timespec="seconds")
     state = load_json(STATE_PATH, {})
     if state.get("version") != STATE_VERSION:  # 이전 형식이면 새로 시작
         state = {}
     started = set(state.get("startedRegions", []))
+    region_ids = {r["id"] for r in cfg["regions"]}
 
     catalog = discover(cfg, state.get("catalog", {}), now)
-    results = collect(cfg, catalog)
+
+    # 새로 등장한 상품 기록 (처음 만든 목록은 'initial' → 우선순위 아님)
+    first_seen = dict(state.get("firstSeen", {}))
+    initial = not first_seen
+    for chain in cfg["chains"]:
+        for p in catalog[chain]["products"]:
+            first_seen.setdefault(f"{chain}|{p['id']}", "initial" if initial else stamp)
+    state["firstSeen"] = first_seen
+
+    plan, plan_info = plan_checks(cfg, catalog, state, now)
+    results = collect(cfg, plan)
     new_qty, restocks, soldouts = diff(results, state, cfg)
 
-    events = state.get("events", [])
+    # 이번에 확인하지 않은 상품의 이전 재고는 그대로 유지 (빠진 지역은 버림)
+    checked_prefixes = {f"{rid}|{chain}|{pid}|" for rid, bc in results.items() for chain, bp in bc.items() for pid in bp}
+    for k, v in state.get("qty", {}).items():
+        if k.split("|")[0] in region_ids and not any(k.startswith(px) for px in checked_prefixes):
+            new_qty.setdefault(k, v)
+
+    # 상품별 마지막 결과(스냅샷)·확인 시각·재고 발견 시각 갱신
+    snapshot = {k: v for k, v in state.get("snapshot", {}).items() if k.split("|")[0] in region_ids}
+    last_checked = dict(state.get("lastChecked", {}))
+    last_in_stock = dict(state.get("lastInStock", {}))
+    for rid, by_chain in results.items():
+        for chain, by_prod in by_chain.items():
+            for pid, e in by_prod.items():
+                key = f"{rid}|{chain}|{pid}"
+                if e["error"]:
+                    prev = snapshot.get(key, {})
+                    snapshot[key] = dict(prev, error=e["error"])
+                    continue
+                stores = sorted(e["stores"].values(), key=lambda s: (-(s["qty"] or 0), s["name"] or ""))
+                hot = [dict(s, mapUrl=map_link(s)) for s in stores if (s["qty"] or 0) >= cfg["minQuantity"]]
+                snapshot[key] = {"checkedStores": len(stores), "stores": hot, "error": None}
+                last_checked[f"{chain}|{pid}"] = stamp
+                if hot:
+                    last_in_stock[f"{chain}|{pid}"] = stamp
+    state["lastChecked"], state["lastInStock"] = last_checked, last_in_stock
+
+    events = [e for e in state.get("events", []) if e.get("region") in region_ids]
     for kind, rows in (("restock", restocks), ("soldout", soldouts)):
         for r in rows:
             if r["region"] not in started:
                 continue
             s = r["store"]
-            events.insert(0, {"at": now.isoformat(timespec="seconds"), "type": kind, "region": r["region"],
+            events.insert(0, {"at": stamp, "type": kind, "region": r["region"],
                               "chain": r["chain"], "chainLabel": CHAIN_LABEL[r["chain"]], "product": r["product"],
                               "store": s["name"], "address": s["address"], "qty": s["qty"] or 0, "before": r["before"]})
     events = events[:MAX_EVENTS]
@@ -452,21 +541,17 @@ def run_once(cfg, dry_run=False):
             ntfy_send(region_topic(region), build_alert(region, rows), dry_run)
         else:
             print(f"[{region['name']}] 새로 입고된 매장 없음")
-    started |= {r["id"] for r in cfg["regions"]}
+    started = (started & region_ids) | region_ids
 
-    status = build_status(results, catalog, cfg, now, events)
-    new_sig = signature(status)
-    last_write = state.get("lastWrite")
-    stale = not last_write or now - datetime.fromisoformat(last_write) > timedelta(hours=cfg.get("heartbeatHours", 6))
-    if (new_sig != state.get("signature") or stale or new_qty != state.get("qty")
-            or started != set(state.get("startedRegions", [])) or catalog != state.get("catalog")):
-        STATUS_PATH.parent.mkdir(parents=True, exist_ok=True)
-        STATUS_PATH.write_text(json.dumps(status, ensure_ascii=False, indent=1), encoding="utf-8")
-        STATE_PATH.write_text(json.dumps({
-            "version": STATE_VERSION, "qty": new_qty, "events": events, "signature": new_sig, "catalog": catalog,
-            "startedRegions": sorted(started), "lastWrite": now.isoformat(timespec="seconds"),
-        }, ensure_ascii=False, indent=1), encoding="utf-8")
-        print("상태 파일 갱신")
+    status = build_status(snapshot, catalog, plan_info, cfg, now, events, state)
+    STATUS_PATH.parent.mkdir(parents=True, exist_ok=True)
+    STATUS_PATH.write_text(json.dumps(status, ensure_ascii=False, indent=1), encoding="utf-8")
+    STATE_PATH.write_text(json.dumps({
+        "version": STATE_VERSION, "qty": new_qty, "events": events, "catalog": catalog,
+        "snapshot": snapshot, "lastChecked": last_checked, "lastInStock": last_in_stock, "firstSeen": first_seen,
+        "startedRegions": sorted(started), "lastWrite": stamp,
+    }, ensure_ascii=False, indent=1), encoding="utf-8")
+    print("상태 파일 갱신")
     return 0
 
 

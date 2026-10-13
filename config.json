@@ -1,5 +1,5 @@
 {
-  "_설명": "productFilter: 편의점마다 searchKeywords로 검색해서, 이름에 mustContainAny 중 하나 + cardWordsAny 중 하나가 들어가고 exclude 단어가 없는 상품을 '카드팩'으로 보고 모두 감시합니다. regions[].notify=false면 그 지역 푸시를 보내지 않습니다.",
+  "_설명": "productFilter로 편의점마다 카드팩을 자동으로 찾습니다(바코드 접두어 또는 '포켓몬+카드' 이름). priorityKeywords가 이름에 들어간 팩, 최근 hotDays일 안에 재고가 잡힌 팩, 새로 나온 팩은 매번 확인하고 나머지는 maxCallsPerChainPerRun(편의점별 한 번 실행당 조회 수) 안에서 오래 안 본 것부터 돌아가며 확인합니다. regions[].notify=false면 그 지역 푸시를 보내지 않습니다.",
   "productFilter": {
     "searchKeywords": [
       "포켓몬카드",
@@ -32,10 +32,24 @@
       "교통카드",
       "티머니",
       "캐시비",
-      "기프트"
+      "기프트",
+      "이즐",
+      "키링",
+      "실드",
+      "스티커"
+    ],
+    "barcodePrefixes": [
+      "8800286",
+      "8809945",
+      "8809581"
     ]
   },
-  "maxProductsPerChain": 8,
+  "priorityKeywords": [
+    "30주년"
+  ],
+  "maxProductsPerChain": 60,
+  "maxCallsPerChainPerRun": 100,
+  "hotDays": 3,
   "discoveryHours": 6,
   "chains": [
     "gs25",
@@ -67,52 +81,6 @@
           "name": "공주 유구읍",
           "lat": 36.5537,
           "lng": 126.954
-        }
-      ]
-    },
-    {
-      "id": "daejeon",
-      "name": "대전",
-      "notify": true,
-      "addressMustContain": [
-        "대전"
-      ],
-      "storeKeyword": "대전",
-      "centers": [
-        {
-          "name": "대전역(동구)",
-          "lat": 36.332,
-          "lng": 127.4345
-        },
-        {
-          "name": "서대전(중구)",
-          "lat": 36.322,
-          "lng": 127.404
-        },
-        {
-          "name": "둔산(서구)",
-          "lat": 36.351,
-          "lng": 127.386
-        },
-        {
-          "name": "관저(서구)",
-          "lat": 36.299,
-          "lng": 127.336
-        },
-        {
-          "name": "유성온천(유성구)",
-          "lat": 36.354,
-          "lng": 127.341
-        },
-        {
-          "name": "노은(유성구)",
-          "lat": 36.373,
-          "lng": 127.317
-        },
-        {
-          "name": "송촌(대덕구)",
-          "lat": 36.364,
-          "lng": 127.444
         }
       ]
     },

@@ -98,7 +98,7 @@ details.watch li.bad span:last-child{color:var(--warn)}
 <body>
 <div class="wrap">
   <header>
-    <h1><small>공주 · 대전 · 청주 편의점</small>포켓몬카드 재고</h1>
+    <h1><small>공주 · 청주 편의점</small>포켓몬카드 재고</h1>
     <div class="meta">
       <div>마지막 확인 <b id="checked">–</b></div>
       <div class="btns">
@@ -134,7 +134,7 @@ details.watch li.bad span:last-child{color:var(--warn)}
 
 <script>
 const DEMO = {
-  regions:[{id:"gongju",name:"공주",notify:true},{id:"daejeon",name:"대전",notify:true},{id:"cheongju",name:"청주",notify:false}],
+  regions:[{id:"gongju",name:"공주",notify:true},{id:"cheongju",name:"청주",notify:false}],
   chains:[{id:"gs25",label:"GS25",products:2,error:null},{id:"cu",label:"CU",products:2,error:null},{id:"seveneleven",label:"세븐일레븐",products:0,error:"(예시) 조회 실패"},{id:"emart24",label:"이마트24",products:1,error:null}],
   minQuantity:1, checkedAt:new Date().toISOString(),
   groups:[
@@ -142,7 +142,6 @@ const DEMO = {
     {region:"gongju",chain:"gs25",chainLabel:"GS25",productId:"g2",product:"(예시) 포켓몬카드 확장팩 B",checkedStores:12,stores:[{code:"s1",name:"GS25 공주예시점",address:"충남 공주시 예시로 1",phone:"041-000-0000",qty:2,mapUrl:"#"}]},
     {region:"gongju",chain:"cu",chainLabel:"CU",productId:"c1",product:"(예시) 포켓몬)카드팩",checkedStores:17,stores:[]},
     {region:"gongju",chain:"cu",chainLabel:"CU",productId:"c2",product:"(예시) 포켓몬)스타터덱",checkedStores:0,error:"(예시) 조회 실패",stores:[]},
-    {region:"daejeon",chain:"cu",chainLabel:"CU",productId:"c1",product:"(예시) 포켓몬)카드팩",checkedStores:106,stores:[{code:"d1",name:"CU 둔산예시점",address:"대전 서구 둔산동 1",qty:3,mapUrl:"#"}]},
     {region:"cheongju",chain:"cu",chainLabel:"CU",productId:"c1",product:"(예시) 포켓몬)카드팩",checkedStores:91,stores:[]}
   ],
   events:[{at:new Date().toISOString(),type:"restock",region:"gongju",chain:"gs25",chainLabel:"GS25",store:"GS25 공주예시점",product:"(예시) 포켓몬카드 확장팩 A",qty:4,before:0}]
@@ -199,7 +198,7 @@ function render(){
   const chainState = CHAINS.map(c => {
     const gs = G.filter(g => g.chain === c);
     const meta = (data.chains || []).find(x => x.id === c) || {};
-    const ok = gs.filter(g => !g.error).length;
+    const ok = gs.filter(g => !g.error && !g.pending).length;
     const label = meta.label || c;
     if (!gs.length) return `<span class="st bad">${esc(label)} 상품 못 찾음</span>`;
     return ok ? `<span class="st">${esc(label)} 정상</span>` : `<span class="st bad">${esc(label)} 조회 실패</span>`;
@@ -218,11 +217,13 @@ function render(){
   $("#watch").innerHTML = CHAINS.filter(c => chain === "all" || c === chain).map(c => {
     const gs = G.filter(g => g.chain === c);
     const meta = (data.chains || []).find(x => x.id === c) || {};
-    const ok = gs.filter(g => !g.error).length;
+    const ok = gs.filter(g => !g.error && !g.pending).length;
     const stores = Math.max(0, ...gs.map(g => g.checkedStores || 0));
+    const rot = meta.rotating ? ` · 우선 ${meta.priority}종 매번, 나머지 약 ${Math.round((meta.cycleRuns||1) * (data.intervalMinutes||15))}분마다` : "";
     const summ = !gs.length ? (meta.error ? "상품 검색 실패" : "카드팩 상품 없음")
-      : ok ? `카드팩 ${gs.length}종 · 매장 ${stores}곳 확인` : "조회 실패 (외부 서비스 장애)";
-    const rows = gs.map(g => `<li class="${g.error ? "bad" : ""}"><span>${esc(g.product)}</span><span>${g.error ? "조회 실패" : `재고 ${g.stores.length}곳`}</span></li>`).join("");
+      : ok ? `카드팩 ${gs.length}종 · 매장 ${stores}곳${rot}` : (gs.every(g => g.pending) ? "확인 대기 중" : "조회 실패 (외부 서비스 장애)");
+    const rows = [...gs].sort((a,b) => b.stores.length - a.stores.length).map(g => `<li class="${g.error ? "bad" : ""}"><span>${esc(g.product)}</span><span>${
+      g.error ? "조회 실패" : g.pending ? "확인 대기" : `재고 ${g.stores.length}곳 · ${g.checkedAt ? ago(g.checkedAt) : ""}`}</span></li>`).join("");
     const err = (!gs.length && meta.error) ? `<li class="bad"><span>${esc(meta.error)}</span><span></span></li>`
       : (gs.find(g => g.error) ? `<li class="bad"><span>${esc(gs.find(g => g.error).error)}</span><span></span></li>` : "");
     return `<details class="watch"><summary><span class="chip" style="background:var(--${c})">${esc(meta.label || c)}</span><span class="meta2">${summ}</span></summary><ul>${rows}${err}</ul></details>`;
