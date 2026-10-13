@@ -3,7 +3,7 @@ name: 포켓몬카드 재고 확인
 on:
   schedule:
     # 20분마다 (UTC 기준, GitHub 사정에 따라 몇 분 늦어질 수 있음)
-    - cron: "*/20 * * * *"
+    - cron: "*/30 * * * *"
   workflow_dispatch:
     inputs:
       test_notify:
