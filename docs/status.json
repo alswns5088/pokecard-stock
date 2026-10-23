@@ -35,12 +35,12 @@
   {
    "id": "seveneleven",
    "label": "세븐일레븐",
-   "products": 15,
+   "products": 3,
    "error": null,
    "priority": 0,
-   "rotating": 15,
-   "checkedNow": 15,
-   "cycleRuns": 0.3
+   "rotating": 3,
+   "checkedNow": 3,
+   "cycleRuns": 0.1
   },
   {
    "id": "emart24",
@@ -54,7 +54,7 @@
   }
  ],
  "minQuantity": 1,
- "checkedAt": "2026-10-23T08:56:13+09:00",
+ "checkedAt": "2026-10-23T13:32:49+09:00",
  "intervalMinutes": 15,
  "groups": [
   {
@@ -65,7 +65,7 @@
    "product": "포켓몬)니힐제로카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -77,7 +77,7 @@
    "product": "포켓몬)배틀파트너즈카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -89,7 +89,7 @@
    "product": "포켓몬)닌자스피너카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -101,7 +101,7 @@
    "product": "포켓몬)어비스아이카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -113,7 +113,7 @@
    "product": "포켓몬)낙원드래고나카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -125,7 +125,7 @@
    "product": "포켓몬)인페르노X카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -137,7 +137,7 @@
    "product": "포켓몬)테라스탈카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -149,7 +149,7 @@
    "product": "포켓몬)30주년기념카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -161,7 +161,7 @@
    "product": "포켓몬)로켓단의영광",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -173,7 +173,7 @@
    "product": "포켓몬)메가심포니아",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -185,7 +185,7 @@
    "product": "포켓몬)메가브레이브",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -197,7 +197,7 @@
    "product": "포켓몬)스톰에메랄다카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -239,157 +239,13 @@
   },
   {
    "region": "gongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8800286275732",
-   "product": "비젼)포켓몬확장팩(30주년)_H",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": "2026-10-16T18:03:42+09:00",
-   "checkedStores": 26,
-   "stores": []
-  },
-  {
-   "region": "gongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8809945338184",
-   "product": "비젼)포켓몬확장팩(낙원드래고나)_H",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": null,
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "gongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8800286279372",
-   "product": "비젼)포켓몬확장팩(닌자스피너)_H",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": null,
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "gongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8800286277743",
-   "product": "비젼)포켓몬확장팩(로켓단의영광)",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": null,
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "gongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8800286278085",
-   "product": "비젼)포켓몬확장팩(메가브레이브)",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": null,
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "gongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8800286278115",
-   "product": "비젼)포켓몬확장팩(메가심포니아)",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": null,
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "gongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8809945339815",
-   "product": "비젼)포켓몬확장팩(배틀파트너즈)_H",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": null,
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "gongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8800286278023",
-   "product": "비젼)포켓몬확장팩(블랙볼트)_H",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": null,
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "gongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8800286279549",
-   "product": "비젼)포켓몬확장팩(어비스아이)_H",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": null,
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "gongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8800286278535",
-   "product": "비젼)포켓몬확장팩(인페르노X)",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": null,
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "gongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8809945338207",
-   "product": "비젼)포켓몬확장팩(초전브레이커)_H",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": null,
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "gongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8800286278054",
-   "product": "비젼)포켓몬확장팩(화이트플레어)_H",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": null,
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "gongju",
    "chain": "emart24",
    "chainLabel": "이마트24",
    "productId": "8800286277736",
    "product": "포켓몬)포켓몬카드(로켓단의영광)박스",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -401,7 +257,7 @@
    "product": "포켓몬)포켓몬카드(로켓단의영광)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -413,7 +269,7 @@
    "product": "포켓몬)포켓몬카드(블랙볼트)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T05:50:42+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -425,7 +281,7 @@
    "product": "포켓몬)포켓몬카드(화이트플레어)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T05:50:42+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -437,7 +293,7 @@
    "product": "포켓몬)포켓몬카드(메가브레이브)박스",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T05:50:42+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -449,7 +305,7 @@
    "product": "포켓몬)포켓몬카드(메가브레이브)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T05:50:42+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -461,7 +317,7 @@
    "product": "포켓몬)포켓몬카드(메가심포니아)박스",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T05:50:42+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -473,7 +329,7 @@
    "product": "포켓몬)포켓몬카드(메가심포니아)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T05:50:42+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -485,7 +341,7 @@
    "product": "포켓몬)포켓몬카드(닌자스피너)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T05:50:42+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -497,7 +353,7 @@
    "product": "포켓몬)포켓몬카드(배틀파트너즈)박스",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T05:50:42+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -509,7 +365,7 @@
    "product": "포켓몬)포켓몬카드(배틀파트너즈)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T05:50:42+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -521,7 +377,7 @@
    "product": "포켓몬)포켓몬카드(낙원드래고나)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T05:50:42+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -653,7 +509,7 @@
    "product": "포켓몬)니힐제로카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -665,7 +521,7 @@
    "product": "포켓몬)배틀파트너즈카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -677,7 +533,7 @@
    "product": "포켓몬)닌자스피너카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -689,7 +545,7 @@
    "product": "포켓몬)어비스아이카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -701,7 +557,7 @@
    "product": "포켓몬)낙원드래고나카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -713,7 +569,7 @@
    "product": "포켓몬)인페르노X카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -725,7 +581,7 @@
    "product": "포켓몬)테라스탈카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -737,9 +593,18 @@
    "product": "포켓몬)30주년기념카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 91,
-   "stores": []
+   "stores": [
+    {
+     "code": "21902",
+     "name": "청주시청후문점",
+     "address": "충청북도 청주시 상당구 중앙로 63-1, (북문로3가) 1층",
+     "phone": "0432212049",
+     "qty": 20,
+     "mapUrl": "https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%8B%9C%EC%B2%AD%ED%9B%84%EB%AC%B8%EC%A0%90%20%EC%B6%A9%EC%B2%AD%EB%B6%81%EB%8F%84%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%83%81%EB%8B%B9%EA%B5%AC%20%EC%A4%91%EC%95%99%EB%A1%9C%2063-1%2C%20%28%EB%B6%81%EB%AC%B8%EB%A1%9C3%EA%B0%80%29%201%EC%B8%B5"
+    }
+   ]
   },
   {
    "region": "cheongju",
@@ -749,7 +614,7 @@
    "product": "포켓몬)로켓단의영광",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -761,7 +626,7 @@
    "product": "포켓몬)메가심포니아",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -773,7 +638,7 @@
    "product": "포켓몬)메가브레이브",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -785,7 +650,7 @@
    "product": "포켓몬)스톰에메랄다카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -827,157 +692,13 @@
   },
   {
    "region": "cheongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8800286275732",
-   "product": "비젼)포켓몬확장팩(30주년)_H",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": "2026-10-16T18:03:42+09:00",
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "cheongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8809945338184",
-   "product": "비젼)포켓몬확장팩(낙원드래고나)_H",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": null,
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "cheongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8800286279372",
-   "product": "비젼)포켓몬확장팩(닌자스피너)_H",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": null,
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "cheongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8800286277743",
-   "product": "비젼)포켓몬확장팩(로켓단의영광)",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": null,
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "cheongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8800286278085",
-   "product": "비젼)포켓몬확장팩(메가브레이브)",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": null,
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "cheongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8800286278115",
-   "product": "비젼)포켓몬확장팩(메가심포니아)",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": null,
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "cheongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8809945339815",
-   "product": "비젼)포켓몬확장팩(배틀파트너즈)_H",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": null,
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "cheongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8800286278023",
-   "product": "비젼)포켓몬확장팩(블랙볼트)_H",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": null,
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "cheongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8800286279549",
-   "product": "비젼)포켓몬확장팩(어비스아이)_H",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": null,
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "cheongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8800286278535",
-   "product": "비젼)포켓몬확장팩(인페르노X)",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": null,
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "cheongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8809945338207",
-   "product": "비젼)포켓몬확장팩(초전브레이커)_H",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": null,
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "cheongju",
-   "chain": "seveneleven",
-   "chainLabel": "세븐일레븐",
-   "productId": "8800286278054",
-   "product": "비젼)포켓몬확장팩(화이트플레어)_H",
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
-   "pending": false,
-   "checkedAt": null,
-   "checkedStores": 0,
-   "stores": []
-  },
-  {
-   "region": "cheongju",
    "chain": "emart24",
    "chainLabel": "이마트24",
    "productId": "8800286277736",
    "product": "포켓몬)포켓몬카드(로켓단의영광)박스",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -989,7 +710,7 @@
    "product": "포켓몬)포켓몬카드(로켓단의영광)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T08:56:13+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -1001,7 +722,7 @@
    "product": "포켓몬)포켓몬카드(블랙볼트)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T05:50:42+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -1013,7 +734,7 @@
    "product": "포켓몬)포켓몬카드(화이트플레어)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T05:50:42+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -1025,7 +746,7 @@
    "product": "포켓몬)포켓몬카드(메가브레이브)박스",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T05:50:42+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -1037,7 +758,7 @@
    "product": "포켓몬)포켓몬카드(메가브레이브)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T05:50:42+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -1049,7 +770,7 @@
    "product": "포켓몬)포켓몬카드(메가심포니아)박스",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T05:50:42+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -1061,7 +782,7 @@
    "product": "포켓몬)포켓몬카드(메가심포니아)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T05:50:42+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -1073,7 +794,7 @@
    "product": "포켓몬)포켓몬카드(닌자스피너)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T05:50:42+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -1085,7 +806,7 @@
    "product": "포켓몬)포켓몬카드(배틀파트너즈)박스",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T05:50:42+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -1097,7 +818,7 @@
    "product": "포켓몬)포켓몬카드(배틀파트너즈)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T05:50:42+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -1109,7 +830,7 @@
    "product": "포켓몬)포켓몬카드(낙원드래고나)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-23T05:50:42+09:00",
+   "checkedAt": "2026-10-23T13:32:49+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -1234,5 +955,18 @@
    "stores": []
   }
  ],
- "events": []
+ "events": [
+  {
+   "at": "2026-10-23T13:32:49+09:00",
+   "type": "restock",
+   "region": "cheongju",
+   "chain": "cu",
+   "chainLabel": "CU",
+   "product": "포켓몬)30주년기념카드",
+   "store": "청주시청후문점",
+   "address": "충청북도 청주시 상당구 중앙로 63-1, (북문로3가) 1층",
+   "qty": 20,
+   "before": 0
+  }
+ ]
 }
