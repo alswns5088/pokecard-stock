@@ -54,7 +54,7 @@
   }
  ],
  "minQuantity": 1,
- "checkedAt": "2026-10-31T01:38:17+09:00",
+ "checkedAt": "2026-10-31T06:06:18+09:00",
  "intervalMinutes": 15,
  "groups": [
   {
@@ -65,7 +65,7 @@
    "product": "포켓몬)닌자스피너카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -77,7 +77,7 @@
    "product": "포켓몬)배틀파트너즈카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -89,7 +89,7 @@
    "product": "포켓몬)니힐제로카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -101,7 +101,7 @@
    "product": "포켓몬)어비스아이카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -113,7 +113,7 @@
    "product": "포켓몬)낙원드래고나카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -125,7 +125,7 @@
    "product": "포켓몬)30주년기념카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -137,7 +137,7 @@
    "product": "포켓몬)인페르노X카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -149,7 +149,7 @@
    "product": "포켓몬)로켓단의영광",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -161,7 +161,7 @@
    "product": "포켓몬)메가심포니아",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -173,7 +173,7 @@
    "product": "포켓몬)테라스탈카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -185,7 +185,7 @@
    "product": "포켓몬)메가브레이브",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -197,7 +197,7 @@
    "product": "포켓몬)스톰에메랄다카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 17,
    "stores": []
   },
@@ -219,7 +219,7 @@
    "chainLabel": "세븐일레븐",
    "productId": "8800286279143",
    "product": "비젼)포켓몬확장팩(니힐제로)",
-   "error": "선택한 매장의 재고 수량을 확인하지 못했습니다.",
+   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
    "pending": false,
    "checkedAt": null,
    "checkedStores": 0,
@@ -231,7 +231,7 @@
    "chainLabel": "세븐일레븐",
    "productId": "8809945338399",
    "product": "비젼)포켓몬하이클래스팩(테라스탈페스타)_H",
-   "error": "선택한 매장의 재고 수량을 확인하지 못했습니다.",
+   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
    "pending": false,
    "checkedAt": null,
    "checkedStores": 0,
@@ -255,7 +255,7 @@
    "chainLabel": "세븐일레븐",
    "productId": "8809945338184",
    "product": "비젼)포켓몬확장팩(낙원드래고나)_H",
-   "error": "선택한 매장의 재고 수량을 확인하지 못했습니다.",
+   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
    "pending": false,
    "checkedAt": null,
    "checkedStores": 0,
@@ -267,7 +267,7 @@
    "chainLabel": "세븐일레븐",
    "productId": "8800286279372",
    "product": "비젼)포켓몬확장팩(닌자스피너)_H",
-   "error": "선택한 매장의 재고 수량을 확인하지 못했습니다.",
+   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다.",
    "pending": false,
    "checkedAt": null,
    "checkedStores": 0,
@@ -389,7 +389,7 @@
    "product": "포켓몬)포켓몬카드(로켓단의영광)박스",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -401,7 +401,7 @@
    "product": "포켓몬)포켓몬카드(로켓단의영광)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -413,7 +413,7 @@
    "product": "포켓몬)포켓몬카드(블랙볼트)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-30T18:53:47+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -425,7 +425,7 @@
    "product": "포켓몬)포켓몬카드(화이트플레어)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-30T18:53:47+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -437,7 +437,7 @@
    "product": "포켓몬)포켓몬카드(메가브레이브)박스",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-30T18:53:47+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -449,7 +449,7 @@
    "product": "포켓몬)포켓몬카드(메가브레이브)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-30T18:53:47+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -461,7 +461,7 @@
    "product": "포켓몬)포켓몬카드(메가심포니아)박스",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-30T18:53:47+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -473,7 +473,7 @@
    "product": "포켓몬)포켓몬카드(메가심포니아)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-30T18:53:47+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -485,7 +485,7 @@
    "product": "포켓몬)포켓몬카드(닌자스피너)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-30T18:53:47+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -497,7 +497,7 @@
    "product": "포켓몬)포켓몬카드(배틀파트너즈)박스",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-30T18:53:47+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -629,7 +629,7 @@
    "product": "포켓몬)포켓몬카드하이클래스(테라스탈페스타ex)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-30T18:53:47+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -641,7 +641,7 @@
    "product": "포켓몬)포켓몬카드하이클래스(테라스탈페스타ex)박스",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-30T18:53:47+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -653,7 +653,7 @@
    "product": "포켓몬)닌자스피너카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -665,7 +665,7 @@
    "product": "포켓몬)배틀파트너즈카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -677,7 +677,7 @@
    "product": "포켓몬)니힐제로카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -689,7 +689,7 @@
    "product": "포켓몬)어비스아이카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -701,7 +701,7 @@
    "product": "포켓몬)낙원드래고나카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -713,7 +713,7 @@
    "product": "포켓몬)30주년기념카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -725,7 +725,7 @@
    "product": "포켓몬)인페르노X카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -737,7 +737,7 @@
    "product": "포켓몬)로켓단의영광",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -749,7 +749,7 @@
    "product": "포켓몬)메가심포니아",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -761,7 +761,7 @@
    "product": "포켓몬)테라스탈카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -773,7 +773,7 @@
    "product": "포켓몬)메가브레이브",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -785,7 +785,7 @@
    "product": "포켓몬)스톰에메랄다카드",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 91,
    "stores": []
   },
@@ -977,7 +977,7 @@
    "product": "포켓몬)포켓몬카드(로켓단의영광)박스",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -989,7 +989,7 @@
    "product": "포켓몬)포켓몬카드(로켓단의영광)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-31T01:38:17+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -1001,7 +1001,7 @@
    "product": "포켓몬)포켓몬카드(블랙볼트)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-30T18:53:47+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -1013,7 +1013,7 @@
    "product": "포켓몬)포켓몬카드(화이트플레어)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-30T18:53:47+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -1025,7 +1025,7 @@
    "product": "포켓몬)포켓몬카드(메가브레이브)박스",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-30T18:53:47+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -1037,7 +1037,7 @@
    "product": "포켓몬)포켓몬카드(메가브레이브)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-30T18:53:47+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -1049,7 +1049,7 @@
    "product": "포켓몬)포켓몬카드(메가심포니아)박스",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-30T18:53:47+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -1061,7 +1061,7 @@
    "product": "포켓몬)포켓몬카드(메가심포니아)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-30T18:53:47+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -1073,7 +1073,7 @@
    "product": "포켓몬)포켓몬카드(닌자스피너)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-30T18:53:47+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -1085,7 +1085,7 @@
    "product": "포켓몬)포켓몬카드(배틀파트너즈)박스",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-30T18:53:47+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -1217,7 +1217,7 @@
    "product": "포켓몬)포켓몬카드하이클래스(테라스탈페스타ex)",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-30T18:53:47+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   },
@@ -1229,7 +1229,7 @@
    "product": "포켓몬)포켓몬카드하이클래스(테라스탈페스타ex)박스",
    "error": null,
    "pending": false,
-   "checkedAt": "2026-10-30T18:53:47+09:00",
+   "checkedAt": "2026-10-31T06:06:18+09:00",
    "checkedStores": 0,
    "stores": []
   }
