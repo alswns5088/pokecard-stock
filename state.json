@@ -1349,12 +1349,12 @@
   "cheongju|cu|8800286279709|43422": 0,
   "cheongju|cu|8800286279709|52238": 0,
   "cheongju|cu|8800286279709|34832": 0,
+  "cheongju|emart24|8800286278535|01192": 0,
+  "cheongju|emart24|8809945338207|01192": 0,
   "cheongju|emart24|8800286278023|01192": 0,
   "cheongju|emart24|8800286278054|01192": 0,
   "cheongju|emart24|8800286278085|01192": 0,
-  "cheongju|emart24|8800286279372|01192": 0,
-  "cheongju|emart24|8800286278535|01192": 0,
-  "cheongju|emart24|8809945338207|01192": 0
+  "cheongju|emart24|8800286279372|01192": 0
  },
  "events": [
   {
@@ -1530,14 +1530,14 @@
   "gs25": {
    "at": null,
    "sig": "[[\"30주년\",\"닌자스피너\",\"배틀파트너즈\",\"낙원드래고나\",\"메가브레이브\",\"메가심포니아\",\"인페르노x\",\"로켓단의영광\",\"블랙볼트\",\"화이트플레어\",\"니힐제로\",\"어비스아이\",\"스톰에메랄다\",\"초전브레이커\",\"테라스탈\"],{\"searchkeywords\":[\"포켓몬카드\",\"포켓몬카드\",\"포켓몬확장팩\"],\"mustcontainany\":[\"포켓몬\"],\"cardwordsany\":[\"카드\",\"확장팩\",\"부스터\",\"스타터\",\"덱\",\"팩\"],\"exclude\":[\"빵\",\"젤리\",\"음료\",\"라면\",\"과자\",\"스낵\",\"슬리브\",\"바인더\",\"파일\",\"케이스\",\"띠부\",\"교통카드\",\"티머니\",\"캐시비\",\"기프트\",\"이즐\",\"키링\",\"실드\",\"스티커\"],\"barcodeprefixes\":[\"8800286\",\"8809945\",\"8809581\"]}]",
-   "triedAt": "2026-11-02T18:14:00+09:00",
+   "triedAt": "2026-11-03T04:36:02+09:00",
    "products": [],
-   "error": "카드팩 상품을 찾지 못했습니다"
+   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
   },
   "cu": {
    "at": "2026-11-02T07:40:28+09:00",
    "sig": "[[\"30주년\",\"닌자스피너\",\"배틀파트너즈\",\"낙원드래고나\",\"메가브레이브\",\"메가심포니아\",\"인페르노x\",\"로켓단의영광\",\"블랙볼트\",\"화이트플레어\",\"니힐제로\",\"어비스아이\",\"스톰에메랄다\",\"초전브레이커\",\"테라스탈\"],{\"searchkeywords\":[\"포켓몬카드\",\"포켓몬카드\",\"포켓몬확장팩\"],\"mustcontainany\":[\"포켓몬\"],\"cardwordsany\":[\"카드\",\"확장팩\",\"부스터\",\"스타터\",\"덱\",\"팩\"],\"exclude\":[\"빵\",\"젤리\",\"음료\",\"라면\",\"과자\",\"스낵\",\"슬리브\",\"바인더\",\"파일\",\"케이스\",\"띠부\",\"교통카드\",\"티머니\",\"캐시비\",\"기프트\",\"이즐\",\"키링\",\"실드\",\"스티커\"],\"barcodeprefixes\":[\"8800286\",\"8809945\",\"8809581\"]}]",
-   "triedAt": "2026-11-02T18:14:00+09:00",
+   "triedAt": "2026-11-03T04:36:02+09:00",
    "products": [
     {
      "id": "8800286279143",
@@ -1588,10 +1588,12 @@
      "name": "포켓몬)스톰에메랄다카드"
     }
    ],
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "seveneleven": {
    "at": "2026-11-02T18:14:00+09:00",
+   "sig": "[[\"30주년\",\"닌자스피너\",\"배틀파트너즈\",\"낙원드래고나\",\"메가브레이브\",\"메가심포니아\",\"인페르노x\",\"로켓단의영광\",\"블랙볼트\",\"화이트플레어\",\"니힐제로\",\"어비스아이\",\"스톰에메랄다\",\"초전브레이커\",\"테라스탈\"],{\"searchkeywords\":[\"포켓몬카드\",\"포켓몬카드\",\"포켓몬확장팩\"],\"mustcontainany\":[\"포켓몬\"],\"cardwordsany\":[\"카드\",\"확장팩\",\"부스터\",\"스타터\",\"덱\",\"팩\"],\"exclude\":[\"빵\",\"젤리\",\"음료\",\"라면\",\"과자\",\"스낵\",\"슬리브\",\"바인더\",\"파일\",\"케이스\",\"띠부\",\"교통카드\",\"티머니\",\"캐시비\",\"기프트\",\"이즐\",\"키링\",\"실드\",\"스티커\"],\"barcodeprefixes\":[\"8800286\",\"8809945\",\"8809581\"]}]",
+   "triedAt": "2026-11-03T04:36:02+09:00",
    "products": [
     {
      "id": "8800286279709",
@@ -1654,11 +1656,12 @@
      "name": "비젼)포켓몬확장팩(화이트플레어)_H"
     }
    ],
-   "error": null,
-   "sig": "[[\"30주년\",\"닌자스피너\",\"배틀파트너즈\",\"낙원드래고나\",\"메가브레이브\",\"메가심포니아\",\"인페르노x\",\"로켓단의영광\",\"블랙볼트\",\"화이트플레어\",\"니힐제로\",\"어비스아이\",\"스톰에메랄다\",\"초전브레이커\",\"테라스탈\"],{\"searchkeywords\":[\"포켓몬카드\",\"포켓몬카드\",\"포켓몬확장팩\"],\"mustcontainany\":[\"포켓몬\"],\"cardwordsany\":[\"카드\",\"확장팩\",\"부스터\",\"스타터\",\"덱\",\"팩\"],\"exclude\":[\"빵\",\"젤리\",\"음료\",\"라면\",\"과자\",\"스낵\",\"슬리브\",\"바인더\",\"파일\",\"케이스\",\"띠부\",\"교통카드\",\"티머니\",\"캐시비\",\"기프트\",\"이즐\",\"키링\",\"실드\",\"스티커\"],\"barcodeprefixes\":[\"8800286\",\"8809945\",\"8809581\"]}]"
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "emart24": {
    "at": "2026-11-02T18:14:00+09:00",
+   "sig": "[[\"30주년\",\"닌자스피너\",\"배틀파트너즈\",\"낙원드래고나\",\"메가브레이브\",\"메가심포니아\",\"인페르노x\",\"로켓단의영광\",\"블랙볼트\",\"화이트플레어\",\"니힐제로\",\"어비스아이\",\"스톰에메랄다\",\"초전브레이커\",\"테라스탈\"],{\"searchkeywords\":[\"포켓몬카드\",\"포켓몬카드\",\"포켓몬확장팩\"],\"mustcontainany\":[\"포켓몬\"],\"cardwordsany\":[\"카드\",\"확장팩\",\"부스터\",\"스타터\",\"덱\",\"팩\"],\"exclude\":[\"빵\",\"젤리\",\"음료\",\"라면\",\"과자\",\"스낵\",\"슬리브\",\"바인더\",\"파일\",\"케이스\",\"띠부\",\"교통카드\",\"티머니\",\"캐시비\",\"기프트\",\"이즐\",\"키링\",\"실드\",\"스티커\"],\"barcodeprefixes\":[\"8800286\",\"8809945\",\"8809581\"]}]",
+   "triedAt": "2026-11-03T04:36:02+09:00",
    "products": [
     {
      "id": "8800286277736",
@@ -1749,15 +1752,14 @@
      "name": "포켓몬)포켓몬카드하이클래스(테라스탈페스타ex)박스"
     }
    ],
-   "error": null,
-   "sig": "[[\"30주년\",\"닌자스피너\",\"배틀파트너즈\",\"낙원드래고나\",\"메가브레이브\",\"메가심포니아\",\"인페르노x\",\"로켓단의영광\",\"블랙볼트\",\"화이트플레어\",\"니힐제로\",\"어비스아이\",\"스톰에메랄다\",\"초전브레이커\",\"테라스탈\"],{\"searchkeywords\":[\"포켓몬카드\",\"포켓몬카드\",\"포켓몬확장팩\"],\"mustcontainany\":[\"포켓몬\"],\"cardwordsany\":[\"카드\",\"확장팩\",\"부스터\",\"스타터\",\"덱\",\"팩\"],\"exclude\":[\"빵\",\"젤리\",\"음료\",\"라면\",\"과자\",\"스낵\",\"슬리브\",\"바인더\",\"파일\",\"케이스\",\"띠부\",\"교통카드\",\"티머니\",\"캐시비\",\"기프트\",\"이즐\",\"키링\",\"실드\",\"스티커\"],\"barcodeprefixes\":[\"8800286\",\"8809945\",\"8809581\"]}]"
+   "error": "HTTP 500 EMART24_PRODUCT_SEARCH_FAILED: 편의점 릴레이 요청에 실패했습니다."
   }
  },
  "snapshot": {
   "gongju|cu|8800286275732": {
    "checkedStores": 17,
    "stores": [],
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|cu|8809945338085": {
    "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
@@ -1765,12 +1767,12 @@
   "gongju|cu|8800286279372": {
    "checkedStores": 17,
    "stores": [],
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|cu|8800286279143": {
    "checkedStores": 17,
    "stores": [],
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|cu|8809945337521": {
    "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
@@ -1778,7 +1780,7 @@
   "gongju|cu|8809945339815": {
    "checkedStores": 17,
    "stores": [],
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|cu|8809945337750": {
    "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
@@ -1786,12 +1788,12 @@
   "gongju|cu|8800286279549": {
    "checkedStores": 17,
    "stores": [],
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|cu|8809945338184": {
    "checkedStores": 17,
    "stores": [],
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|cu|8800286278689": {
    "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
@@ -1853,91 +1855,91 @@
   "gongju|cu|8800286278535": {
    "checkedStores": 17,
    "stores": [],
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|cu|8809945338399": {
    "checkedStores": 17,
    "stores": [],
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|cu|8800286277743": {
    "checkedStores": 17,
    "stores": [],
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|cu|8800286278115": {
    "checkedStores": 17,
    "stores": [],
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|cu|8800286278085": {
    "checkedStores": 17,
    "stores": [],
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|cu|8800286279709": {
    "checkedStores": 17,
    "stores": [],
-   "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|seveneleven|8800286279709": {
    "checkedStores": 26,
    "stores": [],
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|seveneleven|8800286279143": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|seveneleven|8809945338399": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|seveneleven|8800286275732": {
    "checkedStores": 26,
    "stores": [],
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|seveneleven|8809945338184": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|seveneleven|8800286279372": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|seveneleven|8800286277743": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|seveneleven|8800286278085": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|seveneleven|8800286278115": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|seveneleven|8809945339815": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|seveneleven|8800286278023": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|seveneleven|8800286279549": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|seveneleven|8800286278535": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|seveneleven|8809945338207": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|seveneleven|8800286278054": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|emart24|8800286277736": {
    "checkedStores": 0,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|emart24|8800286277743": {
    "checkedStores": 0,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|emart24|8800286278023": {
    "checkedStores": 0,
@@ -1982,52 +1984,52 @@
   "gongju|emart24|8809945339815": {
    "checkedStores": 0,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|emart24|8809945338184": {
    "checkedStores": 0,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|emart24|8809945338191": {
    "checkedStores": 0,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|emart24|8800286278535": {
    "checkedStores": 0,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|emart24|880286278016": {
    "checkedStores": 0,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|emart24|8800286279143": {
    "checkedStores": 0,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|emart24|8800286279549": {
    "checkedStores": 0,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|emart24|8800286279709": {
    "checkedStores": 0,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|emart24|8809945338207": {
    "checkedStores": 0,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|emart24|8809945338214": {
    "checkedStores": 0,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "gongju|emart24|8809945338399": {
    "checkedStores": 0,
@@ -2070,59 +2072,59 @@
    "error": "HTTP 502 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
   },
   "cheongju|seveneleven|8800286279709": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|seveneleven|8800286279143": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|seveneleven|8809945338399": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|seveneleven|8800286275732": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|seveneleven|8809945338184": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|seveneleven|8800286279372": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|seveneleven|8800286277743": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|seveneleven|8800286278085": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|seveneleven|8800286278115": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|seveneleven|8809945339815": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|seveneleven|8800286278023": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|seveneleven|8800286279549": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|seveneleven|8800286278535": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|seveneleven|8809945338207": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|seveneleven|8800286278054": {
-   "error": "HTTP 504 CONVENIENCE_RELAY_FAILED: 편의점 릴레이 요청에 실패했습니다."
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|emart24|8800286277736": {
    "checkedStores": 0,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|emart24|8800286277743": {
    "checkedStores": 0,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|emart24|8800286278023": {
    "checkedStores": 1,
@@ -2167,52 +2169,52 @@
   "cheongju|emart24|8809945339815": {
    "checkedStores": 0,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|emart24|8809945338184": {
    "checkedStores": 0,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|emart24|8809945338191": {
    "checkedStores": 0,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|emart24|8800286278535": {
    "checkedStores": 1,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|emart24|880286278016": {
    "checkedStores": 0,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|emart24|8800286279143": {
    "checkedStores": 0,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|emart24|8800286279549": {
    "checkedStores": 0,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|emart24|8800286279709": {
    "checkedStores": 0,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|emart24|8809945338207": {
    "checkedStores": 1,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|emart24|8809945338214": {
    "checkedStores": 0,
    "stores": [],
-   "error": null
+   "error": "HTTP 503 UPSTREAM_ROUTE_UNAVAILABLE: 외부 서비스 연결을 사용할 수 없습니다."
   },
   "cheongju|emart24|8809945338399": {
    "checkedStores": 0,
@@ -2341,5 +2343,5 @@
   "cheongju",
   "gongju"
  ],
- "lastWrite": "2026-11-02T18:14:00+09:00"
+ "lastWrite": "2026-11-03T04:36:02+09:00"
 }
